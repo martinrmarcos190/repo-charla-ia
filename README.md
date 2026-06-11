@@ -42,7 +42,6 @@ Leé `material-previo.md` completo. Resumen de comandos:
 uv --version          # si falla: curl -LsSf https://astral.sh/uv/install.sh | sh
 python3 --version     # necesitás ≥ 3.11  (si no: uv python install 3.12)
 git --version
-docker --version
 ```
 
 ### 🟧 [A] Claude Code + Spec Kit
@@ -68,7 +67,7 @@ La primera vez que corras `claude` te autentica por OAuth en el navegador.
 1) Descargá Kiro de kiro.dev/downloads (fork de VS Code; no necesitás cuenta AWS).
 2) Logueate (Google / GitHub / Builder ID / AWS SSO).
 3) No instalás Spec Kit ni Claude Code: el flujo SDD viene incluido.
-   De la base común solo necesitás uv, Python, Git y Docker.
+   De la base común solo necesitás uv, Python y Git.
 ```
 
 ### Refresher opcional (Flask + SQLite)

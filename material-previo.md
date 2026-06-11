@@ -88,7 +88,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh        # macOS / Linux
 uv --version
 python3 --version      # debe ser ≥ 3.11
 git --version
-docker --version
 ```
 
 > Si `python3` es < 3.11: `uv python install 3.12`.
@@ -133,7 +132,7 @@ specify version
 **Checklist "entorno listo" — 🟧 [A]:**
 - [ ] `uv --version` responde
 - [ ] `python3 --version` ≥ 3.11
-- [ ] `git` y `docker` responden
+- [ ] `git` responde
 - [ ] `claude --version` y `claude doctor` OK
 - [ ] `specify check` OK
 
@@ -145,7 +144,7 @@ specify version
 1) Descargá Kiro desde kiro.dev/downloads (macOS / Linux / Windows; es fork de VS Code).
 2) Abrílo y logueate con Google, GitHub, Builder ID o AWS SSO (NO hace falta cuenta de AWS).
 3) En Kiro NO instalás Spec Kit ni Claude Code: el flujo SDD viene incluido.
-   De la base común solo necesitás uv (para el MCP del Bloque 4), Python, Git y Docker.
+   De la base común solo necesitás uv (para el MCP del Bloque 4), Python y Git.
 4) Verificación: abrí una carpeta vacía (File → Open Folder) y confirmá que aparece
    el panel "Specs" en la barra lateral y que podés abrir el chat.
 ```
@@ -153,7 +152,7 @@ specify version
 **Checklist "entorno listo" — 🟪 [B]:**
 - [ ] Kiro instalado y con sesión iniciada
 - [ ] Abrí una carpeta y veo el panel **Specs**
-- [ ] `uv --version`, `python3 --version` ≥ 3.11, `git` / `docker` responden (base común)
+- [ ] `uv --version`, `python3 --version` ≥ 3.11, `git` responden (base común)
 
 ---
 
