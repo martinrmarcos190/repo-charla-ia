@@ -22,9 +22,9 @@ la Skill los generás vos **vía SDD** durante la clase.
 | `recursos/problema.md` | Spec del problema → genera la **API** | Bloque 3 |
 | `recursos/spec-mcp.md` | Spec del **MCP** → genera `server.py` | Bloque 4 |
 | `recursos/spec-skill.md` | Spec de la **Skill** → genera `SKILL.md` | Bloque 4 |
-| `recursos/constitution.example.md` | 🟧 [A] ejemplo de constitución | Bloque 3 |
-| `recursos/steering.example.md` | 🟪 [B] ejemplo de steering file | Bloque 3 |
-| `recursos/mcp.json.example` | 🟪 [B] registro del MCP en Kiro | Bloque 4 |
+| `recursos/examples/constitution.example.md` | 🟧 [A] ejemplo de constitución | Bloque 3 |
+| `recursos/examples/steering.example.md` | 🟪 [B] ejemplo de steering file | Bloque 3 |
+| `recursos/examples/mcp.json.example` | 🟪 [B] registro del MCP en Kiro | Bloque 4 |
 
 > Las specs son **tool-agnostic**: el mismo `.md` se pega en `/speckit.specify`
 > (A) o al crear el Feature Spec (B).
@@ -124,7 +124,7 @@ El panel "Specs" ya está listo (no se instala nada).
 
 ### 🟪 [B]
 ```text
-(Opcional) Steering file en .kiro/steering/ con las mismas reglas (ver steering.example.md).
+(Opcional) Steering file en .kiro/steering/ con las mismas reglas (ver examples/steering.example.md).
 Panel Specs → "+" → Feature → pegá recursos/problema.md →
    Requirements-First (o Quick Plan si vas ajustado) →
    revisar requirements.md → design.md → tasks.md → "Run all Tasks".
@@ -164,7 +164,7 @@ claude mcp list          # debe aparecer items-api
 # dentro de Claude Code: /mcp
 ```
 ```json
-// 🟪 [B] — .kiro/settings/mcp.json (ver recursos/mcp.json.example)
+// 🟪 [B] — .kiro/settings/mcp.json (ver recursos/examples/mcp.json.example)
 {
   "mcpServers": {
     "items-api": {
