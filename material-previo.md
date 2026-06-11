@@ -159,9 +159,10 @@ specify version
 
 ## 5. Refresher: Flask + SQLite
 
-En el taller vas a generar este servicio **vía SDD**, pero conviene que lo
-tengas fresco. Este `app.py` mínimo usa Flask y el `sqlite3` de la stdlib (sin
-ORM):
+En el taller vas a generar este servicio **vía SDD desde cero**. Este snippet es
+solo para **refrescar** cómo se ve Flask + el `sqlite3` de la stdlib (sin ORM).
+**No es la solución completa:** le faltan `init_db()`, el seed y `GET /models/<id>`
+— eso lo genera SDD a partir de `recursos/problema.md`.
 
 ```python
 import sqlite3
@@ -205,8 +206,10 @@ if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
 ```
 
-Correr sin instalar nada (uv trae Flask al vuelo; pinneá el Python para que no
-agarre uno viejo del sistema):
+Si lo guardás como `app.py` podés correrlo para refrescar (uv trae Flask al
+vuelo; pinneá el Python para que no agarre uno viejo del sistema). Ojo: así como
+está, sin crear la tabla, `GET /models` falla con "no such table" — es esperado,
+es solo un refresher de sintaxis:
 
 ```bash
 uv run --python 3.12 --with flask app.py
@@ -225,7 +228,8 @@ curl -X POST http://127.0.0.1:5000/models -H "Content-Type: application/json" \
   -d '{"name":"bert-base","framework":"pytorch","accuracy":0.91}'
 ```
 
-> El archivo completo (con `init_db()` y seed) está en `recursos/app.py`.
+> La versión completa (con `init_db()`, seed y `GET /models/<id>`) la generás vos
+> vía SDD en el Bloque 3. No viene en este repo a propósito.
 
 ---
 

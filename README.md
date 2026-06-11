@@ -18,8 +18,7 @@ la Skill los generás vos **vía SDD** durante la clase.
 
 | Archivo | Para qué | Cuándo |
 |---|---|---|
-| `material-previo.md` | Guía de preparación completa (instalación, refresher) | **Antes** del taller |
-| `recursos/app.py` | Refresher Flask + SQLite (para correr y tener fresco) | Antes (opcional) |
+| `material-previo.md` | Guía de preparación completa (instalación + refresher Flask) | **Antes** del taller |
 | `recursos/problema.md` | Spec del problema → genera la **API** | Bloque 3 |
 | `recursos/spec-mcp.md` | Spec del **MCP** → genera `server.py` | Bloque 4 |
 | `recursos/spec-skill.md` | Spec de la **Skill** → genera `SKILL.md` | Bloque 4 |
@@ -71,18 +70,17 @@ La primera vez que corras `claude` te autentica por OAuth en el navegador.
    De la base común solo necesitás uv, Python, Git y Docker.
 ```
 
-### Refresher opcional (correr la API mínima)
+### Refresher opcional (Flask + SQLite)
 
-```bash
-uv run --python 3.12 --with flask recursos/app.py
-# en otra terminal:
-curl http://127.0.0.1:5000/health
-curl http://127.0.0.1:5000/models
-```
+Para llegar con la sintaxis fresca, mirá el snippet ilustrativo en
+`material-previo.md` (sección 5). **No es la solución completa** (le faltan
+`init_db()`, el seed y `GET /models/<id>`): esa la generás vos vía SDD en el
+Bloque 3 a partir de `recursos/problema.md`.
 
-> ⚠️ **macOS:** AirPlay Receiver ocupa el puerto 5000 y responde 403 a todo. Si
-> `curl` devuelve vacío o 403, desactivalo en **Ajustes del Sistema → General →
-> AirDrop y Handoff → Receptor de AirPlay**, o usá otro puerto.
+> ⚠️ **macOS:** cuando corras la API, ojo que AirPlay Receiver ocupa el puerto
+> 5000 y responde 403 a todo. Si `curl` devuelve vacío o 403, desactivalo en
+> **Ajustes del Sistema → General → AirDrop y Handoff → Receptor de AirPlay**, o
+> usá otro puerto.
 
 ---
 
