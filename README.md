@@ -22,6 +22,7 @@ la Skill los generás vos **vía SDD** durante la clase.
 | `recursos/problema.md` | Spec del problema → genera la **API** | Bloque 3 |
 | `recursos/spec-mcp.md` | Spec del **MCP** → genera `server.py` | Bloque 4 |
 | `recursos/spec-skill.md` | Spec de la **Skill** → genera `SKILL.md` | Bloque 4 |
+| `recursos/seed.sh` | Carga ~10 modelos de ejemplo vía `POST /models` (para poblar el inventario) | Bloque 3/4 |
 | `recursos/examples/constitution.example.md` | 🟧 [A] ejemplo de constitución | Bloque 3 |
 | `recursos/examples/steering.example.md` | 🟪 [B] ejemplo de steering file | Bloque 3 |
 | `recursos/examples/mcp.json.example` | 🟪 [B] registro del MCP en Kiro | Bloque 4 |
@@ -137,6 +138,14 @@ curl http://127.0.0.1:5000/models
 curl -X POST http://127.0.0.1:5000/models -H "Content-Type: application/json" \
   -d '{"name":"bert-base","framework":"pytorch","accuracy":0.91}'
 curl http://127.0.0.1:5000/models/1
+```
+
+**Poblar el inventario** (opcional, pero hace mejor la demo del Bloque 4) — con la
+API corriendo, cargá ~10 modelos de ejemplo vía el endpoint:
+
+```bash
+./recursos/seed.sh                          # http://127.0.0.1:5000
+./recursos/seed.sh http://127.0.0.1:5001    # si la levantaste en otro puerto
 ```
 
 ---
