@@ -1,0 +1,16 @@
+# Generados durante el taller
+*.db
+inventory.db
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Artefactos que cada uno genera vía SDD
+taller-sdd/
+mcp-items/
+.specify/
+.kiro/
+
+# Sistema
+.DS_Store
