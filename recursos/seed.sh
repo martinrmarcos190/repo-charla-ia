@@ -3,8 +3,8 @@
 #
 # No toca la base de datos directamente: usa los endpoints, así funciona igual
 # sin importar cómo esté implementada la API (Camino A o B) y no spoilea la
-# solución. Algunos issues correlacionan a propósito con los patrones de
-# recursos/logs/app.log (para la demo de análisis de logs del Bloque 5).
+# solución. Algunos issues correlacionan a propósito con las historias
+# enterradas en recursos/logs/ (para la demo de análisis del Bloque 5).
 #
 # Uso:
 #   ./seed.sh                          # usa http://127.0.0.1:5000

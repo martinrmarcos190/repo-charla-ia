@@ -51,6 +51,6 @@ devops-issues/
 - En una **sesión nueva** (o tras reiniciar), sin registrar nada a mano:
   - las dos skills aparecen disponibles, y
   - el MCP `issues-api` está conectado con sus 4 tools.
-- Prueba integrada: pedirle al agente *"analizá `recursos/logs/app.log` y
+- Prueba integrada: pedirle al agente *"analizá los logs de `recursos/logs/` y
   después regenerá el reporte"* — una skill actualiza la tabla, la otra la
   consume, el MCP conecta todo.

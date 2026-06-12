@@ -1,0 +1,1527 @@
+2026-06-09T05:00:15Z [INFO] catalog-service redis GET sess:5763 hit 1ms
+2026-06-09T05:00:29Z [INFO] checkout-service gc pause 4ms heap=40%
+2026-06-09T05:00:41Z [WARN] payments-api req=4fe3021b db acquire=803ms pool=payments-db
+2026-06-09T05:00:56Z [ERROR] catalog-service image-resize timeout for sku-98618 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T05:01:01Z [INFO] catalog-service image-resize retry succeeded for sku-98618 (attempt 2/3)
+2026-06-09T05:01:14Z [INFO] catalog-service health-check ok latency=7ms
+2026-06-09T05:01:32Z [WARN] logging-pipeline buffer high watermark 91% (shipper lagging)
+2026-06-09T05:01:44Z [WARN] payments-api req=db1aa525 db acquire=1495ms pool=payments-db
+2026-06-09T05:01:55Z [INFO] auth-service gc pause 21ms heap=60%
+2026-06-09T05:02:07Z [WARN] payments-api req=c0ed839f db acquire=833ms pool=payments-db
+2026-06-09T05:02:19Z [INFO] payments-api redis GET sess:1746 miss 1ms
+2026-06-09T05:02:30Z [WARN] logging-pipeline buffer high watermark 86% (shipper lagging)
+2026-06-09T05:02:48Z [INFO] orders-service kafka consumer group rebalance completed gen=168 (took 1076ms)
+2026-06-09T05:03:00Z [WARN] payments-api req=d98022cf db acquire=844ms pool=payments-db
+2026-06-09T05:03:11Z [INFO] auth-service token issued sub=user-7418 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T05:03:29Z [INFO] catalog-service search index refresh ok docs=11579 took=535ms
+2026-06-09T05:03:47Z [INFO] payments-api health-check ok latency=2ms
+2026-06-09T05:04:03Z [INFO] catalog-service search index refresh ok docs=11515 took=441ms
+2026-06-09T05:04:13Z [INFO] payments-api req=08f8a40e db acquire=422ms pool=payments-db
+2026-06-09T05:04:31Z [INFO] catalog-service gc pause 28ms heap=56%
+2026-06-09T05:04:50Z [INFO] checkout-service health-check ok latency=4ms
+2026-06-09T05:05:04Z [WARN] payments-api req=bb093b4c db acquire=853ms pool=payments-db
+2026-06-09T05:05:15Z [INFO] catalog-service gc pause 36ms heap=63%
+2026-06-09T05:05:27Z [INFO] catalog-service search index refresh ok docs=11433 took=273ms
+2026-06-09T05:05:38Z [INFO] checkout-service pool stats active=9 idle=38 waiting=0 max=50
+2026-06-09T05:05:50Z [INFO] checkout-service order processed txn=tx72744 total=46.60 req=04aae32a
+2026-06-09T05:06:09Z [INFO] payments-api gc pause 37ms heap=70%
+2026-06-09T05:06:23Z [INFO] auth-service token issued sub=user-6247 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T05:06:35Z [INFO] catalog-service search index refresh ok docs=11097 took=187ms
+2026-06-09T05:06:53Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T05:07:04Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T05:07:20Z [INFO] auth-service token issued sub=user-4020 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T05:07:35Z [INFO] payments-api req=8b1baa62 db acquire=191ms pool=payments-db
+2026-06-09T05:07:48Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T05:07:59Z [INFO] catalog-service redis GET sess:8970 hit 3ms
+2026-06-09T05:08:09Z [INFO] catalog-service search index refresh ok docs=11431 took=532ms
+2026-06-09T05:08:23Z [INFO] payments-api req=f2c1899f db acquire=8ms pool=payments-db
+2026-06-09T05:08:37Z [INFO] orders-service health-check ok latency=9ms
+2026-06-09T05:08:53Z [INFO] catalog-service health-check ok latency=6ms
+2026-06-09T05:09:07Z [INFO] orders-service kafka consumer group rebalance completed gen=143 (took 2577ms)
+2026-06-09T05:09:19Z [INFO] checkout-service gc pause 4ms heap=68%
+2026-06-09T05:09:36Z [INFO] catalog-service search index refresh ok docs=11001 took=221ms
+2026-06-09T05:09:55Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T05:10:12Z [INFO] checkout-service redis GET sess:3779 miss 1ms
+2026-06-09T05:10:30Z [INFO] payments-api health-check ok latency=8ms
+2026-06-09T05:10:45Z [INFO] checkout-service health-check ok latency=1ms
+2026-06-09T05:11:02Z [INFO] checkout-service gc pause 7ms heap=67%
+2026-06-09T05:11:19Z [INFO] payments-api redis GET sess:8821 hit 3ms
+2026-06-09T05:11:32Z [INFO] catalog-service health-check ok latency=4ms
+2026-06-09T05:11:44Z [INFO] payments-api req=23ccec60 db acquire=17ms pool=payments-db
+2026-06-09T05:11:55Z [INFO] payments-api req=5dcad3ac db acquire=17ms pool=payments-db
+2026-06-09T05:12:13Z [INFO] checkout-service health-check ok latency=2ms
+2026-06-09T05:12:27Z [INFO] checkout-service pool stats active=6 idle=42 waiting=0 max=50
+2026-06-09T05:12:44Z [INFO] checkout-service order processed txn=tx73409 total=295.25 req=ed758e43
+2026-06-09T05:12:55Z [INFO] orders-service health-check ok latency=9ms
+2026-06-09T05:13:13Z [INFO] auth-service token issued sub=user-5334 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T05:13:29Z [INFO] payments-api health-check ok latency=9ms
+2026-06-09T05:13:44Z [INFO] payments-api req=635622ed db acquire=8ms pool=payments-db
+2026-06-09T05:13:54Z [INFO] orders-service gc pause 16ms heap=71%
+2026-06-09T05:14:08Z [INFO] auth-service token issued sub=user-6580 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T05:14:19Z [INFO] payments-api req=9d87eaad db acquire=16ms pool=payments-db
+2026-06-09T05:14:33Z [INFO] checkout-service pool stats active=9 idle=41 waiting=0 max=50
+2026-06-09T05:14:49Z [INFO] auth-service token issued sub=user-6076 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T05:15:07Z [INFO] auth-service redis GET sess:4945 hit 4ms
+2026-06-09T05:15:23Z [INFO] auth-service redis GET sess:5365 hit 0ms
+2026-06-09T05:15:35Z [INFO] checkout-service order processed txn=tx83907 total=112.36 req=05ea48c5
+2026-06-09T05:15:51Z [INFO] payments-api redis GET sess:2998 hit 1ms
+2026-06-09T05:16:09Z [INFO] orders-service redis GET sess:2161 hit 4ms
+2026-06-09T05:16:21Z [INFO] checkout-service health-check ok latency=4ms
+2026-06-09T05:16:39Z [INFO] auth-service token issued sub=user-9760 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T05:16:58Z [INFO] auth-service gc pause 8ms heap=41%
+2026-06-09T05:17:15Z [INFO] payments-api gc pause 21ms heap=61%
+2026-06-09T05:17:31Z [INFO] payments-api req=751e8f35 db acquire=10ms pool=payments-db
+2026-06-09T05:17:49Z [INFO] checkout-service pool stats active=12 idle=35 waiting=0 max=50
+2026-06-09T05:18:04Z [INFO] payments-api req=f4343de8 db acquire=19ms pool=payments-db
+2026-06-09T05:18:14Z [INFO] orders-service gc pause 9ms heap=43%
+2026-06-09T05:18:25Z [INFO] auth-service token issued sub=user-2120 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T05:18:37Z [INFO] auth-service redis GET sess:2857 hit 0ms
+2026-06-09T05:18:56Z [INFO] auth-service redis GET sess:2305 miss 4ms
+2026-06-09T05:19:11Z [INFO] payments-api req=f4293fbc db acquire=12ms pool=payments-db
+2026-06-09T05:19:26Z [INFO] orders-service gc pause 36ms heap=66%
+2026-06-09T05:19:44Z [INFO] checkout-service pool stats active=7 idle=42 waiting=0 max=50
+2026-06-09T05:19:55Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T05:20:10Z [WARN] logging-pipeline buffer high watermark 88% (shipper lagging)
+2026-06-09T05:20:25Z [INFO] orders-service redis GET sess:9958 hit 2ms
+2026-06-09T05:20:36Z [INFO] payments-api req=8cefdda9 db acquire=18ms pool=payments-db
+2026-06-09T05:20:47Z [INFO] checkout-service redis GET sess:7423 hit 4ms
+2026-06-09T05:21:00Z [INFO] checkout-service order processed txn=tx85418 total=158.18 req=42b64e2a
+2026-06-09T05:21:18Z [INFO] payments-api req=703b4d74 db acquire=6ms pool=payments-db
+2026-06-09T05:21:31Z [INFO] catalog-service health-check ok latency=9ms
+2026-06-09T05:21:48Z [INFO] checkout-service pool stats active=9 idle=41 waiting=0 max=50
+2026-06-09T05:22:05Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T05:22:21Z [INFO] catalog-service search index refresh ok docs=12420 took=496ms
+2026-06-09T05:22:40Z [INFO] auth-service health-check ok latency=1ms
+2026-06-09T05:22:56Z [INFO] auth-service redis GET sess:8281 hit 0ms
+2026-06-09T05:23:15Z [INFO] orders-service redis GET sess:2148 hit 0ms
+2026-06-09T05:23:29Z [INFO] payments-api req=de377936 db acquire=10ms pool=payments-db
+2026-06-09T05:23:42Z [INFO] checkout-service redis GET sess:2284 hit 3ms
+2026-06-09T05:23:56Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T05:24:11Z [INFO] orders-service health-check ok latency=3ms
+2026-06-09T05:24:28Z [INFO] orders-service kafka consumer group rebalance completed gen=176 (took 2869ms)
+2026-06-09T05:24:43Z [INFO] auth-service token issued sub=user-1273 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T05:24:57Z [INFO] payments-api req=61c08713 db acquire=8ms pool=payments-db
+2026-06-09T05:25:08Z [INFO] payments-api redis GET sess:1041 hit 2ms
+2026-06-09T05:25:26Z [INFO] checkout-service health-check ok latency=2ms
+2026-06-09T05:25:38Z [INFO] checkout-service health-check ok latency=2ms
+2026-06-09T05:25:48Z [INFO] auth-service health-check ok latency=6ms
+2026-06-09T05:26:07Z [INFO] auth-service gc pause 10ms heap=74%
+2026-06-09T05:26:20Z [INFO] auth-service health-check ok latency=6ms
+2026-06-09T05:26:30Z [INFO] payments-api req=2675c6e3 db acquire=5ms pool=payments-db
+2026-06-09T05:26:43Z [INFO] catalog-service search index refresh ok docs=12442 took=547ms
+2026-06-09T05:26:54Z [INFO] catalog-service search index refresh ok docs=11628 took=537ms
+2026-06-09T05:27:13Z [INFO] auth-service token issued sub=user-1066 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T05:27:25Z [INFO] auth-service token issued sub=user-7450 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T05:27:36Z [INFO] orders-service gc pause 27ms heap=73%
+2026-06-09T05:27:46Z [ERROR] logging-pipeline dropping 12 events (buffer full) — known issue LOG-441
+2026-06-09T05:28:05Z [INFO] orders-service kafka consumer group rebalance completed gen=158 (took 2243ms)
+2026-06-09T05:28:24Z [INFO] checkout-service pool stats active=11 idle=36 waiting=0 max=50
+2026-06-09T05:28:39Z [INFO] checkout-service redis GET sess:9607 hit 0ms
+2026-06-09T05:28:52Z [INFO] payments-api req=87d5ebad db acquire=10ms pool=payments-db
+2026-06-09T05:29:10Z [INFO] auth-service token issued sub=user-1140 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T05:29:22Z [INFO] checkout-service health-check ok latency=3ms
+2026-06-09T05:29:36Z [INFO] catalog-service gc pause 35ms heap=41%
+2026-06-09T05:29:53Z [INFO] payments-api req=1dabd24b db acquire=7ms pool=payments-db
+2026-06-09T05:30:05Z [INFO] auth-service token issued sub=user-1892 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T05:30:19Z [INFO] checkout-service pool stats active=9 idle=41 waiting=0 max=50
+2026-06-09T05:30:29Z [INFO] payments-api health-check ok latency=3ms
+2026-06-09T05:30:48Z [INFO] auth-service health-check ok latency=8ms
+2026-06-09T05:31:06Z [INFO] payments-api gc pause 27ms heap=45%
+2026-06-09T05:31:22Z [INFO] auth-service health-check ok latency=7ms
+2026-06-09T05:31:34Z [INFO] checkout-service order processed txn=tx77872 total=174.76 req=89834fab
+2026-06-09T05:31:50Z [INFO] payments-api redis GET sess:3761 hit 0ms
+2026-06-09T05:32:00Z [INFO] catalog-service health-check ok latency=9ms
+2026-06-09T05:32:19Z [INFO] auth-service redis GET sess:7373 hit 1ms
+2026-06-09T05:32:33Z [INFO] auth-service token issued sub=user-8646 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T05:32:52Z [INFO] payments-api req=8dbe2dd0 db acquire=13ms pool=payments-db
+2026-06-09T05:33:08Z [INFO] auth-service gc pause 25ms heap=43%
+2026-06-09T05:33:18Z [INFO] catalog-service gc pause 36ms heap=46%
+2026-06-09T05:33:36Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T05:33:52Z [INFO] payments-api gc pause 5ms heap=50%
+2026-06-09T05:34:06Z [INFO] checkout-service pool stats active=6 idle=42 waiting=0 max=50
+2026-06-09T05:34:19Z [INFO] checkout-service order processed txn=tx97180 total=98.35 req=79a08b26
+2026-06-09T05:34:37Z [INFO] checkout-service order processed txn=tx78949 total=179.45 req=6fea18aa
+2026-06-09T05:34:49Z [INFO] catalog-service gc pause 30ms heap=53%
+2026-06-09T05:35:05Z [INFO] catalog-service health-check ok latency=4ms
+2026-06-09T05:35:19Z [INFO] checkout-service redis GET sess:6562 hit 1ms
+2026-06-09T05:35:36Z [INFO] payments-api req=32a2a4c6 db acquire=5ms pool=payments-db
+2026-06-09T05:35:52Z [INFO] catalog-service health-check ok latency=9ms
+2026-06-09T05:36:05Z [INFO] auth-service health-check ok latency=2ms
+2026-06-09T05:36:23Z [INFO] auth-service token issued sub=user-3855 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T05:36:34Z [INFO] orders-service gc pause 24ms heap=41%
+2026-06-09T05:36:50Z [INFO] checkout-service pool stats active=8 idle=39 waiting=0 max=50
+2026-06-09T05:37:05Z [INFO] payments-api redis GET sess:1413 hit 4ms
+2026-06-09T05:37:19Z [INFO] catalog-service gc pause 35ms heap=72%
+2026-06-09T05:37:37Z [INFO] catalog-service gc pause 11ms heap=54%
+2026-06-09T05:37:48Z [INFO] auth-service health-check ok latency=6ms
+2026-06-09T05:38:07Z [INFO] catalog-service gc pause 21ms heap=77%
+2026-06-09T05:38:22Z [INFO] auth-service token issued sub=user-2128 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T05:38:33Z [INFO] catalog-service health-check ok latency=9ms
+2026-06-09T05:38:50Z [INFO] auth-service health-check ok latency=6ms
+2026-06-09T05:39:09Z [INFO] catalog-service search index refresh ok docs=11321 took=275ms
+2026-06-09T05:39:28Z [INFO] payments-api req=66e3dedf db acquire=15ms pool=payments-db
+2026-06-09T05:39:39Z [INFO] catalog-service search index refresh ok docs=11260 took=266ms
+2026-06-09T05:39:53Z [ERROR] logging-pipeline dropping 18 events (buffer full) — known issue LOG-441
+2026-06-09T05:40:08Z [INFO] orders-service gc pause 8ms heap=42%
+2026-06-09T05:40:21Z [INFO] payments-api gc pause 38ms heap=69%
+2026-06-09T05:40:37Z [INFO] auth-service gc pause 19ms heap=65%
+2026-06-09T05:40:51Z [INFO] checkout-service pool stats active=7 idle=41 waiting=0 max=50
+2026-06-09T05:41:06Z [INFO] catalog-service gc pause 7ms heap=49%
+2026-06-09T05:41:21Z [INFO] auth-service gc pause 29ms heap=75%
+2026-06-09T05:41:31Z [INFO] payments-api req=aa277008 db acquire=8ms pool=payments-db
+2026-06-09T05:41:42Z [INFO] payments-api health-check ok latency=6ms
+2026-06-09T05:41:55Z [INFO] catalog-service search index refresh ok docs=12493 took=264ms
+2026-06-09T05:42:14Z [INFO] payments-api req=bc1d9cb5 db acquire=14ms pool=payments-db
+2026-06-09T05:42:25Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T05:42:38Z [INFO] payments-api req=0518f88a db acquire=17ms pool=payments-db
+2026-06-09T05:42:55Z [INFO] checkout-service redis GET sess:8937 miss 0ms
+2026-06-09T05:43:13Z [INFO] auth-service token issued sub=user-3786 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T05:43:24Z [INFO] orders-service gc pause 28ms heap=71%
+2026-06-09T05:43:39Z [INFO] auth-service token issued sub=user-6162 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T05:43:56Z [INFO] auth-service token issued sub=user-7448 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T05:44:06Z [INFO] payments-api redis GET sess:5075 hit 2ms
+2026-06-09T05:44:21Z [INFO] catalog-service health-check ok latency=8ms
+2026-06-09T05:44:39Z [INFO] auth-service health-check ok latency=8ms
+2026-06-09T05:44:56Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T05:45:06Z [INFO] payments-api redis GET sess:6903 hit 3ms
+2026-06-09T05:45:23Z [INFO] catalog-service health-check ok latency=4ms
+2026-06-09T05:45:36Z [INFO] orders-service redis GET sess:8511 hit 3ms
+2026-06-09T05:45:51Z [ERROR] logging-pipeline dropping 11 events (buffer full) — known issue LOG-441
+2026-06-09T05:46:06Z [INFO] payments-api req=eaeb0a0a db acquire=22ms pool=payments-db
+2026-06-09T05:46:19Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T05:46:35Z [INFO] auth-service token issued sub=user-6413 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T05:46:51Z [INFO] payments-api req=b53309a2 db acquire=6ms pool=payments-db
+2026-06-09T05:47:10Z [INFO] payments-api req=fd540660 db acquire=8ms pool=payments-db
+2026-06-09T05:47:21Z [INFO] checkout-service gc pause 14ms heap=73%
+2026-06-09T05:47:32Z [INFO] orders-service health-check ok latency=9ms
+2026-06-09T05:47:48Z [INFO] catalog-service search index refresh ok docs=11279 took=352ms
+2026-06-09T05:48:04Z [ERROR] logging-pipeline dropping 18 events (buffer full) — known issue LOG-441
+2026-06-09T05:48:18Z [INFO] catalog-service gc pause 9ms heap=45%
+2026-06-09T05:48:33Z [INFO] catalog-service health-check ok latency=5ms
+2026-06-09T05:48:46Z [INFO] checkout-service pool stats active=9 idle=39 waiting=0 max=50
+2026-06-09T05:49:02Z [INFO] auth-service token issued sub=user-2398 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T05:49:14Z [INFO] catalog-service health-check ok latency=8ms
+2026-06-09T05:49:24Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T05:49:34Z [INFO] catalog-service search index refresh ok docs=11613 took=121ms
+2026-06-09T05:49:47Z [INFO] payments-api req=770e5e15 db acquire=6ms pool=payments-db
+2026-06-09T05:49:59Z [INFO] auth-service health-check ok latency=3ms
+2026-06-09T05:50:16Z [INFO] checkout-service order processed txn=tx86474 total=332.06 req=209ae1d7
+2026-06-09T05:50:35Z [INFO] auth-service token issued sub=user-8944 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T05:50:50Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T05:51:00Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T05:51:18Z [INFO] checkout-service health-check ok latency=3ms
+2026-06-09T05:51:34Z [INFO] auth-service token issued sub=user-5296 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T05:51:44Z [INFO] checkout-service pool stats active=8 idle=41 waiting=0 max=50
+2026-06-09T05:52:01Z [INFO] orders-service redis GET sess:4440 hit 4ms
+2026-06-09T05:52:11Z [ERROR] catalog-service image-resize timeout for sku-63780 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T05:52:13Z [INFO] catalog-service image-resize retry succeeded for sku-63780 (attempt 2/3)
+2026-06-09T05:52:26Z [INFO] checkout-service order processed txn=tx72155 total=359.87 req=070b0fc6
+2026-06-09T05:52:40Z [INFO] payments-api req=94143a54 db acquire=22ms pool=payments-db
+2026-06-09T05:52:56Z [WARN] logging-pipeline buffer high watermark 84% (shipper lagging)
+2026-06-09T05:53:08Z [INFO] payments-api req=10b92fc3 db acquire=22ms pool=payments-db
+2026-06-09T05:53:21Z [INFO] payments-api req=2cf82430 db acquire=20ms pool=payments-db
+2026-06-09T05:53:39Z [INFO] checkout-service pool stats active=8 idle=40 waiting=0 max=50
+2026-06-09T05:53:51Z [INFO] auth-service gc pause 37ms heap=56%
+2026-06-09T05:54:02Z [INFO] checkout-service order processed txn=tx85864 total=377.67 req=ed0cd836
+2026-06-09T05:54:17Z [INFO] checkout-service gc pause 21ms heap=45%
+2026-06-09T05:54:27Z [INFO] payments-api req=0581e28d db acquire=18ms pool=payments-db
+2026-06-09T05:54:42Z [INFO] catalog-service redis GET sess:4157 hit 4ms
+2026-06-09T05:54:58Z [INFO] orders-service gc pause 10ms heap=45%
+2026-06-09T05:55:10Z [INFO] payments-api req=79d699df db acquire=22ms pool=payments-db
+2026-06-09T05:55:28Z [INFO] checkout-service gc pause 10ms heap=52%
+2026-06-09T05:55:43Z [INFO] payments-api req=37615aad db acquire=8ms pool=payments-db
+2026-06-09T05:56:02Z [INFO] payments-api req=af76ec75 db acquire=7ms pool=payments-db
+2026-06-09T05:56:14Z [INFO] auth-service token issued sub=user-5185 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T05:56:30Z [INFO] auth-service token issued sub=user-4675 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T05:56:43Z [INFO] auth-service token issued sub=user-8511 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T05:56:59Z [INFO] auth-service token issued sub=user-5863 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T05:57:15Z [WARN] logging-pipeline buffer high watermark 85% (shipper lagging)
+2026-06-09T05:57:28Z [INFO] orders-service gc pause 24ms heap=54%
+2026-06-09T05:57:47Z [INFO] checkout-service gc pause 9ms heap=58%
+2026-06-09T05:58:02Z [INFO] catalog-service search index refresh ok docs=11898 took=268ms
+2026-06-09T05:58:15Z [INFO] catalog-service redis GET sess:9535 hit 3ms
+2026-06-09T05:58:25Z [INFO] auth-service gc pause 38ms heap=51%
+2026-06-09T05:58:40Z [INFO] payments-api req=fb82d686 db acquire=11ms pool=payments-db
+2026-06-09T05:58:54Z [INFO] catalog-service health-check ok latency=6ms
+2026-06-09T05:59:09Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T05:59:28Z [ERROR] catalog-service image-resize timeout for sku-15940 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T05:59:32Z [INFO] catalog-service image-resize retry succeeded for sku-15940 (attempt 2/3)
+2026-06-09T05:59:45Z [INFO] checkout-service health-check ok latency=2ms
+2026-06-09T06:00:04Z [INFO] checkout-service pool stats active=7 idle=40 waiting=0 max=50
+2026-06-09T06:00:17Z [INFO] payments-api health-check ok latency=2ms
+2026-06-09T06:00:31Z [WARN] payments-api req=59bc654c db acquire=1595ms pool=payments-db
+2026-06-09T06:00:41Z [INFO] catalog-service search index refresh ok docs=11907 took=486ms
+2026-06-09T06:00:53Z [INFO] auth-service token issued sub=user-4701 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T06:01:04Z [INFO] checkout-service redis GET sess:5286 hit 2ms
+2026-06-09T06:01:23Z [INFO] orders-service gc pause 6ms heap=76%
+2026-06-09T06:01:34Z [INFO] payments-api req=765583cc db acquire=327ms pool=payments-db
+2026-06-09T06:01:53Z [INFO] checkout-service order processed txn=tx78251 total=112.04 req=b4f406a3
+2026-06-09T06:02:09Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T06:02:28Z [INFO] auth-service token issued sub=user-2294 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T06:02:47Z [INFO] checkout-service gc pause 7ms heap=76%
+2026-06-09T06:03:04Z [INFO] auth-service redis GET sess:1638 miss 4ms
+2026-06-09T06:03:17Z [INFO] checkout-service redis GET sess:4589 miss 1ms
+2026-06-09T06:03:29Z [INFO] checkout-service pool stats active=12 idle=38 waiting=0 max=50
+2026-06-09T06:03:44Z [INFO] orders-service gc pause 32ms heap=66%
+2026-06-09T06:04:00Z [ERROR] catalog-service image-resize timeout for sku-88423 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T06:04:05Z [INFO] catalog-service image-resize retry succeeded for sku-88423 (attempt 2/3)
+2026-06-09T06:04:17Z [INFO] auth-service token issued sub=user-3316 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T06:04:33Z [INFO] auth-service redis GET sess:2374 hit 1ms
+2026-06-09T06:04:52Z [INFO] payments-api redis GET sess:8154 hit 4ms
+2026-06-09T06:05:04Z [INFO] catalog-service gc pause 14ms heap=57%
+2026-06-09T06:05:20Z [WARN] payments-api req=7df0b671 db acquire=828ms pool=payments-db
+2026-06-09T06:05:33Z [INFO] checkout-service pool stats active=12 idle=38 waiting=0 max=50
+2026-06-09T06:05:50Z [INFO] payments-api req=0b8d1a73 db acquire=378ms pool=payments-db
+2026-06-09T06:06:06Z [INFO] catalog-service search index refresh ok docs=11614 took=244ms
+2026-06-09T06:06:17Z [INFO] payments-api health-check ok latency=6ms
+2026-06-09T06:06:28Z [INFO] checkout-service order processed txn=tx95755 total=375.83 req=566523e3
+2026-06-09T06:06:45Z [INFO] orders-service gc pause 22ms heap=58%
+2026-06-09T06:07:00Z [INFO] checkout-service order processed txn=tx92543 total=53.67 req=50a5deac
+2026-06-09T06:07:11Z [INFO] orders-service health-check ok latency=1ms
+2026-06-09T06:07:29Z [INFO] payments-api req=2fa4a1dd db acquire=217ms pool=payments-db
+2026-06-09T06:07:44Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T06:07:55Z [INFO] checkout-service gc pause 23ms heap=71%
+2026-06-09T06:08:14Z [INFO] orders-service gc pause 16ms heap=47%
+2026-06-09T06:08:32Z [WARN] logging-pipeline buffer high watermark 90% (shipper lagging)
+2026-06-09T06:08:44Z [INFO] auth-service token issued sub=user-2657 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T06:09:01Z [INFO] checkout-service health-check ok latency=3ms
+2026-06-09T06:09:12Z [INFO] orders-service health-check ok latency=6ms
+2026-06-09T06:09:30Z [INFO] checkout-service pool stats active=7 idle=41 waiting=0 max=50
+2026-06-09T06:09:49Z [INFO] payments-api req=483ae4aa db acquire=21ms pool=payments-db
+2026-06-09T06:10:03Z [INFO] checkout-service order processed txn=tx99471 total=120.37 req=b07d3991
+2026-06-09T06:10:16Z [INFO] orders-service kafka consumer group rebalance completed gen=176 (took 3335ms)
+2026-06-09T06:10:29Z [INFO] checkout-service order processed txn=tx85141 total=257.64 req=538c46df
+2026-06-09T06:10:43Z [INFO] checkout-service order processed txn=tx90177 total=57.58 req=58671586
+2026-06-09T06:10:56Z [INFO] checkout-service order processed txn=tx78601 total=181.34 req=d914219b
+2026-06-09T06:11:11Z [INFO] payments-api req=06926a6a db acquire=7ms pool=payments-db
+2026-06-09T06:11:28Z [INFO] catalog-service search index refresh ok docs=11902 took=524ms
+2026-06-09T06:11:43Z [INFO] auth-service health-check ok latency=9ms
+2026-06-09T06:11:53Z [INFO] auth-service token issued sub=user-9645 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T06:12:08Z [INFO] auth-service gc pause 8ms heap=74%
+2026-06-09T06:12:24Z [INFO] auth-service token issued sub=user-7589 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T06:12:37Z [INFO] auth-service gc pause 29ms heap=71%
+2026-06-09T06:12:52Z [INFO] checkout-service gc pause 25ms heap=68%
+2026-06-09T06:13:05Z [INFO] payments-api req=549ea813 db acquire=13ms pool=payments-db
+2026-06-09T06:13:21Z [INFO] payments-api req=873f33d2 db acquire=9ms pool=payments-db
+2026-06-09T06:13:40Z [INFO] payments-api req=3f523bc8 db acquire=20ms pool=payments-db
+2026-06-09T06:13:52Z [INFO] payments-api req=4fd9e4b0 db acquire=9ms pool=payments-db
+2026-06-09T06:14:03Z [INFO] auth-service gc pause 22ms heap=41%
+2026-06-09T06:14:17Z [WARN] logging-pipeline buffer high watermark 91% (shipper lagging)
+2026-06-09T06:14:29Z [INFO] auth-service gc pause 23ms heap=71%
+2026-06-09T06:14:45Z [INFO] payments-api health-check ok latency=3ms
+2026-06-09T06:14:56Z [ERROR] catalog-service image-resize timeout for sku-56838 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T06:15:00Z [INFO] catalog-service image-resize retry succeeded for sku-56838 (attempt 2/3)
+2026-06-09T06:15:14Z [INFO] auth-service token issued sub=user-6252 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T06:15:28Z [INFO] auth-service token issued sub=user-1071 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T06:15:45Z [INFO] catalog-service search index refresh ok docs=11131 took=232ms
+2026-06-09T06:15:59Z [INFO] payments-api redis GET sess:2729 hit 1ms
+2026-06-09T06:16:13Z [INFO] checkout-service pool stats active=11 idle=38 waiting=0 max=50
+2026-06-09T06:16:29Z [INFO] auth-service token issued sub=user-3726 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T06:16:41Z [INFO] orders-service health-check ok latency=7ms
+2026-06-09T06:16:53Z [INFO] auth-service gc pause 4ms heap=74%
+2026-06-09T06:17:08Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T06:17:23Z [INFO] payments-api req=6c68abd5 db acquire=22ms pool=payments-db
+2026-06-09T06:17:42Z [INFO] auth-service token issued sub=user-6931 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T06:17:52Z [INFO] payments-api req=abbe5503 db acquire=21ms pool=payments-db
+2026-06-09T06:18:10Z [INFO] checkout-service pool stats active=11 idle=38 waiting=0 max=50
+2026-06-09T06:18:29Z [INFO] checkout-service gc pause 23ms heap=69%
+2026-06-09T06:18:47Z [INFO] auth-service health-check ok latency=6ms
+2026-06-09T06:18:58Z [INFO] orders-service health-check ok latency=2ms
+2026-06-09T06:19:09Z [INFO] orders-service kafka consumer group rebalance completed gen=169 (took 3315ms)
+2026-06-09T06:19:27Z [INFO] checkout-service order processed txn=tx96625 total=220.94 req=bd877a52
+2026-06-09T06:19:44Z [INFO] orders-service health-check ok latency=9ms
+2026-06-09T06:19:54Z [INFO] checkout-service order processed txn=tx78034 total=25.71 req=a922dd3f
+2026-06-09T06:20:12Z [INFO] auth-service health-check ok latency=7ms
+2026-06-09T06:20:24Z [INFO] checkout-service pool stats active=7 idle=40 waiting=0 max=50
+2026-06-09T06:20:39Z [INFO] payments-api req=e23aa2da db acquire=14ms pool=payments-db
+2026-06-09T06:20:49Z [INFO] orders-service redis GET sess:6437 miss 0ms
+2026-06-09T06:21:00Z [INFO] auth-service health-check ok latency=3ms
+2026-06-09T06:21:10Z [INFO] orders-service redis GET sess:1861 hit 3ms
+2026-06-09T06:21:22Z [INFO] catalog-service health-check ok latency=1ms
+2026-06-09T06:21:41Z [INFO] auth-service token issued sub=user-2367 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T06:21:58Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T06:22:15Z [INFO] checkout-service redis GET sess:9346 miss 0ms
+2026-06-09T06:22:27Z [INFO] catalog-service gc pause 31ms heap=65%
+2026-06-09T06:22:37Z [ERROR] catalog-service image-resize timeout for sku-37575 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T06:22:39Z [INFO] catalog-service image-resize retry succeeded for sku-37575 (attempt 2/3)
+2026-06-09T06:22:50Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T06:23:07Z [INFO] payments-api req=04c6b0f8 db acquire=14ms pool=payments-db
+2026-06-09T06:23:26Z [INFO] orders-service redis GET sess:3030 hit 1ms
+2026-06-09T06:23:44Z [INFO] checkout-service pool stats active=6 idle=42 waiting=0 max=50
+2026-06-09T06:23:59Z [INFO] checkout-service order processed txn=tx82379 total=53.32 req=d6605fb7
+2026-06-09T06:24:16Z [INFO] auth-service token issued sub=user-7120 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T06:24:32Z [INFO] orders-service gc pause 11ms heap=55%
+2026-06-09T06:24:51Z [INFO] payments-api health-check ok latency=2ms
+2026-06-09T06:25:08Z [INFO] auth-service token issued sub=user-7312 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T06:25:18Z [INFO] checkout-service redis GET sess:3814 hit 4ms
+2026-06-09T06:25:35Z [INFO] checkout-service pool stats active=11 idle=36 waiting=0 max=50
+2026-06-09T06:25:48Z [INFO] checkout-service order processed txn=tx77036 total=347.39 req=2a68a2a1
+2026-06-09T06:26:02Z [INFO] checkout-service redis GET sess:3276 hit 4ms
+2026-06-09T06:26:18Z [INFO] payments-api req=ce572e8e db acquire=14ms pool=payments-db
+2026-06-09T06:26:30Z [INFO] payments-api req=d4aed0fc db acquire=4ms pool=payments-db
+2026-06-09T06:26:49Z [INFO] checkout-service order processed txn=tx92699 total=277.41 req=16ba1607
+2026-06-09T06:26:59Z [INFO] payments-api req=ad16269d db acquire=19ms pool=payments-db
+2026-06-09T06:27:14Z [INFO] payments-api req=e3c19e45 db acquire=14ms pool=payments-db
+2026-06-09T06:27:33Z [INFO] auth-service gc pause 11ms heap=45%
+2026-06-09T06:27:44Z [INFO] catalog-service gc pause 19ms heap=44%
+2026-06-09T06:27:59Z [INFO] orders-service redis GET sess:8428 hit 2ms
+2026-06-09T06:28:11Z [INFO] checkout-service pool stats active=10 idle=40 waiting=0 max=50
+2026-06-09T06:28:23Z [INFO] payments-api req=f4c7b5c4 db acquire=6ms pool=payments-db
+2026-06-09T06:28:34Z [INFO] payments-api req=83de5f9b db acquire=12ms pool=payments-db
+2026-06-09T06:28:50Z [INFO] catalog-service search index refresh ok docs=11719 took=457ms
+2026-06-09T06:29:00Z [INFO] orders-service kafka consumer group rebalance completed gen=169 (took 1827ms)
+2026-06-09T06:29:12Z [INFO] orders-service gc pause 27ms heap=47%
+2026-06-09T06:29:28Z [INFO] payments-api req=86379668 db acquire=21ms pool=payments-db
+2026-06-09T06:29:45Z [INFO] catalog-service search index refresh ok docs=11650 took=304ms
+2026-06-09T06:29:57Z [INFO] checkout-service order processed txn=tx72372 total=259.22 req=c51e42ae
+2026-06-09T06:30:14Z [INFO] auth-service health-check ok latency=7ms
+2026-06-09T06:30:33Z [INFO] payments-api req=721e6d63 db acquire=15ms pool=payments-db
+2026-06-09T06:30:51Z [WARN] logging-pipeline buffer high watermark 86% (shipper lagging)
+2026-06-09T06:31:09Z [INFO] catalog-service redis GET sess:6115 hit 4ms
+2026-06-09T06:31:28Z [INFO] checkout-service pool stats active=9 idle=41 waiting=0 max=50
+2026-06-09T06:31:45Z [INFO] payments-api health-check ok latency=5ms
+2026-06-09T06:31:57Z [INFO] checkout-service order processed txn=tx73707 total=104.85 req=c344e0af
+2026-06-09T06:32:12Z [ERROR] catalog-service image-resize timeout for sku-26485 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T06:32:16Z [INFO] catalog-service image-resize retry succeeded for sku-26485 (attempt 2/3)
+2026-06-09T06:32:28Z [INFO] auth-service token issued sub=user-3930 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T06:32:38Z [INFO] payments-api redis GET sess:3966 hit 4ms
+2026-06-09T06:32:55Z [INFO] payments-api req=4ec4f636 db acquire=8ms pool=payments-db
+2026-06-09T06:33:09Z [INFO] checkout-service order processed txn=tx87778 total=228.81 req=fe40036b
+2026-06-09T06:33:19Z [INFO] auth-service token issued sub=user-9284 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T06:33:32Z [INFO] checkout-service gc pause 9ms heap=40%
+2026-06-09T06:33:48Z [INFO] catalog-service health-check ok latency=9ms
+2026-06-09T06:34:01Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T06:34:20Z [INFO] auth-service token issued sub=user-1017 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T06:34:31Z [INFO] catalog-service search index refresh ok docs=11054 took=434ms
+2026-06-09T06:34:50Z [INFO] catalog-service health-check ok latency=4ms
+2026-06-09T06:35:01Z [INFO] checkout-service pool stats active=7 idle=43 waiting=0 max=50
+2026-06-09T06:35:12Z [INFO] auth-service gc pause 16ms heap=45%
+2026-06-09T06:35:27Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T06:35:37Z [INFO] catalog-service health-check ok latency=1ms
+2026-06-09T06:35:51Z [INFO] catalog-service search index refresh ok docs=11186 took=534ms
+2026-06-09T06:36:08Z [INFO] payments-api redis GET sess:8158 hit 0ms
+2026-06-09T06:36:18Z [INFO] payments-api req=93a8cf0f db acquire=16ms pool=payments-db
+2026-06-09T06:36:31Z [INFO] catalog-service health-check ok latency=2ms
+2026-06-09T06:36:45Z [INFO] payments-api req=4e4e06e3 db acquire=9ms pool=payments-db
+2026-06-09T06:36:55Z [INFO] orders-service kafka consumer group rebalance completed gen=143 (took 3938ms)
+2026-06-09T06:37:12Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T06:37:28Z [INFO] payments-api req=0699059f db acquire=10ms pool=payments-db
+2026-06-09T06:37:40Z [INFO] payments-api redis GET sess:6536 miss 4ms
+2026-06-09T06:37:55Z [INFO] orders-service health-check ok latency=3ms
+2026-06-09T06:38:05Z [INFO] payments-api req=b6e67b01 db acquire=21ms pool=payments-db
+2026-06-09T06:38:22Z [INFO] orders-service redis GET sess:1570 hit 3ms
+2026-06-09T06:38:36Z [INFO] catalog-service gc pause 8ms heap=69%
+2026-06-09T06:38:55Z [INFO] payments-api req=b150f2e9 db acquire=9ms pool=payments-db
+2026-06-09T06:39:07Z [INFO] auth-service gc pause 19ms heap=74%
+2026-06-09T06:39:25Z [INFO] auth-service redis GET sess:6884 hit 3ms
+2026-06-09T06:39:36Z [INFO] orders-service health-check ok latency=8ms
+2026-06-09T06:39:46Z [INFO] payments-api req=71048c34 db acquire=21ms pool=payments-db
+2026-06-09T06:40:03Z [INFO] catalog-service health-check ok latency=6ms
+2026-06-09T06:40:16Z [ERROR] logging-pipeline dropping 11 events (buffer full) — known issue LOG-441
+2026-06-09T06:40:35Z [INFO] checkout-service redis GET sess:6039 hit 1ms
+2026-06-09T06:40:49Z [INFO] auth-service token issued sub=user-6840 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T06:41:05Z [INFO] orders-service health-check ok latency=8ms
+2026-06-09T06:41:23Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T06:41:36Z [INFO] orders-service redis GET sess:8768 hit 2ms
+2026-06-09T06:41:53Z [INFO] payments-api req=cf7cc5d8 db acquire=19ms pool=payments-db
+2026-06-09T06:42:07Z [INFO] checkout-service gc pause 28ms heap=56%
+2026-06-09T06:42:18Z [INFO] orders-service kafka consumer group rebalance completed gen=156 (took 3170ms)
+2026-06-09T06:42:36Z [INFO] catalog-service search index refresh ok docs=11175 took=584ms
+2026-06-09T06:42:51Z [INFO] checkout-service pool stats active=12 idle=37 waiting=0 max=50
+2026-06-09T06:43:06Z [INFO] payments-api gc pause 5ms heap=52%
+2026-06-09T06:43:20Z [INFO] payments-api req=8fab55c6 db acquire=13ms pool=payments-db
+2026-06-09T06:43:35Z [INFO] orders-service kafka consumer group rebalance completed gen=150 (took 2812ms)
+2026-06-09T06:43:51Z [INFO] auth-service gc pause 15ms heap=49%
+2026-06-09T06:44:04Z [INFO] payments-api req=24a9c1bd db acquire=9ms pool=payments-db
+2026-06-09T06:44:18Z [INFO] checkout-service redis GET sess:6929 hit 2ms
+2026-06-09T06:44:28Z [INFO] payments-api req=17fef626 db acquire=6ms pool=payments-db
+2026-06-09T06:44:40Z [INFO] auth-service token issued sub=user-3859 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T06:44:53Z [INFO] checkout-service pool stats active=9 idle=39 waiting=0 max=50
+2026-06-09T06:45:06Z [INFO] payments-api req=d10dc7b7 db acquire=6ms pool=payments-db
+2026-06-09T06:45:25Z [INFO] payments-api redis GET sess:1930 hit 3ms
+2026-06-09T06:45:37Z [ERROR] catalog-service image-resize timeout for sku-62681 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T06:45:42Z [INFO] catalog-service image-resize retry succeeded for sku-62681 (attempt 2/3)
+2026-06-09T06:45:54Z [INFO] checkout-service order processed txn=tx86151 total=339.16 req=9c5f6694
+2026-06-09T06:46:10Z [INFO] payments-api req=1fd728e0 db acquire=21ms pool=payments-db
+2026-06-09T06:46:24Z [INFO] catalog-service health-check ok latency=5ms
+2026-06-09T06:46:39Z [INFO] payments-api redis GET sess:6916 hit 2ms
+2026-06-09T06:46:54Z [INFO] catalog-service gc pause 27ms heap=64%
+2026-06-09T06:47:05Z [INFO] auth-service redis GET sess:3329 hit 1ms
+2026-06-09T06:47:23Z [INFO] payments-api redis GET sess:1283 miss 4ms
+2026-06-09T06:47:34Z [INFO] payments-api redis GET sess:9998 hit 1ms
+2026-06-09T06:47:48Z [INFO] payments-api redis GET sess:6637 hit 2ms
+2026-06-09T06:48:06Z [INFO] checkout-service pool stats active=10 idle=39 waiting=0 max=50
+2026-06-09T06:48:20Z [INFO] checkout-service order processed txn=tx73472 total=352.79 req=91301b3e
+2026-06-09T06:48:34Z [INFO] orders-service redis GET sess:8363 miss 4ms
+2026-06-09T06:48:46Z [INFO] checkout-service order processed txn=tx74760 total=122.72 req=c993346c
+2026-06-09T06:48:59Z [INFO] auth-service token issued sub=user-7642 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T06:49:17Z [INFO] payments-api redis GET sess:5178 hit 3ms
+2026-06-09T06:49:30Z [INFO] auth-service redis GET sess:5451 hit 1ms
+2026-06-09T06:49:41Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T06:49:51Z [INFO] payments-api gc pause 22ms heap=71%
+2026-06-09T06:50:02Z [INFO] orders-service gc pause 37ms heap=78%
+2026-06-09T06:50:19Z [INFO] checkout-service pool stats active=9 idle=39 waiting=0 max=50
+2026-06-09T06:50:34Z [INFO] checkout-service health-check ok latency=2ms
+2026-06-09T06:50:44Z [INFO] auth-service token issued sub=user-4573 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T06:51:01Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T06:51:11Z [INFO] catalog-service search index refresh ok docs=11725 took=265ms
+2026-06-09T06:51:24Z [INFO] payments-api gc pause 15ms heap=43%
+2026-06-09T06:51:43Z [INFO] catalog-service health-check ok latency=3ms
+2026-06-09T06:51:54Z [INFO] catalog-service gc pause 13ms heap=44%
+2026-06-09T06:52:09Z [INFO] catalog-service redis GET sess:7733 hit 1ms
+2026-06-09T06:52:24Z [INFO] orders-service redis GET sess:6504 hit 0ms
+2026-06-09T06:52:43Z [INFO] auth-service token issued sub=user-1286 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T06:52:57Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T06:53:09Z [INFO] payments-api req=a9b801d0 db acquire=14ms pool=payments-db
+2026-06-09T06:53:20Z [INFO] payments-api req=ae9e3994 db acquire=20ms pool=payments-db
+2026-06-09T06:53:33Z [INFO] catalog-service search index refresh ok docs=12424 took=351ms
+2026-06-09T06:53:45Z [INFO] checkout-service pool stats active=10 idle=40 waiting=0 max=50
+2026-06-09T06:53:55Z [INFO] payments-api req=4752b819 db acquire=20ms pool=payments-db
+2026-06-09T06:54:13Z [INFO] catalog-service gc pause 21ms heap=69%
+2026-06-09T06:54:29Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T06:54:48Z [INFO] payments-api req=ede0f30b db acquire=15ms pool=payments-db
+2026-06-09T06:55:02Z [INFO] auth-service token issued sub=user-5615 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T06:55:20Z [INFO] catalog-service gc pause 15ms heap=53%
+2026-06-09T06:55:39Z [INFO] payments-api health-check ok latency=7ms
+2026-06-09T06:55:56Z [INFO] orders-service redis GET sess:9436 miss 1ms
+2026-06-09T06:56:13Z [INFO] checkout-service pool stats active=8 idle=39 waiting=0 max=50
+2026-06-09T06:56:30Z [INFO] payments-api gc pause 27ms heap=51%
+2026-06-09T06:56:48Z [INFO] checkout-service order processed txn=tx76522 total=216.87 req=19300b32
+2026-06-09T06:56:58Z [INFO] payments-api redis GET sess:5607 hit 0ms
+2026-06-09T06:57:14Z [INFO] checkout-service order processed txn=tx91508 total=65.34 req=867ac41d
+2026-06-09T06:57:25Z [INFO] payments-api req=6abde5e0 db acquire=8ms pool=payments-db
+2026-06-09T06:57:44Z [INFO] checkout-service order processed txn=tx79267 total=318.40 req=55979d8b
+2026-06-09T06:57:55Z [INFO] auth-service token issued sub=user-7045 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T06:58:05Z [INFO] payments-api req=9fa6e5e0 db acquire=21ms pool=payments-db
+2026-06-09T06:58:23Z [INFO] checkout-service health-check ok latency=8ms
+2026-06-09T06:58:39Z [ERROR] catalog-service image-resize timeout for sku-75212 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T06:58:44Z [INFO] catalog-service image-resize retry succeeded for sku-75212 (attempt 2/3)
+2026-06-09T06:58:51Z [INFO] checkout-service pool stats active=6 idle=43 waiting=0 max=50
+2026-06-09T06:59:10Z [INFO] auth-service health-check ok latency=8ms
+2026-06-09T06:59:27Z [INFO] payments-api redis GET sess:8668 hit 2ms
+2026-06-09T06:59:37Z [INFO] auth-service health-check ok latency=3ms
+2026-06-09T06:59:50Z [INFO] payments-api req=0831b983 db acquire=9ms pool=payments-db
+2026-06-09T07:00:04Z [WARN] payments-api req=7da0c138 db acquire=640ms pool=payments-db
+2026-06-09T07:00:15Z [INFO] auth-service health-check ok latency=7ms
+2026-06-09T07:00:26Z [INFO] checkout-service order processed txn=tx84340 total=233.39 req=c7f25648
+2026-06-09T07:00:45Z [INFO] auth-service token issued sub=user-8271 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T07:01:04Z [INFO] catalog-service gc pause 31ms heap=60%
+2026-06-09T07:01:20Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:01:39Z [ERROR] catalog-service image-resize timeout for sku-61184 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T07:01:43Z [INFO] catalog-service image-resize retry succeeded for sku-61184 (attempt 2/3)
+2026-06-09T07:01:52Z [WARN] payments-api req=9a31d0b1 db acquire=763ms pool=payments-db
+2026-06-09T07:02:11Z [INFO] orders-service redis GET sess:6996 hit 4ms
+2026-06-09T07:02:30Z [INFO] checkout-service pool stats active=7 idle=40 waiting=0 max=50
+2026-06-09T07:02:47Z [WARN] payments-api req=0e707f69 db acquire=1133ms pool=payments-db
+2026-06-09T07:03:03Z [INFO] orders-service gc pause 16ms heap=57%
+2026-06-09T07:03:20Z [INFO] auth-service health-check ok latency=3ms
+2026-06-09T07:03:37Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:03:53Z [INFO] catalog-service redis GET sess:1620 hit 3ms
+2026-06-09T07:04:09Z [WARN] logging-pipeline buffer high watermark 91% (shipper lagging)
+2026-06-09T07:04:20Z [INFO] catalog-service gc pause 33ms heap=49%
+2026-06-09T07:04:32Z [INFO] payments-api health-check ok latency=7ms
+2026-06-09T07:04:43Z [INFO] payments-api redis GET sess:1694 hit 3ms
+2026-06-09T07:04:57Z [INFO] checkout-service health-check ok latency=1ms
+2026-06-09T07:05:09Z [INFO] checkout-service pool stats active=11 idle=38 waiting=0 max=50
+2026-06-09T07:05:25Z [WARN] payments-api req=1d1e9ff6 db acquire=921ms pool=payments-db
+2026-06-09T07:05:36Z [INFO] orders-service gc pause 36ms heap=49%
+2026-06-09T07:05:48Z [INFO] payments-api req=79274eeb db acquire=480ms pool=payments-db
+2026-06-09T07:06:04Z [WARN] logging-pipeline buffer high watermark 90% (shipper lagging)
+2026-06-09T07:06:20Z [INFO] catalog-service redis GET sess:9765 hit 0ms
+2026-06-09T07:06:30Z [INFO] orders-service health-check ok latency=3ms
+2026-06-09T07:06:47Z [WARN] logging-pipeline buffer high watermark 85% (shipper lagging)
+2026-06-09T07:06:59Z [INFO] catalog-service search index refresh ok docs=11924 took=248ms
+2026-06-09T07:07:16Z [INFO] catalog-service search index refresh ok docs=11687 took=244ms
+2026-06-09T07:07:26Z [WARN] payments-api req=0219bc45 db acquire=638ms pool=payments-db
+2026-06-09T07:07:44Z [INFO] orders-service redis GET sess:6536 hit 0ms
+2026-06-09T07:07:59Z [INFO] payments-api req=a19031a8 db acquire=384ms pool=payments-db
+2026-06-09T07:08:09Z [INFO] payments-api redis GET sess:6729 hit 2ms
+2026-06-09T07:08:22Z [INFO] checkout-service pool stats active=10 idle=39 waiting=0 max=50
+2026-06-09T07:08:33Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:08:43Z [INFO] catalog-service search index refresh ok docs=11367 took=202ms
+2026-06-09T07:09:02Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T07:09:21Z [INFO] catalog-service health-check ok latency=9ms
+2026-06-09T07:09:40Z [INFO] orders-service kafka consumer group rebalance completed gen=153 (took 1338ms)
+2026-06-09T07:09:50Z [INFO] orders-service kafka consumer group rebalance completed gen=170 (took 2231ms)
+2026-06-09T07:10:03Z [INFO] payments-api req=6826bae3 db acquire=20ms pool=payments-db
+2026-06-09T07:10:22Z [INFO] payments-api req=94afadc3 db acquire=8ms pool=payments-db
+2026-06-09T07:10:37Z [INFO] payments-api req=aa96f25e db acquire=7ms pool=payments-db
+2026-06-09T07:10:47Z [INFO] catalog-service gc pause 20ms heap=46%
+2026-06-09T07:11:04Z [INFO] checkout-service pool stats active=12 idle=35 waiting=0 max=50
+2026-06-09T07:11:14Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:11:27Z [INFO] checkout-service order processed txn=tx93664 total=102.57 req=2115a210
+2026-06-09T07:11:39Z [INFO] catalog-service redis GET sess:7091 miss 2ms
+2026-06-09T07:11:52Z [INFO] orders-service redis GET sess:5093 hit 2ms
+2026-06-09T07:12:04Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T07:12:23Z [INFO] catalog-service redis GET sess:6791 hit 2ms
+2026-06-09T07:12:34Z [INFO] checkout-service order processed txn=tx75189 total=89.39 req=58c5722a
+2026-06-09T07:12:44Z [INFO] catalog-service search index refresh ok docs=12071 took=332ms
+2026-06-09T07:12:57Z [INFO] catalog-service gc pause 8ms heap=72%
+2026-06-09T07:13:09Z [INFO] payments-api req=ce150f0d db acquire=15ms pool=payments-db
+2026-06-09T07:13:27Z [INFO] payments-api req=3a500081 db acquire=19ms pool=payments-db
+2026-06-09T07:13:40Z [INFO] checkout-service redis GET sess:5361 hit 3ms
+2026-06-09T07:13:57Z [INFO] orders-service gc pause 36ms heap=44%
+2026-06-09T07:14:15Z [INFO] auth-service redis GET sess:5463 miss 0ms
+2026-06-09T07:14:30Z [INFO] checkout-service pool stats active=7 idle=41 waiting=0 max=50
+2026-06-09T07:14:45Z [INFO] payments-api req=071f9962 db acquire=7ms pool=payments-db
+2026-06-09T07:14:57Z [INFO] payments-api req=bad0e9e0 db acquire=12ms pool=payments-db
+2026-06-09T07:15:08Z [INFO] auth-service redis GET sess:9205 miss 1ms
+2026-06-09T07:15:22Z [INFO] payments-api req=98850417 db acquire=22ms pool=payments-db
+2026-06-09T07:15:36Z [INFO] orders-service gc pause 33ms heap=61%
+2026-06-09T07:15:47Z [INFO] payments-api req=bd385cb6 db acquire=17ms pool=payments-db
+2026-06-09T07:16:01Z [INFO] auth-service health-check ok latency=6ms
+2026-06-09T07:16:17Z [INFO] catalog-service gc pause 37ms heap=55%
+2026-06-09T07:16:36Z [INFO] checkout-service redis GET sess:5334 hit 0ms
+2026-06-09T07:16:54Z [INFO] payments-api req=f1ecad91 db acquire=21ms pool=payments-db
+2026-06-09T07:17:10Z [INFO] payments-api gc pause 18ms heap=44%
+2026-06-09T07:17:23Z [INFO] payments-api req=d1e069cd db acquire=4ms pool=payments-db
+2026-06-09T07:17:38Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T07:17:54Z [INFO] auth-service redis GET sess:1043 miss 2ms
+2026-06-09T07:18:09Z [INFO] checkout-service pool stats active=6 idle=41 waiting=0 max=50
+2026-06-09T07:18:23Z [INFO] catalog-service search index refresh ok docs=11337 took=499ms
+2026-06-09T07:18:38Z [INFO] orders-service health-check ok latency=4ms
+2026-06-09T07:18:53Z [INFO] catalog-service search index refresh ok docs=12333 took=486ms
+2026-06-09T07:19:08Z [ERROR] catalog-service image-resize timeout for sku-31115 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T07:19:11Z [INFO] catalog-service image-resize retry succeeded for sku-31115 (attempt 2/3)
+2026-06-09T07:19:23Z [INFO] orders-service gc pause 35ms heap=55%
+2026-06-09T07:19:35Z [INFO] payments-api req=9077848d db acquire=19ms pool=payments-db
+2026-06-09T07:19:54Z [INFO] orders-service health-check ok latency=6ms
+2026-06-09T07:20:11Z [INFO] checkout-service pool stats active=9 idle=41 waiting=0 max=50
+2026-06-09T07:20:21Z [INFO] auth-service redis GET sess:1974 hit 3ms
+2026-06-09T07:20:36Z [INFO] catalog-service search index refresh ok docs=11120 took=429ms
+2026-06-09T07:20:53Z [INFO] checkout-service gc pause 19ms heap=49%
+2026-06-09T07:21:10Z [INFO] orders-service health-check ok latency=6ms
+2026-06-09T07:21:23Z [INFO] checkout-service health-check ok latency=1ms
+2026-06-09T07:21:36Z [INFO] payments-api req=a40cbd12 db acquire=13ms pool=payments-db
+2026-06-09T07:21:55Z [INFO] orders-service kafka consumer group rebalance completed gen=151 (took 1961ms)
+2026-06-09T07:22:08Z [INFO] payments-api req=4c0b3c8c db acquire=19ms pool=payments-db
+2026-06-09T07:22:24Z [INFO] catalog-service health-check ok latency=1ms
+2026-06-09T07:22:37Z [INFO] checkout-service pool stats active=10 idle=40 waiting=0 max=50
+2026-06-09T07:22:48Z [INFO] auth-service health-check ok latency=4ms
+2026-06-09T07:23:02Z [INFO] orders-service kafka consumer group rebalance completed gen=175 (took 2497ms)
+2026-06-09T07:23:15Z [INFO] catalog-service health-check ok latency=4ms
+2026-06-09T07:23:31Z [INFO] auth-service redis GET sess:3156 miss 1ms
+2026-06-09T07:23:50Z [INFO] catalog-service search index refresh ok docs=11643 took=162ms
+2026-06-09T07:24:07Z [INFO] payments-api req=94cf75e6 db acquire=21ms pool=payments-db
+2026-06-09T07:24:18Z [INFO] catalog-service search index refresh ok docs=11677 took=533ms
+2026-06-09T07:24:28Z [INFO] payments-api req=04cb4662 db acquire=16ms pool=payments-db
+2026-06-09T07:24:42Z [INFO] auth-service health-check ok latency=8ms
+2026-06-09T07:25:01Z [INFO] catalog-service search index refresh ok docs=11169 took=562ms
+2026-06-09T07:25:16Z [INFO] payments-api req=e9d545d5 db acquire=12ms pool=payments-db
+2026-06-09T07:25:31Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T07:25:42Z [INFO] auth-service token issued sub=user-2383 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T07:25:54Z [INFO] payments-api req=1001fccb db acquire=19ms pool=payments-db
+2026-06-09T07:26:08Z [WARN] logging-pipeline buffer high watermark 89% (shipper lagging)
+2026-06-09T07:26:22Z [INFO] catalog-service search index refresh ok docs=11732 took=270ms
+2026-06-09T07:26:40Z [INFO] orders-service health-check ok latency=7ms
+2026-06-09T07:26:51Z [INFO] orders-service health-check ok latency=1ms
+2026-06-09T07:27:06Z [INFO] auth-service gc pause 30ms heap=42%
+2026-06-09T07:27:19Z [INFO] payments-api req=325efb5b db acquire=6ms pool=payments-db
+2026-06-09T07:27:38Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:27:57Z [INFO] checkout-service pool stats active=9 idle=41 waiting=0 max=50
+2026-06-09T07:28:12Z [INFO] auth-service health-check ok latency=2ms
+2026-06-09T07:28:25Z [INFO] orders-service gc pause 16ms heap=66%
+2026-06-09T07:28:38Z [INFO] payments-api req=c039702b db acquire=22ms pool=payments-db
+2026-06-09T07:28:54Z [INFO] catalog-service redis GET sess:2680 hit 2ms
+2026-06-09T07:29:06Z [INFO] checkout-service redis GET sess:7224 hit 4ms
+2026-06-09T07:29:23Z [INFO] orders-service redis GET sess:5892 hit 3ms
+2026-06-09T07:29:35Z [INFO] payments-api req=ab862c6c db acquire=4ms pool=payments-db
+2026-06-09T07:29:54Z [INFO] catalog-service redis GET sess:3967 miss 0ms
+2026-06-09T07:30:06Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:30:20Z [INFO] payments-api redis GET sess:2857 hit 2ms
+2026-06-09T07:30:32Z [INFO] payments-api gc pause 28ms heap=58%
+2026-06-09T07:30:43Z [INFO] auth-service gc pause 35ms heap=63%
+2026-06-09T07:31:00Z [INFO] checkout-service redis GET sess:1312 miss 2ms
+2026-06-09T07:31:19Z [INFO] payments-api req=927ef3c9 db acquire=16ms pool=payments-db
+2026-06-09T07:31:33Z [INFO] catalog-service search index refresh ok docs=12382 took=182ms
+2026-06-09T07:31:51Z [INFO] payments-api req=f57d8e6c db acquire=10ms pool=payments-db
+2026-06-09T07:32:07Z [INFO] auth-service token issued sub=user-4697 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T07:32:19Z [INFO] checkout-service pool stats active=12 idle=36 waiting=0 max=50
+2026-06-09T07:32:33Z [INFO] auth-service health-check ok latency=6ms
+2026-06-09T07:32:44Z [INFO] auth-service token issued sub=user-9379 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T07:32:56Z [INFO] checkout-service order processed txn=tx78552 total=260.69 req=830bc52e
+2026-06-09T07:33:09Z [INFO] auth-service redis GET sess:6860 hit 3ms
+2026-06-09T07:33:24Z [INFO] catalog-service gc pause 11ms heap=42%
+2026-06-09T07:33:41Z [INFO] orders-service gc pause 25ms heap=47%
+2026-06-09T07:33:54Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:34:07Z [INFO] orders-service health-check ok latency=3ms
+2026-06-09T07:34:18Z [INFO] checkout-service gc pause 5ms heap=74%
+2026-06-09T07:34:28Z [INFO] payments-api req=b32d5844 db acquire=22ms pool=payments-db
+2026-06-09T07:34:40Z [INFO] catalog-service search index refresh ok docs=11539 took=369ms
+2026-06-09T07:34:50Z [INFO] auth-service token issued sub=user-4053 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T07:35:07Z [ERROR] catalog-service image-resize timeout for sku-35965 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T07:35:12Z [INFO] catalog-service image-resize retry succeeded for sku-35965 (attempt 2/3)
+2026-06-09T07:35:18Z [INFO] auth-service token issued sub=user-5749 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T07:35:33Z [INFO] catalog-service search index refresh ok docs=11385 took=331ms
+2026-06-09T07:35:47Z [INFO] checkout-service pool stats active=12 idle=37 waiting=0 max=50
+2026-06-09T07:36:05Z [ERROR] catalog-service image-resize timeout for sku-50309 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T07:36:07Z [INFO] catalog-service image-resize retry succeeded for sku-50309 (attempt 2/3)
+2026-06-09T07:36:21Z [INFO] catalog-service redis GET sess:6303 hit 2ms
+2026-06-09T07:36:32Z [INFO] auth-service redis GET sess:7689 hit 2ms
+2026-06-09T07:36:43Z [INFO] payments-api gc pause 25ms heap=45%
+2026-06-09T07:37:01Z [INFO] auth-service gc pause 9ms heap=47%
+2026-06-09T07:37:13Z [INFO] catalog-service search index refresh ok docs=12194 took=352ms
+2026-06-09T07:37:24Z [INFO] catalog-service gc pause 6ms heap=41%
+2026-06-09T07:37:42Z [INFO] checkout-service pool stats active=12 idle=36 waiting=0 max=50
+2026-06-09T07:37:57Z [INFO] payments-api req=15a3a473 db acquire=19ms pool=payments-db
+2026-06-09T07:38:12Z [INFO] checkout-service order processed txn=tx71134 total=277.82 req=bd0a1d6e
+2026-06-09T07:38:25Z [INFO] payments-api req=91d9bad4 db acquire=9ms pool=payments-db
+2026-06-09T07:38:38Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T07:38:51Z [INFO] catalog-service health-check ok latency=6ms
+2026-06-09T07:39:08Z [INFO] checkout-service gc pause 9ms heap=67%
+2026-06-09T07:39:23Z [INFO] payments-api gc pause 21ms heap=63%
+2026-06-09T07:39:40Z [INFO] checkout-service pool stats active=10 idle=40 waiting=0 max=50
+2026-06-09T07:39:51Z [INFO] auth-service token issued sub=user-5130 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T07:40:06Z [INFO] checkout-service redis GET sess:5249 hit 4ms
+2026-06-09T07:40:17Z [INFO] orders-service gc pause 21ms heap=63%
+2026-06-09T07:40:27Z [INFO] checkout-service health-check ok latency=4ms
+2026-06-09T07:40:42Z [INFO] auth-service redis GET sess:9909 hit 3ms
+2026-06-09T07:40:53Z [INFO] auth-service gc pause 10ms heap=77%
+2026-06-09T07:41:12Z [INFO] payments-api req=739eac40 db acquire=9ms pool=payments-db
+2026-06-09T07:41:31Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:41:43Z [INFO] auth-service health-check ok latency=2ms
+2026-06-09T07:41:55Z [INFO] checkout-service redis GET sess:6250 hit 0ms
+2026-06-09T07:42:12Z [INFO] payments-api gc pause 16ms heap=77%
+2026-06-09T07:42:29Z [INFO] catalog-service search index refresh ok docs=11731 took=490ms
+2026-06-09T07:42:48Z [INFO] orders-service redis GET sess:8894 hit 3ms
+2026-06-09T07:43:05Z [INFO] checkout-service redis GET sess:9401 hit 3ms
+2026-06-09T07:43:24Z [INFO] auth-service redis GET sess:8843 hit 0ms
+2026-06-09T07:43:42Z [INFO] payments-api redis GET sess:2263 miss 3ms
+2026-06-09T07:43:56Z [INFO] catalog-service gc pause 12ms heap=74%
+2026-06-09T07:44:15Z [INFO] checkout-service pool stats active=14 idle=35 waiting=0 max=50
+2026-06-09T07:44:31Z [INFO] payments-api req=171d5354 db acquire=9ms pool=payments-db
+2026-06-09T07:44:41Z [INFO] auth-service redis GET sess:1693 hit 1ms
+2026-06-09T07:44:55Z [INFO] checkout-service gc pause 29ms heap=75%
+2026-06-09T07:45:06Z [INFO] auth-service token issued sub=user-5234 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T07:45:17Z [INFO] catalog-service health-check ok latency=1ms
+2026-06-09T07:45:35Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:45:45Z [INFO] auth-service redis GET sess:9212 hit 2ms
+2026-06-09T07:46:01Z [INFO] auth-service health-check ok latency=6ms
+2026-06-09T07:46:16Z [INFO] auth-service gc pause 7ms heap=49%
+2026-06-09T07:46:33Z [ERROR] catalog-service image-resize timeout for sku-67295 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T07:46:37Z [INFO] catalog-service image-resize retry succeeded for sku-67295 (attempt 2/3)
+2026-06-09T07:46:44Z [INFO] payments-api req=d1e6e601 db acquire=6ms pool=payments-db
+2026-06-09T07:46:56Z [INFO] auth-service redis GET sess:2252 hit 0ms
+2026-06-09T07:47:11Z [INFO] payments-api req=799df898 db acquire=20ms pool=payments-db
+2026-06-09T07:47:28Z [INFO] checkout-service pool stats active=12 idle=37 waiting=0 max=50
+2026-06-09T07:47:46Z [INFO] checkout-service order processed txn=tx95064 total=297.94 req=5a50eba6
+2026-06-09T07:47:58Z [INFO] payments-api redis GET sess:4951 hit 4ms
+2026-06-09T07:48:08Z [INFO] catalog-service redis GET sess:4418 hit 2ms
+2026-06-09T07:48:20Z [INFO] catalog-service search index refresh ok docs=11187 took=161ms
+2026-06-09T07:48:32Z [INFO] checkout-service gc pause 22ms heap=76%
+2026-06-09T07:48:48Z [INFO] checkout-service order processed txn=tx88856 total=138.69 req=bc1a2e54
+2026-06-09T07:49:07Z [INFO] payments-api req=5bbb8be7 db acquire=18ms pool=payments-db
+2026-06-09T07:49:19Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T07:49:37Z [INFO] orders-service health-check ok latency=9ms
+2026-06-09T07:49:48Z [INFO] payments-api req=6f900dc9 db acquire=8ms pool=payments-db
+2026-06-09T07:49:58Z [INFO] checkout-service pool stats active=15 idle=35 waiting=0 max=50
+2026-06-09T07:50:12Z [INFO] payments-api gc pause 16ms heap=65%
+2026-06-09T07:50:30Z [INFO] auth-service gc pause 36ms heap=68%
+2026-06-09T07:50:48Z [ERROR] catalog-service image-resize timeout for sku-20369 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T07:50:51Z [INFO] catalog-service image-resize retry succeeded for sku-20369 (attempt 2/3)
+2026-06-09T07:51:00Z [INFO] payments-api health-check ok latency=6ms
+2026-06-09T07:51:12Z [INFO] orders-service health-check ok latency=6ms
+2026-06-09T07:51:29Z [INFO] catalog-service search index refresh ok docs=11092 took=171ms
+2026-06-09T07:51:44Z [INFO] orders-service gc pause 14ms heap=64%
+2026-06-09T07:51:58Z [INFO] payments-api redis GET sess:9955 hit 4ms
+2026-06-09T07:52:13Z [INFO] auth-service token issued sub=user-3384 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T07:52:24Z [INFO] checkout-service pool stats active=15 idle=32 waiting=0 max=50
+2026-06-09T07:52:43Z [INFO] payments-api req=49ab8faf db acquire=22ms pool=payments-db
+2026-06-09T07:52:56Z [INFO] payments-api req=bb6f45ea db acquire=17ms pool=payments-db
+2026-06-09T07:53:06Z [INFO] payments-api req=75229dbe db acquire=17ms pool=payments-db
+2026-06-09T07:53:23Z [INFO] catalog-service redis GET sess:9063 miss 4ms
+2026-06-09T07:53:37Z [INFO] catalog-service redis GET sess:2808 hit 4ms
+2026-06-09T07:53:53Z [INFO] catalog-service search index refresh ok docs=12174 took=184ms
+2026-06-09T07:54:05Z [INFO] orders-service gc pause 23ms heap=52%
+2026-06-09T07:54:19Z [INFO] payments-api req=1fdefac8 db acquire=7ms pool=payments-db
+2026-06-09T07:54:37Z [INFO] payments-api req=cad24504 db acquire=7ms pool=payments-db
+2026-06-09T07:54:48Z [INFO] payments-api req=bc6f714a db acquire=6ms pool=payments-db
+2026-06-09T07:55:03Z [INFO] catalog-service gc pause 20ms heap=72%
+2026-06-09T07:55:16Z [INFO] checkout-service pool stats active=16 idle=32 waiting=0 max=50
+2026-06-09T07:55:31Z [INFO] checkout-service order processed txn=tx79275 total=56.89 req=a782075b
+2026-06-09T07:55:44Z [INFO] payments-api gc pause 38ms heap=74%
+2026-06-09T07:56:00Z [INFO] catalog-service redis GET sess:5511 hit 0ms
+2026-06-09T07:56:18Z [INFO] auth-service token issued sub=user-9090 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T07:56:34Z [INFO] payments-api req=7f7474ec db acquire=18ms pool=payments-db
+2026-06-09T07:56:44Z [INFO] auth-service token issued sub=user-2352 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T07:56:57Z [INFO] payments-api req=ef0c1ef5 db acquire=21ms pool=payments-db
+2026-06-09T07:57:15Z [INFO] catalog-service search index refresh ok docs=11580 took=309ms
+2026-06-09T07:57:27Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T07:57:38Z [INFO] catalog-service search index refresh ok docs=12488 took=537ms
+2026-06-09T07:57:49Z [INFO] auth-service health-check ok latency=5ms
+2026-06-09T07:58:04Z [INFO] auth-service redis GET sess:9048 miss 1ms
+2026-06-09T07:58:19Z [INFO] checkout-service pool stats active=18 idle=32 waiting=0 max=50
+2026-06-09T07:58:31Z [INFO] checkout-service order processed txn=tx80296 total=283.03 req=f977ddb4
+2026-06-09T07:58:49Z [INFO] payments-api req=b7a06be7 db acquire=4ms pool=payments-db
+2026-06-09T07:59:04Z [INFO] checkout-service order processed txn=tx84496 total=320.57 req=f6df0482
+2026-06-09T07:59:18Z [INFO] orders-service health-check ok latency=6ms
+2026-06-09T07:59:31Z [INFO] checkout-service health-check ok latency=2ms
+2026-06-09T07:59:44Z [ERROR] logging-pipeline dropping 5 events (buffer full) — known issue LOG-441
+2026-06-09T07:59:59Z [ERROR] catalog-service image-resize timeout for sku-88527 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:00:04Z [INFO] catalog-service image-resize retry succeeded for sku-88527 (attempt 2/3)
+2026-06-09T08:00:12Z [WARN] payments-api req=5f54679a db acquire=1718ms pool=payments-db
+2026-06-09T08:00:25Z [INFO] checkout-service gc pause 35ms heap=70%
+2026-06-09T08:00:35Z [INFO] payments-api health-check ok latency=6ms
+2026-06-09T08:00:54Z [INFO] orders-service gc pause 34ms heap=59%
+2026-06-09T08:01:07Z [INFO] auth-service redis GET sess:7742 miss 0ms
+2026-06-09T08:01:25Z [INFO] auth-service token issued sub=user-4297 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T08:01:36Z [INFO] orders-service redis GET sess:5028 hit 1ms
+2026-06-09T08:01:55Z [INFO] checkout-service pool stats active=18 idle=29 waiting=0 max=50
+2026-06-09T08:02:12Z [INFO] payments-api gc pause 26ms heap=54%
+2026-06-09T08:02:27Z [INFO] catalog-service search index refresh ok docs=11274 took=481ms
+2026-06-09T08:02:40Z [INFO] auth-service gc pause 12ms heap=59%
+2026-06-09T08:02:52Z [WARN] payments-api req=21bc1623 db acquire=1103ms pool=payments-db
+2026-06-09T08:03:07Z [INFO] orders-service redis GET sess:5106 miss 1ms
+2026-06-09T08:03:17Z [INFO] orders-service health-check ok latency=9ms
+2026-06-09T08:03:33Z [INFO] auth-service gc pause 20ms heap=77%
+2026-06-09T08:03:47Z [INFO] auth-service redis GET sess:9476 hit 3ms
+2026-06-09T08:04:02Z [WARN] payments-api req=e1c9e0f7 db acquire=989ms pool=payments-db
+2026-06-09T08:04:19Z [INFO] auth-service token issued sub=user-8889 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T08:04:35Z [INFO] payments-api gc pause 37ms heap=43%
+2026-06-09T08:04:53Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T08:05:04Z [INFO] catalog-service health-check ok latency=3ms
+2026-06-09T08:05:23Z [INFO] orders-service kafka consumer group rebalance completed gen=172 (took 2926ms)
+2026-06-09T08:05:34Z [INFO] auth-service redis GET sess:5437 hit 2ms
+2026-06-09T08:05:48Z [INFO] catalog-service search index refresh ok docs=11475 took=531ms
+2026-06-09T08:06:03Z [INFO] payments-api req=573d66cb db acquire=165ms pool=payments-db
+2026-06-09T08:06:19Z [INFO] orders-service kafka consumer group rebalance completed gen=170 (took 1897ms)
+2026-06-09T08:06:37Z [INFO] checkout-service gc pause 13ms heap=72%
+2026-06-09T08:06:50Z [INFO] catalog-service redis GET sess:3350 hit 0ms
+2026-06-09T08:07:06Z [INFO] orders-service kafka consumer group rebalance completed gen=175 (took 3557ms)
+2026-06-09T08:07:16Z [INFO] payments-api health-check ok latency=7ms
+2026-06-09T08:07:33Z [INFO] catalog-service health-check ok latency=1ms
+2026-06-09T08:07:45Z [INFO] orders-service kafka consumer group rebalance completed gen=144 (took 2371ms)
+2026-06-09T08:08:03Z [INFO] auth-service health-check ok latency=3ms
+2026-06-09T08:08:15Z [INFO] catalog-service gc pause 13ms heap=75%
+2026-06-09T08:08:31Z [INFO] checkout-service pool stats active=16 idle=34 waiting=0 max=50
+2026-06-09T08:08:41Z [INFO] orders-service kafka consumer group rebalance completed gen=160 (took 1141ms)
+2026-06-09T08:08:54Z [INFO] payments-api gc pause 30ms heap=69%
+2026-06-09T08:09:12Z [INFO] checkout-service gc pause 34ms heap=52%
+2026-06-09T08:09:30Z [WARN] logging-pipeline buffer high watermark 90% (shipper lagging)
+2026-06-09T08:09:44Z [INFO] payments-api req=9ad6105c db acquire=21ms pool=payments-db
+2026-06-09T08:09:57Z [INFO] catalog-service gc pause 12ms heap=67%
+2026-06-09T08:10:15Z [INFO] payments-api req=1228d06d db acquire=21ms pool=payments-db
+2026-06-09T08:10:26Z [INFO] catalog-service redis GET sess:1382 hit 3ms
+2026-06-09T08:10:42Z [INFO] orders-service health-check ok latency=8ms
+2026-06-09T08:10:52Z [INFO] checkout-service pool stats active=20 idle=28 waiting=0 max=50
+2026-06-09T08:11:10Z [INFO] auth-service redis GET sess:3715 hit 1ms
+2026-06-09T08:11:25Z [INFO] payments-api req=8a9abf06 db acquire=19ms pool=payments-db
+2026-06-09T08:11:41Z [INFO] checkout-service gc pause 8ms heap=59%
+2026-06-09T08:11:54Z [INFO] checkout-service order processed txn=tx73688 total=85.01 req=2fb5da71
+2026-06-09T08:12:04Z [INFO] payments-api req=9520c2d1 db acquire=12ms pool=payments-db
+2026-06-09T08:12:23Z [INFO] checkout-service order processed txn=tx89659 total=300.84 req=d691e40c
+2026-06-09T08:12:38Z [INFO] payments-api req=e0f5bc91 db acquire=18ms pool=payments-db
+2026-06-09T08:12:49Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T08:13:01Z [INFO] checkout-service redis GET sess:2699 miss 4ms
+2026-06-09T08:13:14Z [INFO] payments-api req=fa38df0d db acquire=19ms pool=payments-db
+2026-06-09T08:13:30Z [INFO] payments-api req=6329bb04 db acquire=21ms pool=payments-db
+2026-06-09T08:13:42Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T08:13:58Z [INFO] auth-service health-check ok latency=4ms
+2026-06-09T08:14:17Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T08:14:27Z [INFO] orders-service gc pause 35ms heap=61%
+2026-06-09T08:14:41Z [INFO] checkout-service pool stats active=21 idle=26 waiting=0 max=50
+2026-06-09T08:14:54Z [INFO] auth-service token issued sub=user-7179 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T08:15:05Z [INFO] auth-service token issued sub=user-2806 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T08:15:21Z [INFO] orders-service health-check ok latency=1ms
+2026-06-09T08:15:39Z [INFO] orders-service gc pause 10ms heap=51%
+2026-06-09T08:15:49Z [INFO] payments-api req=2167dbd9 db acquire=19ms pool=payments-db
+2026-06-09T08:16:00Z [ERROR] catalog-service image-resize timeout for sku-90218 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:16:05Z [INFO] catalog-service image-resize retry succeeded for sku-90218 (attempt 2/3)
+2026-06-09T08:16:10Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T08:16:21Z [INFO] payments-api gc pause 9ms heap=70%
+2026-06-09T08:16:32Z [INFO] payments-api redis GET sess:6737 miss 0ms
+2026-06-09T08:16:51Z [INFO] checkout-service pool stats active=21 idle=28 waiting=0 max=50
+2026-06-09T08:17:01Z [INFO] payments-api req=50f578b6 db acquire=4ms pool=payments-db
+2026-06-09T08:17:11Z [INFO] checkout-service order processed txn=tx96058 total=176.14 req=174385b6
+2026-06-09T08:17:21Z [INFO] checkout-service order processed txn=tx77791 total=350.06 req=6641f1dc
+2026-06-09T08:17:40Z [WARN] logging-pipeline buffer high watermark 84% (shipper lagging)
+2026-06-09T08:17:58Z [INFO] checkout-service order processed txn=tx71007 total=359.66 req=a1e91aa9
+2026-06-09T08:18:14Z [INFO] orders-service redis GET sess:1760 hit 0ms
+2026-06-09T08:18:31Z [INFO] payments-api req=a27d955f db acquire=8ms pool=payments-db
+2026-06-09T08:18:47Z [INFO] auth-service token issued sub=user-4045 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T08:19:03Z [INFO] payments-api req=ce6d5d27 db acquire=20ms pool=payments-db
+2026-06-09T08:19:19Z [ERROR] catalog-service image-resize timeout for sku-84284 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:19:24Z [INFO] catalog-service image-resize retry succeeded for sku-84284 (attempt 2/3)
+2026-06-09T08:19:37Z [INFO] auth-service token issued sub=user-8458 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T08:19:56Z [INFO] checkout-service pool stats active=19 idle=30 waiting=0 max=50
+2026-06-09T08:20:10Z [INFO] payments-api gc pause 17ms heap=46%
+2026-06-09T08:20:29Z [INFO] payments-api req=c20ba2c4 db acquire=17ms pool=payments-db
+2026-06-09T08:20:46Z [INFO] auth-service health-check ok latency=8ms
+2026-06-09T08:21:02Z [INFO] auth-service gc pause 21ms heap=49%
+2026-06-09T08:21:15Z [INFO] payments-api req=1d1a9a80 db acquire=5ms pool=payments-db
+2026-06-09T08:21:26Z [INFO] payments-api redis GET sess:7390 hit 3ms
+2026-06-09T08:21:36Z [INFO] payments-api req=27aec409 db acquire=20ms pool=payments-db
+2026-06-09T08:21:55Z [INFO] auth-service redis GET sess:8402 hit 2ms
+2026-06-09T08:22:10Z [INFO] checkout-service pool stats active=23 idle=27 waiting=0 max=50
+2026-06-09T08:22:23Z [INFO] checkout-service order processed txn=tx76446 total=376.92 req=0de2a3af
+2026-06-09T08:22:38Z [INFO] auth-service token issued sub=user-6478 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T08:22:53Z [INFO] orders-service gc pause 21ms heap=74%
+2026-06-09T08:23:03Z [INFO] catalog-service search index refresh ok docs=11250 took=193ms
+2026-06-09T08:23:13Z [INFO] payments-api gc pause 30ms heap=61%
+2026-06-09T08:23:23Z [ERROR] catalog-service image-resize timeout for sku-75157 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:23:28Z [INFO] catalog-service image-resize retry succeeded for sku-75157 (attempt 2/3)
+2026-06-09T08:23:41Z [INFO] checkout-service order processed txn=tx99646 total=129.20 req=88357f23
+2026-06-09T08:23:55Z [INFO] payments-api req=d45ba399 db acquire=4ms pool=payments-db
+2026-06-09T08:24:06Z [INFO] auth-service token issued sub=user-5231 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T08:24:21Z [INFO] payments-api req=8d4d0c59 db acquire=11ms pool=payments-db
+2026-06-09T08:24:32Z [INFO] payments-api req=0ca5fc18 db acquire=5ms pool=payments-db
+2026-06-09T08:24:48Z [INFO] catalog-service gc pause 5ms heap=47%
+2026-06-09T08:25:04Z [INFO] payments-api req=2568b7ec db acquire=7ms pool=payments-db
+2026-06-09T08:25:21Z [INFO] payments-api redis GET sess:6508 hit 1ms
+2026-06-09T08:25:38Z [INFO] payments-api gc pause 12ms heap=54%
+2026-06-09T08:25:55Z [INFO] orders-service gc pause 37ms heap=41%
+2026-06-09T08:26:09Z [INFO] auth-service token issued sub=user-7537 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T08:26:20Z [INFO] checkout-service pool stats active=23 idle=24 waiting=0 max=50
+2026-06-09T08:26:31Z [INFO] payments-api redis GET sess:2781 hit 0ms
+2026-06-09T08:26:49Z [INFO] checkout-service health-check ok latency=1ms
+2026-06-09T08:27:05Z [INFO] payments-api redis GET sess:8579 hit 2ms
+2026-06-09T08:27:23Z [INFO] catalog-service gc pause 11ms heap=73%
+2026-06-09T08:27:40Z [INFO] auth-service gc pause 11ms heap=40%
+2026-06-09T08:27:58Z [INFO] payments-api req=60f9abf1 db acquire=9ms pool=payments-db
+2026-06-09T08:28:09Z [INFO] checkout-service redis GET sess:6287 miss 2ms
+2026-06-09T08:28:20Z [INFO] payments-api health-check ok latency=5ms
+2026-06-09T08:28:33Z [INFO] checkout-service health-check ok latency=8ms
+2026-06-09T08:28:45Z [ERROR] catalog-service image-resize timeout for sku-29157 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:28:50Z [INFO] catalog-service image-resize retry succeeded for sku-29157 (attempt 2/3)
+2026-06-09T08:28:56Z [INFO] orders-service health-check ok latency=2ms
+2026-06-09T08:29:08Z [INFO] checkout-service pool stats active=22 idle=26 waiting=0 max=50
+2026-06-09T08:29:26Z [INFO] orders-service gc pause 12ms heap=60%
+2026-06-09T08:29:45Z [INFO] catalog-service gc pause 19ms heap=44%
+2026-06-09T08:30:00Z [INFO] payments-api redis GET sess:4551 miss 2ms
+2026-06-09T08:30:13Z [INFO] catalog-service search index refresh ok docs=11826 took=192ms
+2026-06-09T08:30:29Z [INFO] checkout-service order processed txn=tx84767 total=156.99 req=6f2502f0
+2026-06-09T08:30:42Z [INFO] payments-api req=185b0318 db acquire=5ms pool=payments-db
+2026-06-09T08:31:00Z [INFO] payments-api req=6eaf0b2f db acquire=16ms pool=payments-db
+2026-06-09T08:31:10Z [INFO] payments-api req=ad6fa375 db acquire=6ms pool=payments-db
+2026-06-09T08:31:26Z [WARN] logging-pipeline buffer high watermark 89% (shipper lagging)
+2026-06-09T08:31:43Z [INFO] auth-service token issued sub=user-3173 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T08:31:53Z [INFO] auth-service token issued sub=user-4719 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T08:32:11Z [INFO] catalog-service redis GET sess:2931 hit 0ms
+2026-06-09T08:32:26Z [INFO] auth-service token issued sub=user-6946 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T08:32:39Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T08:32:51Z [INFO] payments-api req=356dfd76 db acquire=8ms pool=payments-db
+2026-06-09T08:33:06Z [INFO] auth-service redis GET sess:1014 hit 1ms
+2026-06-09T08:33:23Z [INFO] orders-service kafka consumer group rebalance completed gen=150 (took 2062ms)
+2026-06-09T08:33:41Z [ERROR] catalog-service image-resize timeout for sku-92982 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:33:44Z [INFO] catalog-service image-resize retry succeeded for sku-92982 (attempt 2/3)
+2026-06-09T08:33:53Z [INFO] payments-api req=c1fb0951 db acquire=7ms pool=payments-db
+2026-06-09T08:34:06Z [INFO] auth-service token issued sub=user-1955 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T08:34:18Z [INFO] auth-service token issued sub=user-4152 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T08:34:37Z [INFO] auth-service token issued sub=user-3401 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T08:34:54Z [INFO] auth-service redis GET sess:2855 hit 0ms
+2026-06-09T08:35:09Z [INFO] catalog-service search index refresh ok docs=12022 took=467ms
+2026-06-09T08:35:27Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T08:35:45Z [INFO] payments-api redis GET sess:7823 hit 3ms
+2026-06-09T08:36:04Z [INFO] auth-service gc pause 13ms heap=68%
+2026-06-09T08:36:16Z [INFO] payments-api req=fbdd2586 db acquire=21ms pool=payments-db
+2026-06-09T08:36:32Z [INFO] checkout-service pool stats active=21 idle=27 waiting=0 max=50
+2026-06-09T08:36:42Z [INFO] payments-api req=74120a4d db acquire=12ms pool=payments-db
+2026-06-09T08:37:00Z [INFO] payments-api req=50ac9882 db acquire=6ms pool=payments-db
+2026-06-09T08:37:13Z [INFO] checkout-service order processed txn=tx88315 total=49.36 req=57d7ec1d
+2026-06-09T08:37:32Z [INFO] auth-service redis GET sess:9706 hit 0ms
+2026-06-09T08:37:43Z [INFO] catalog-service search index refresh ok docs=12045 took=411ms
+2026-06-09T08:37:59Z [INFO] orders-service kafka consumer group rebalance completed gen=177 (took 3270ms)
+2026-06-09T08:38:18Z [INFO] payments-api req=564ebec1 db acquire=10ms pool=payments-db
+2026-06-09T08:38:30Z [INFO] orders-service kafka consumer group rebalance completed gen=166 (took 3160ms)
+2026-06-09T08:38:40Z [INFO] checkout-service pool stats active=24 idle=25 waiting=0 max=50
+2026-06-09T08:38:57Z [INFO] checkout-service redis GET sess:7023 hit 3ms
+2026-06-09T08:39:10Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T08:39:26Z [INFO] catalog-service health-check ok latency=1ms
+2026-06-09T08:39:42Z [ERROR] logging-pipeline dropping 12 events (buffer full) — known issue LOG-441
+2026-06-09T08:39:55Z [INFO] payments-api req=87d48837 db acquire=14ms pool=payments-db
+2026-06-09T08:40:14Z [WARN] logging-pipeline buffer high watermark 90% (shipper lagging)
+2026-06-09T08:40:27Z [INFO] auth-service token issued sub=user-6537 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T08:40:46Z [INFO] payments-api req=46de294c db acquire=17ms pool=payments-db
+2026-06-09T08:41:05Z [INFO] checkout-service pool stats active=23 idle=25 waiting=0 max=50
+2026-06-09T08:41:23Z [INFO] checkout-service order processed txn=tx86847 total=222.91 req=edeae4f8
+2026-06-09T08:41:35Z [ERROR] catalog-service image-resize timeout for sku-28255 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:41:38Z [INFO] catalog-service image-resize retry succeeded for sku-28255 (attempt 2/3)
+2026-06-09T08:41:47Z [INFO] orders-service kafka consumer group rebalance completed gen=177 (took 2447ms)
+2026-06-09T08:42:03Z [INFO] catalog-service redis GET sess:9287 hit 4ms
+2026-06-09T08:42:21Z [ERROR] catalog-service image-resize timeout for sku-90485 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:42:23Z [INFO] catalog-service image-resize retry succeeded for sku-90485 (attempt 2/3)
+2026-06-09T08:42:33Z [INFO] catalog-service redis GET sess:4915 hit 1ms
+2026-06-09T08:42:46Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T08:42:56Z [INFO] payments-api gc pause 15ms heap=75%
+2026-06-09T08:43:08Z [INFO] orders-service kafka consumer group rebalance completed gen=151 (took 1616ms)
+2026-06-09T08:43:27Z [INFO] payments-api req=9686f6e7 db acquire=7ms pool=payments-db
+2026-06-09T08:43:40Z [INFO] checkout-service pool stats active=24 idle=23 waiting=0 max=50
+2026-06-09T08:43:59Z [INFO] auth-service token issued sub=user-9478 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T08:44:12Z [WARN] auth-service token validation failed: token used before issued (iat=08:44:13, now=08:44:12) sub=user-5778 node=worker-2
+2026-06-09T08:44:24Z [INFO] orders-service gc pause 10ms heap=61%
+2026-06-09T08:44:40Z [INFO] catalog-service search index refresh ok docs=12228 took=132ms
+2026-06-09T08:44:58Z [INFO] checkout-service order processed txn=tx85465 total=91.31 req=bd435e4a
+2026-06-09T08:45:08Z [INFO] checkout-service health-check ok latency=4ms
+2026-06-09T08:45:25Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T08:45:35Z [INFO] catalog-service gc pause 33ms heap=74%
+2026-06-09T08:45:50Z [ERROR] catalog-service image-resize timeout for sku-37481 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:45:53Z [INFO] catalog-service image-resize retry succeeded for sku-37481 (attempt 2/3)
+2026-06-09T08:46:07Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T08:46:18Z [INFO] checkout-service pool stats active=25 idle=24 waiting=0 max=50
+2026-06-09T08:46:36Z [INFO] catalog-service search index refresh ok docs=11689 took=262ms
+2026-06-09T08:46:49Z [INFO] payments-api redis GET sess:6120 hit 1ms
+2026-06-09T08:47:06Z [INFO] checkout-service order processed txn=tx80907 total=213.29 req=48e64a9d
+2026-06-09T08:47:21Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T08:47:36Z [INFO] catalog-service search index refresh ok docs=11534 took=233ms
+2026-06-09T08:47:52Z [INFO] auth-service gc pause 5ms heap=42%
+2026-06-09T08:48:04Z [INFO] payments-api req=7762a3b8 db acquire=13ms pool=payments-db
+2026-06-09T08:48:20Z [INFO] payments-api gc pause 32ms heap=72%
+2026-06-09T08:48:31Z [INFO] catalog-service gc pause 6ms heap=43%
+2026-06-09T08:48:45Z [INFO] auth-service redis GET sess:5292 hit 4ms
+2026-06-09T08:49:02Z [WARN] auth-service token validation failed: token used before issued (iat=08:49:05, now=08:49:02) sub=user-5785 node=worker-2
+2026-06-09T08:49:13Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T08:49:32Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T08:49:49Z [INFO] orders-service health-check ok latency=2ms
+2026-06-09T08:50:07Z [WARN] auth-service token validation failed: token used before issued (iat=08:50:09, now=08:50:07) sub=user-9357 node=worker-2
+2026-06-09T08:50:21Z [WARN] auth-service token validation failed: token used before issued (iat=08:50:24, now=08:50:21) sub=user-9019 node=worker-2
+2026-06-09T08:50:31Z [INFO] payments-api redis GET sess:4736 miss 1ms
+2026-06-09T08:50:44Z [INFO] auth-service health-check ok latency=1ms
+2026-06-09T08:50:55Z [INFO] catalog-service search index refresh ok docs=12041 took=260ms
+2026-06-09T08:51:07Z [ERROR] catalog-service image-resize timeout for sku-35304 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:51:09Z [INFO] catalog-service image-resize retry succeeded for sku-35304 (attempt 2/3)
+2026-06-09T08:51:21Z [WARN] logging-pipeline buffer high watermark 93% (shipper lagging)
+2026-06-09T08:51:34Z [INFO] checkout-service redis GET sess:6750 miss 3ms
+2026-06-09T08:51:49Z [INFO] orders-service health-check ok latency=3ms
+2026-06-09T08:52:03Z [WARN] auth-service token validation failed: token used before issued (iat=08:52:04, now=08:52:03) sub=user-4005 node=worker-2
+2026-06-09T08:52:14Z [WARN] auth-service token validation failed: token used before issued (iat=08:52:16, now=08:52:14) sub=user-6045 node=worker-2
+2026-06-09T08:52:28Z [INFO] catalog-service gc pause 24ms heap=52%
+2026-06-09T08:52:47Z [INFO] payments-api req=008b2419 db acquire=8ms pool=payments-db
+2026-06-09T08:53:04Z [WARN] auth-service token validation failed: token used before issued (iat=08:53:07, now=08:53:04) sub=user-9862 node=worker-2
+2026-06-09T08:53:20Z [INFO] catalog-service search index refresh ok docs=12189 took=495ms
+2026-06-09T08:53:33Z [INFO] checkout-service redis GET sess:9322 hit 3ms
+2026-06-09T08:53:45Z [INFO] payments-api req=9eb0466c db acquire=8ms pool=payments-db
+2026-06-09T08:54:01Z [INFO] orders-service kafka consumer group rebalance completed gen=154 (took 3627ms)
+2026-06-09T08:54:12Z [INFO] payments-api req=5fdb83cd db acquire=20ms pool=payments-db
+2026-06-09T08:54:31Z [INFO] auth-service health-check ok latency=1ms
+2026-06-09T08:54:49Z [INFO] checkout-service pool stats active=27 idle=23 waiting=0 max=50
+2026-06-09T08:55:08Z [INFO] checkout-service gc pause 6ms heap=75%
+2026-06-09T08:55:23Z [INFO] checkout-service health-check ok latency=9ms
+2026-06-09T08:55:33Z [INFO] checkout-service gc pause 20ms heap=74%
+2026-06-09T08:55:43Z [INFO] auth-service redis GET sess:8625 hit 2ms
+2026-06-09T08:55:56Z [INFO] catalog-service health-check ok latency=8ms
+2026-06-09T08:56:06Z [INFO] orders-service kafka consumer group rebalance completed gen=173 (took 3992ms)
+2026-06-09T08:56:17Z [INFO] checkout-service order processed txn=tx87899 total=248.77 req=d959ca9b
+2026-06-09T08:56:32Z [INFO] payments-api req=569fc671 db acquire=8ms pool=payments-db
+2026-06-09T08:56:44Z [INFO] checkout-service pool stats active=25 idle=23 waiting=0 max=50
+2026-06-09T08:56:54Z [INFO] payments-api req=412d3ebb db acquire=7ms pool=payments-db
+2026-06-09T08:57:07Z [INFO] checkout-service redis GET sess:2816 hit 2ms
+2026-06-09T08:57:26Z [INFO] auth-service token issued sub=user-6466 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T08:57:40Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T08:57:53Z [INFO] payments-api redis GET sess:5795 hit 4ms
+2026-06-09T08:58:05Z [INFO] auth-service health-check ok latency=7ms
+2026-06-09T08:58:15Z [INFO] payments-api req=b5fc1f34 db acquire=11ms pool=payments-db
+2026-06-09T08:58:31Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T08:58:48Z [ERROR] catalog-service image-resize timeout for sku-21209 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T08:58:51Z [INFO] catalog-service image-resize retry succeeded for sku-21209 (attempt 2/3)
+2026-06-09T08:58:59Z [INFO] orders-service kafka consumer group rebalance completed gen=164 (took 1233ms)
+2026-06-09T08:59:14Z [INFO] auth-service token issued sub=user-9256 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T08:59:24Z [INFO] checkout-service pool stats active=27 idle=21 waiting=0 max=50
+2026-06-09T08:59:35Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T08:59:50Z [INFO] auth-service token issued sub=user-9358 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T09:00:01Z [INFO] auth-service health-check ok latency=5ms
+2026-06-09T09:00:12Z [INFO] catalog-service search index refresh ok docs=11700 took=557ms
+2026-06-09T09:00:30Z [INFO] auth-service token issued sub=user-7604 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T09:00:46Z [INFO] catalog-service search index refresh ok docs=11291 took=393ms
+2026-06-09T09:01:00Z [INFO] checkout-service health-check ok latency=4ms
+2026-06-09T09:01:18Z [WARN] payments-api req=4b1e027e db acquire=1196ms pool=payments-db
+2026-06-09T09:01:36Z [INFO] auth-service gc pause 35ms heap=62%
+2026-06-09T09:01:55Z [INFO] checkout-service pool stats active=30 idle=18 waiting=0 max=50
+2026-06-09T09:02:08Z [INFO] payments-api health-check ok latency=8ms
+2026-06-09T09:02:21Z [INFO] orders-service kafka consumer group rebalance completed gen=168 (took 2168ms)
+2026-06-09T09:02:31Z [INFO] auth-service token issued sub=user-3914 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T09:02:48Z [INFO] checkout-service gc pause 35ms heap=74%
+2026-06-09T09:03:04Z [INFO] checkout-service order processed txn=tx82195 total=328.33 req=b5beeca8
+2026-06-09T09:03:23Z [WARN] payments-api req=96c77425 db acquire=1327ms pool=payments-db
+2026-06-09T09:03:38Z [INFO] checkout-service order processed txn=tx78069 total=281.23 req=d8c098fa
+2026-06-09T09:03:53Z [INFO] checkout-service pool stats active=29 idle=18 waiting=0 max=50
+2026-06-09T09:04:03Z [WARN] payments-api req=315f4ba5 db acquire=755ms pool=payments-db
+2026-06-09T09:04:22Z [ERROR] catalog-service image-resize timeout for sku-97519 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T09:04:24Z [INFO] catalog-service image-resize retry succeeded for sku-97519 (attempt 2/3)
+2026-06-09T09:04:38Z [INFO] catalog-service redis GET sess:7434 miss 2ms
+2026-06-09T09:04:54Z [ERROR] catalog-service image-resize timeout for sku-53856 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T09:04:58Z [INFO] catalog-service image-resize retry succeeded for sku-53856 (attempt 2/3)
+2026-06-09T09:05:12Z [INFO] orders-service redis GET sess:4504 miss 2ms
+2026-06-09T09:05:22Z [INFO] orders-service redis GET sess:6725 hit 3ms
+2026-06-09T09:05:37Z [INFO] checkout-service health-check ok latency=9ms
+2026-06-09T09:05:51Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T09:06:09Z [INFO] auth-service redis GET sess:2526 hit 3ms
+2026-06-09T09:06:28Z [INFO] checkout-service redis GET sess:5481 hit 0ms
+2026-06-09T09:06:41Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T09:06:53Z [INFO] checkout-service health-check ok latency=4ms
+2026-06-09T09:07:10Z [INFO] payments-api req=7660395f db acquire=131ms pool=payments-db
+2026-06-09T09:07:29Z [INFO] payments-api req=25cc1e39 db acquire=346ms pool=payments-db
+2026-06-09T09:07:39Z [INFO] auth-service token issued sub=user-2529 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T09:07:52Z [ERROR] logging-pipeline dropping 17 events (buffer full) — known issue LOG-441
+2026-06-09T09:08:04Z [INFO] orders-service gc pause 19ms heap=77%
+2026-06-09T09:08:20Z [INFO] catalog-service redis GET sess:9753 hit 3ms
+2026-06-09T09:08:38Z [INFO] checkout-service redis GET sess:5559 hit 0ms
+2026-06-09T09:08:51Z [INFO] checkout-service health-check ok latency=6ms
+2026-06-09T09:09:04Z [WARN] logging-pipeline buffer high watermark 84% (shipper lagging)
+2026-06-09T09:09:18Z [INFO] payments-api redis GET sess:1641 hit 2ms
+2026-06-09T09:09:30Z [INFO] checkout-service redis GET sess:5930 hit 0ms
+2026-06-09T09:09:41Z [INFO] checkout-service pool stats active=28 idle=21 waiting=0 max=50
+2026-06-09T09:09:59Z [INFO] catalog-service search index refresh ok docs=11917 took=152ms
+2026-06-09T09:10:16Z [WARN] logging-pipeline buffer high watermark 88% (shipper lagging)
+2026-06-09T09:10:30Z [INFO] payments-api gc pause 7ms heap=66%
+2026-06-09T09:10:42Z [INFO] orders-service redis GET sess:6529 miss 1ms
+2026-06-09T09:10:59Z [INFO] checkout-service order processed txn=tx99856 total=20.12 req=93686bb4
+2026-06-09T09:11:11Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T09:11:30Z [WARN] logging-pipeline buffer high watermark 84% (shipper lagging)
+2026-06-09T09:11:48Z [INFO] checkout-service pool stats active=32 idle=17 waiting=0 max=50
+2026-06-09T09:11:59Z [INFO] catalog-service health-check ok latency=8ms
+2026-06-09T09:12:09Z [INFO] checkout-service order processed txn=tx99739 total=58.40 req=b15d1ec3
+2026-06-09T09:12:27Z [INFO] checkout-service health-check ok latency=3ms
+2026-06-09T09:12:44Z [ERROR] logging-pipeline dropping 8 events (buffer full) — known issue LOG-441
+2026-06-09T09:12:59Z [INFO] orders-service health-check ok latency=2ms
+2026-06-09T09:13:18Z [INFO] payments-api req=2e1d47ab db acquire=18ms pool=payments-db
+2026-06-09T09:13:28Z [INFO] payments-api req=8664374d db acquire=17ms pool=payments-db
+2026-06-09T09:13:45Z [INFO] catalog-service search index refresh ok docs=12457 took=517ms
+2026-06-09T09:14:00Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T09:14:13Z [INFO] catalog-service search index refresh ok docs=12018 took=528ms
+2026-06-09T09:14:23Z [INFO] checkout-service pool stats active=33 idle=14 waiting=0 max=50
+2026-06-09T09:14:39Z [INFO] auth-service gc pause 6ms heap=52%
+2026-06-09T09:14:57Z [INFO] payments-api req=ecff3b6e db acquire=7ms pool=payments-db
+2026-06-09T09:15:16Z [INFO] payments-api gc pause 15ms heap=62%
+2026-06-09T09:15:34Z [INFO] checkout-service order processed txn=tx75150 total=176.83 req=24be1738
+2026-06-09T09:15:52Z [INFO] orders-service redis GET sess:2352 hit 1ms
+2026-06-09T09:16:04Z [INFO] checkout-service order processed txn=tx93135 total=44.37 req=26a0b6fb
+2026-06-09T09:16:15Z [ERROR] logging-pipeline dropping 12 events (buffer full) — known issue LOG-441
+2026-06-09T09:16:33Z [INFO] payments-api redis GET sess:3484 hit 2ms
+2026-06-09T09:16:45Z [INFO] payments-api req=126df977 db acquire=12ms pool=payments-db
+2026-06-09T09:16:58Z [INFO] checkout-service health-check ok latency=3ms
+2026-06-09T09:17:13Z [INFO] catalog-service health-check ok latency=7ms
+2026-06-09T09:17:32Z [INFO] checkout-service pool stats active=30 idle=17 waiting=0 max=50
+2026-06-09T09:17:51Z [INFO] payments-api req=a16aa55e db acquire=20ms pool=payments-db
+2026-06-09T09:18:07Z [INFO] payments-api health-check ok latency=7ms
+2026-06-09T09:18:18Z [INFO] checkout-service redis GET sess:7333 hit 1ms
+2026-06-09T09:18:35Z [INFO] auth-service redis GET sess:7525 hit 4ms
+2026-06-09T09:18:46Z [INFO] auth-service token issued sub=user-3567 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T09:19:05Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T09:19:15Z [INFO] checkout-service order processed txn=tx87436 total=37.37 req=329d2014
+2026-06-09T09:19:33Z [INFO] catalog-service search index refresh ok docs=11064 took=461ms
+2026-06-09T09:19:44Z [INFO] auth-service redis GET sess:8118 hit 1ms
+2026-06-09T09:19:58Z [INFO] payments-api req=b21f4609 db acquire=10ms pool=payments-db
+2026-06-09T09:20:10Z [INFO] checkout-service health-check ok latency=3ms
+2026-06-09T09:20:24Z [WARN] logging-pipeline buffer high watermark 89% (shipper lagging)
+2026-06-09T09:20:37Z [INFO] orders-service redis GET sess:2692 hit 3ms
+2026-06-09T09:20:47Z [INFO] payments-api req=14600717 db acquire=5ms pool=payments-db
+2026-06-09T09:21:00Z [INFO] payments-api req=1ab3c10d db acquire=17ms pool=payments-db
+2026-06-09T09:21:17Z [INFO] checkout-service pool stats active=32 idle=18 waiting=0 max=50
+2026-06-09T09:21:28Z [INFO] orders-service gc pause 24ms heap=52%
+2026-06-09T09:21:47Z [INFO] checkout-service gc pause 12ms heap=55%
+2026-06-09T09:21:59Z [INFO] checkout-service order processed txn=tx86313 total=136.36 req=52f0e61a
+2026-06-09T09:22:10Z [INFO] auth-service redis GET sess:3294 hit 1ms
+2026-06-09T09:22:20Z [INFO] checkout-service redis GET sess:2076 hit 4ms
+2026-06-09T09:22:37Z [INFO] auth-service redis GET sess:1021 miss 1ms
+2026-06-09T09:22:52Z [INFO] checkout-service order processed txn=tx89160 total=379.26 req=78147a04
+2026-06-09T09:23:04Z [INFO] auth-service token issued sub=user-4648 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T09:23:23Z [WARN] logging-pipeline buffer high watermark 89% (shipper lagging)
+2026-06-09T09:23:37Z [INFO] catalog-service search index refresh ok docs=11599 took=386ms
+2026-06-09T09:23:50Z [INFO] catalog-service gc pause 20ms heap=42%
+2026-06-09T09:24:05Z [INFO] checkout-service redis GET sess:2176 hit 0ms
+2026-06-09T09:24:20Z [INFO] payments-api req=f8ddd88b db acquire=5ms pool=payments-db
+2026-06-09T09:24:39Z [INFO] catalog-service redis GET sess:2386 hit 3ms
+2026-06-09T09:24:53Z [INFO] catalog-service search index refresh ok docs=11850 took=394ms
+2026-06-09T09:25:10Z [INFO] payments-api req=d5805489 db acquire=14ms pool=payments-db
+2026-06-09T09:25:22Z [INFO] catalog-service health-check ok latency=4ms
+2026-06-09T09:25:41Z [INFO] catalog-service redis GET sess:6134 hit 4ms
+2026-06-09T09:25:56Z [INFO] auth-service health-check ok latency=5ms
+2026-06-09T09:26:09Z [INFO] catalog-service gc pause 30ms heap=44%
+2026-06-09T09:26:19Z [INFO] payments-api req=4cadfe5c db acquire=20ms pool=payments-db
+2026-06-09T09:26:29Z [INFO] checkout-service pool stats active=32 idle=15 waiting=0 max=50
+2026-06-09T09:26:43Z [INFO] checkout-service gc pause 8ms heap=51%
+2026-06-09T09:26:56Z [INFO] auth-service gc pause 18ms heap=77%
+2026-06-09T09:27:10Z [INFO] auth-service token issued sub=user-4605 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T09:27:28Z [INFO] payments-api health-check ok latency=2ms
+2026-06-09T09:27:41Z [INFO] checkout-service redis GET sess:6230 hit 3ms
+2026-06-09T09:27:57Z [INFO] checkout-service order processed txn=tx99973 total=228.96 req=89965e62
+2026-06-09T09:28:10Z [INFO] payments-api req=463f5fde db acquire=21ms pool=payments-db
+2026-06-09T09:28:24Z [INFO] auth-service token issued sub=user-9129 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T09:28:43Z [INFO] payments-api req=daf0ddb5 db acquire=8ms pool=payments-db
+2026-06-09T09:29:01Z [INFO] payments-api health-check ok latency=8ms
+2026-06-09T09:29:12Z [INFO] orders-service redis GET sess:1983 hit 4ms
+2026-06-09T09:29:31Z [INFO] checkout-service health-check ok latency=6ms
+2026-06-09T09:29:50Z [INFO] auth-service gc pause 38ms heap=45%
+2026-06-09T09:30:00Z [INFO] orders-service health-check ok latency=7ms
+2026-06-09T09:30:15Z [INFO] checkout-service pool stats active=36 idle=13 waiting=0 max=50
+2026-06-09T09:30:34Z [INFO] payments-api req=f9799d21 db acquire=13ms pool=payments-db
+2026-06-09T09:30:48Z [INFO] catalog-service gc pause 34ms heap=78%
+2026-06-09T09:31:02Z [INFO] checkout-service order processed txn=tx73666 total=27.90 req=9efc82eb
+2026-06-09T09:31:21Z [WARN] logging-pipeline buffer high watermark 82% (shipper lagging)
+2026-06-09T09:31:35Z [INFO] catalog-service gc pause 33ms heap=59%
+2026-06-09T09:31:50Z [INFO] auth-service token issued sub=user-8927 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T09:32:01Z [INFO] payments-api req=ed5e462c db acquire=13ms pool=payments-db
+2026-06-09T09:32:18Z [INFO] auth-service token issued sub=user-7956 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T09:32:30Z [INFO] orders-service health-check ok latency=4ms
+2026-06-09T09:32:45Z [INFO] checkout-service gc pause 37ms heap=71%
+2026-06-09T09:33:04Z [INFO] catalog-service search index refresh ok docs=11218 took=220ms
+2026-06-09T09:33:19Z [INFO] catalog-service search index refresh ok docs=12110 took=255ms
+2026-06-09T09:33:32Z [INFO] catalog-service gc pause 14ms heap=70%
+2026-06-09T09:33:46Z [INFO] catalog-service gc pause 36ms heap=73%
+2026-06-09T09:34:04Z [INFO] orders-service health-check ok latency=4ms
+2026-06-09T09:34:19Z [INFO] catalog-service health-check ok latency=4ms
+2026-06-09T09:34:33Z [INFO] checkout-service redis GET sess:2569 hit 1ms
+2026-06-09T09:34:46Z [INFO] catalog-service search index refresh ok docs=12386 took=342ms
+2026-06-09T09:35:03Z [INFO] auth-service health-check ok latency=8ms
+2026-06-09T09:35:18Z [WARN] logging-pipeline buffer high watermark 91% (shipper lagging)
+2026-06-09T09:35:32Z [INFO] payments-api req=903cdc58 db acquire=10ms pool=payments-db
+2026-06-09T09:35:50Z [INFO] checkout-service pool stats active=35 idle=13 waiting=0 max=50
+2026-06-09T09:36:08Z [INFO] payments-api req=dab5a460 db acquire=10ms pool=payments-db
+2026-06-09T09:36:20Z [INFO] orders-service gc pause 9ms heap=73%
+2026-06-09T09:36:31Z [INFO] checkout-service order processed txn=tx73701 total=253.05 req=877b7d6b
+2026-06-09T09:36:45Z [INFO] auth-service token issued sub=user-5674 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T09:37:02Z [INFO] catalog-service gc pause 14ms heap=67%
+2026-06-09T09:37:14Z [INFO] orders-service gc pause 25ms heap=48%
+2026-06-09T09:37:32Z [INFO] auth-service redis GET sess:6010 hit 2ms
+2026-06-09T09:37:51Z [INFO] catalog-service health-check ok latency=9ms
+2026-06-09T09:38:04Z [INFO] orders-service kafka consumer group rebalance completed gen=167 (took 3515ms)
+2026-06-09T09:38:17Z [INFO] payments-api health-check ok latency=5ms
+2026-06-09T09:38:36Z [INFO] auth-service token issued sub=user-6200 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T09:38:55Z [INFO] orders-service health-check ok latency=2ms
+2026-06-09T09:39:10Z [INFO] checkout-service pool stats active=34 idle=14 waiting=0 max=50
+2026-06-09T09:39:26Z [INFO] auth-service token issued sub=user-7400 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T09:39:45Z [INFO] checkout-service gc pause 9ms heap=72%
+2026-06-09T09:39:56Z [INFO] payments-api gc pause 15ms heap=74%
+2026-06-09T09:40:10Z [INFO] orders-service redis GET sess:8145 hit 2ms
+2026-06-09T09:40:29Z [INFO] checkout-service order processed txn=tx74424 total=83.23 req=ccc5dc9f
+2026-06-09T09:40:39Z [INFO] auth-service redis GET sess:4915 miss 2ms
+2026-06-09T09:40:50Z [INFO] checkout-service order processed txn=tx97698 total=290.32 req=820f52ef
+2026-06-09T09:41:01Z [INFO] payments-api req=91a61aeb db acquire=19ms pool=payments-db
+2026-06-09T09:41:20Z [INFO] auth-service token issued sub=user-9884 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T09:41:38Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T09:41:49Z [INFO] checkout-service health-check ok latency=1ms
+2026-06-09T09:42:06Z [INFO] checkout-service health-check ok latency=3ms
+2026-06-09T09:42:16Z [INFO] checkout-service redis GET sess:2903 hit 4ms
+2026-06-09T09:42:26Z [INFO] checkout-service pool stats active=35 idle=13 waiting=0 max=50
+2026-06-09T09:42:38Z [INFO] payments-api req=dca2f74f db acquire=19ms pool=payments-db
+2026-06-09T09:42:48Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T09:43:00Z [INFO] auth-service token issued sub=user-9333 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T09:43:15Z [INFO] checkout-service order processed txn=tx94676 total=248.93 req=f38043fc
+2026-06-09T09:43:34Z [INFO] auth-service gc pause 34ms heap=43%
+2026-06-09T09:43:48Z [INFO] payments-api req=586df876 db acquire=19ms pool=payments-db
+2026-06-09T09:44:03Z [INFO] checkout-service order processed txn=tx75636 total=55.76 req=0451d5ab
+2026-06-09T09:44:15Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T09:44:32Z [INFO] checkout-service pool stats active=35 idle=12 waiting=0 max=50
+2026-06-09T09:44:42Z [INFO] checkout-service health-check ok latency=6ms
+2026-06-09T09:44:57Z [INFO] auth-service gc pause 38ms heap=46%
+2026-06-09T09:45:16Z [INFO] checkout-service gc pause 34ms heap=61%
+2026-06-09T09:45:30Z [INFO] auth-service token issued sub=user-9328 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T09:45:44Z [INFO] catalog-service health-check ok latency=3ms
+2026-06-09T09:46:03Z [INFO] checkout-service order processed txn=tx76217 total=267.94 req=55604e9c
+2026-06-09T09:46:22Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T09:46:41Z [INFO] catalog-service search index refresh ok docs=12246 took=442ms
+2026-06-09T09:46:51Z [INFO] checkout-service health-check ok latency=7ms
+2026-06-09T09:47:05Z [INFO] checkout-service health-check ok latency=5ms
+2026-06-09T09:47:21Z [INFO] checkout-service gc pause 7ms heap=46%
+2026-06-09T09:47:32Z [INFO] payments-api health-check ok latency=9ms
+2026-06-09T09:47:49Z [INFO] payments-api req=528130e2 db acquire=14ms pool=payments-db
+2026-06-09T09:48:00Z [INFO] checkout-service pool stats active=37 idle=13 waiting=0 max=50
+2026-06-09T09:48:12Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T09:48:27Z [INFO] payments-api req=9256cb76 db acquire=10ms pool=payments-db
+2026-06-09T09:48:46Z [INFO] payments-api req=974ca01c db acquire=10ms pool=payments-db
+2026-06-09T09:48:57Z [INFO] checkout-service order processed txn=tx85938 total=210.55 req=e0efce33
+2026-06-09T09:49:16Z [INFO] payments-api req=863a2d5a db acquire=5ms pool=payments-db
+2026-06-09T09:49:28Z [INFO] payments-api req=32aed545 db acquire=17ms pool=payments-db
+2026-06-09T09:49:41Z [INFO] payments-api req=63dc3032 db acquire=20ms pool=payments-db
+2026-06-09T09:49:57Z [INFO] checkout-service gc pause 6ms heap=77%
+2026-06-09T09:50:15Z [INFO] catalog-service search index refresh ok docs=11905 took=549ms
+2026-06-09T09:50:31Z [INFO] checkout-service pool stats active=36 idle=11 waiting=0 max=50
+2026-06-09T09:50:44Z [INFO] catalog-service health-check ok latency=4ms
+2026-06-09T09:50:58Z [INFO] orders-service kafka consumer group rebalance completed gen=149 (took 3282ms)
+2026-06-09T09:51:10Z [INFO] auth-service gc pause 17ms heap=75%
+2026-06-09T09:51:21Z [INFO] orders-service health-check ok latency=4ms
+2026-06-09T09:51:31Z [INFO] catalog-service gc pause 14ms heap=52%
+2026-06-09T09:51:42Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T09:51:55Z [INFO] auth-service health-check ok latency=5ms
+2026-06-09T09:52:10Z [INFO] catalog-service search index refresh ok docs=11081 took=150ms
+2026-06-09T09:52:24Z [INFO] auth-service health-check ok latency=4ms
+2026-06-09T09:52:35Z [INFO] orders-service redis GET sess:5566 miss 0ms
+2026-06-09T09:52:53Z [INFO] orders-service health-check ok latency=9ms
+2026-06-09T09:53:10Z [INFO] checkout-service redis GET sess:8449 hit 4ms
+2026-06-09T09:53:27Z [INFO] payments-api req=c8ac1f51 db acquire=10ms pool=payments-db
+2026-06-09T09:53:40Z [INFO] catalog-service search index refresh ok docs=11684 took=594ms
+2026-06-09T09:53:53Z [INFO] checkout-service pool stats active=37 idle=10 waiting=0 max=50
+2026-06-09T09:54:03Z [INFO] orders-service kafka consumer group rebalance completed gen=170 (took 1936ms)
+2026-06-09T09:54:17Z [INFO] payments-api req=8a73334a db acquire=22ms pool=payments-db
+2026-06-09T09:54:34Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T09:54:45Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T09:55:01Z [INFO] catalog-service redis GET sess:5201 hit 2ms
+2026-06-09T09:55:14Z [INFO] catalog-service gc pause 9ms heap=53%
+2026-06-09T09:55:24Z [INFO] auth-service token issued sub=user-5550 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T09:55:39Z [ERROR] catalog-service image-resize timeout for sku-88364 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T09:55:41Z [INFO] catalog-service image-resize retry succeeded for sku-88364 (attempt 2/3)
+2026-06-09T09:55:55Z [INFO] catalog-service gc pause 6ms heap=59%
+2026-06-09T09:56:07Z [INFO] catalog-service search index refresh ok docs=12172 took=532ms
+2026-06-09T09:56:22Z [WARN] logging-pipeline buffer high watermark 85% (shipper lagging)
+2026-06-09T09:56:36Z [INFO] catalog-service redis GET sess:4812 hit 1ms
+2026-06-09T09:56:54Z [ERROR] catalog-service image-resize timeout for sku-65158 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T09:56:59Z [INFO] catalog-service image-resize retry succeeded for sku-65158 (attempt 2/3)
+2026-06-09T09:57:11Z [INFO] payments-api req=6de2be40 db acquire=22ms pool=payments-db
+2026-06-09T09:57:21Z [INFO] auth-service token issued sub=user-7098 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T09:57:40Z [INFO] orders-service gc pause 8ms heap=45%
+2026-06-09T09:57:55Z [INFO] payments-api health-check ok latency=7ms
+2026-06-09T09:58:08Z [INFO] auth-service token issued sub=user-6928 ttl=3600s cache_hit_ratio=0.93
+2026-06-09T09:58:21Z [INFO] auth-service redis GET sess:8162 hit 2ms
+2026-06-09T09:58:35Z [ERROR] catalog-service image-resize timeout for sku-95394 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T09:58:37Z [INFO] catalog-service image-resize retry succeeded for sku-95394 (attempt 2/3)
+2026-06-09T09:58:51Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T09:59:10Z [INFO] auth-service token issued sub=user-6618 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T09:59:24Z [INFO] payments-api req=e7d2fd5f db acquire=10ms pool=payments-db
+2026-06-09T09:59:41Z [INFO] catalog-service gc pause 27ms heap=58%
+2026-06-09T09:59:53Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T10:00:11Z [WARN] payments-api req=85f18ce0 db acquire=1621ms pool=payments-db
+2026-06-09T10:00:28Z [INFO] auth-service token issued sub=user-6070 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T10:00:43Z [INFO] orders-service health-check ok latency=7ms
+2026-06-09T10:00:59Z [INFO] catalog-service search index refresh ok docs=11889 took=295ms
+2026-06-09T10:01:10Z [INFO] checkout-service redis GET sess:1882 hit 2ms
+2026-06-09T10:01:27Z [INFO] catalog-service redis GET sess:1461 miss 4ms
+2026-06-09T10:01:46Z [WARN] payments-api req=468e0214 db acquire=934ms pool=payments-db
+2026-06-09T10:02:00Z [WARN] payments-api req=486e2969 db acquire=777ms pool=payments-db
+2026-06-09T10:02:19Z [INFO] orders-service kafka consumer group rebalance completed gen=159 (took 2890ms)
+2026-06-09T10:02:36Z [INFO] orders-service gc pause 17ms heap=78%
+2026-06-09T10:02:49Z [WARN] payments-api req=ecabef19 db acquire=1221ms pool=payments-db
+2026-06-09T10:03:01Z [INFO] payments-api health-check ok latency=9ms
+2026-06-09T10:03:14Z [INFO] checkout-service redis GET sess:2668 miss 1ms
+2026-06-09T10:03:32Z [INFO] auth-service token issued sub=user-9919 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T10:03:45Z [INFO] checkout-service gc pause 13ms heap=50%
+2026-06-09T10:04:02Z [WARN] payments-api req=20caac03 db acquire=1149ms pool=payments-db
+2026-06-09T10:04:20Z [INFO] checkout-service redis GET sess:3753 hit 0ms
+2026-06-09T10:04:36Z [WARN] payments-api req=693eabf2 db acquire=1035ms pool=payments-db
+2026-06-09T10:04:53Z [INFO] payments-api gc pause 5ms heap=56%
+2026-06-09T10:05:09Z [ERROR] catalog-service image-resize timeout for sku-97168 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T10:05:11Z [INFO] catalog-service image-resize retry succeeded for sku-97168 (attempt 2/3)
+2026-06-09T10:05:19Z [INFO] catalog-service search index refresh ok docs=11398 took=575ms
+2026-06-09T10:05:38Z [ERROR] catalog-service image-resize timeout for sku-34562 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T10:05:41Z [INFO] catalog-service image-resize retry succeeded for sku-34562 (attempt 2/3)
+2026-06-09T10:05:54Z [INFO] checkout-service pool stats active=38 idle=12 waiting=0 max=50
+2026-06-09T10:06:04Z [INFO] payments-api redis GET sess:1820 miss 1ms
+2026-06-09T10:06:18Z [WARN] payments-api req=2bc71d34 db acquire=692ms pool=payments-db
+2026-06-09T10:06:35Z [INFO] auth-service health-check ok latency=3ms
+2026-06-09T10:06:45Z [INFO] checkout-service order processed txn=tx93877 total=187.45 req=7bb32674
+2026-06-09T10:06:57Z [WARN] logging-pipeline buffer high watermark 83% (shipper lagging)
+2026-06-09T10:07:15Z [INFO] orders-service redis GET sess:7498 hit 1ms
+2026-06-09T10:07:28Z [INFO] payments-api req=23c5038e db acquire=149ms pool=payments-db
+2026-06-09T10:07:39Z [INFO] catalog-service gc pause 28ms heap=63%
+2026-06-09T10:07:58Z [INFO] checkout-service health-check ok latency=8ms
+2026-06-09T10:08:12Z [INFO] payments-api req=de442e71 db acquire=13ms pool=payments-db
+2026-06-09T10:08:29Z [INFO] catalog-service search index refresh ok docs=12070 took=324ms
+2026-06-09T10:08:48Z [INFO] auth-service token issued sub=user-8476 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T10:09:02Z [INFO] auth-service health-check ok latency=2ms
+2026-06-09T10:09:21Z [INFO] checkout-service pool stats active=41 idle=8 waiting=0 max=50
+2026-06-09T10:09:34Z [INFO] auth-service token issued sub=user-5249 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T10:09:49Z [INFO] catalog-service gc pause 30ms heap=43%
+2026-06-09T10:10:06Z [INFO] auth-service gc pause 28ms heap=60%
+2026-06-09T10:10:20Z [INFO] checkout-service order processed txn=tx71918 total=354.74 req=bb194112
+2026-06-09T10:10:38Z [INFO] payments-api req=1e5c6b2c db acquire=14ms pool=payments-db
+2026-06-09T10:10:51Z [INFO] checkout-service health-check ok latency=3ms
+2026-06-09T10:11:05Z [INFO] checkout-service order processed txn=tx77692 total=339.11 req=184a96c9
+2026-06-09T10:11:18Z [INFO] checkout-service gc pause 4ms heap=74%
+2026-06-09T10:11:28Z [INFO] checkout-service health-check ok latency=4ms
+2026-06-09T10:11:41Z [INFO] catalog-service health-check ok latency=3ms
+2026-06-09T10:11:58Z [INFO] auth-service token issued sub=user-2471 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T10:12:14Z [INFO] orders-service gc pause 14ms heap=75%
+2026-06-09T10:12:33Z [INFO] checkout-service redis GET sess:7028 hit 3ms
+2026-06-09T10:12:47Z [ERROR] logging-pipeline dropping 16 events (buffer full) — known issue LOG-441
+2026-06-09T10:13:04Z [INFO] auth-service token issued sub=user-4223 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T10:13:18Z [INFO] payments-api health-check ok latency=9ms
+2026-06-09T10:13:35Z [INFO] orders-service gc pause 33ms heap=66%
+2026-06-09T10:13:46Z [INFO] payments-api req=a57d5677 db acquire=18ms pool=payments-db
+2026-06-09T10:14:01Z [INFO] checkout-service pool stats active=41 idle=9 waiting=0 max=50
+2026-06-09T10:14:15Z [INFO] payments-api health-check ok latency=8ms
+2026-06-09T10:14:26Z [INFO] orders-service health-check ok latency=1ms
+2026-06-09T10:14:38Z [INFO] checkout-service order processed txn=tx75477 total=336.51 req=fb29bc95
+2026-06-09T10:14:56Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T10:15:09Z [INFO] payments-api req=56681462 db acquire=21ms pool=payments-db
+2026-06-09T10:15:19Z [INFO] auth-service token issued sub=user-5295 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T10:15:31Z [INFO] payments-api req=8820cd85 db acquire=10ms pool=payments-db
+2026-06-09T10:15:41Z [INFO] checkout-service order processed txn=tx79270 total=38.37 req=cb3ce90c
+2026-06-09T10:15:56Z [INFO] checkout-service pool stats active=42 idle=6 waiting=0 max=50
+2026-06-09T10:16:13Z [WARN] logging-pipeline buffer high watermark 89% (shipper lagging)
+2026-06-09T10:16:26Z [INFO] catalog-service redis GET sess:5476 hit 2ms
+2026-06-09T10:16:36Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T10:16:48Z [INFO] payments-api redis GET sess:5784 hit 0ms
+2026-06-09T10:17:03Z [INFO] catalog-service redis GET sess:6777 miss 4ms
+2026-06-09T10:17:22Z [INFO] catalog-service gc pause 14ms heap=72%
+2026-06-09T10:17:34Z [INFO] checkout-service order processed txn=tx81891 total=29.23 req=6422c99e
+2026-06-09T10:17:48Z [INFO] auth-service token issued sub=user-1899 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T10:18:05Z [INFO] payments-api req=b392cfbb db acquire=12ms pool=payments-db
+2026-06-09T10:18:15Z [INFO] orders-service gc pause 31ms heap=45%
+2026-06-09T10:18:27Z [INFO] catalog-service search index refresh ok docs=11843 took=301ms
+2026-06-09T10:18:40Z [INFO] payments-api req=80e70d3f db acquire=15ms pool=payments-db
+2026-06-09T10:18:58Z [INFO] checkout-service pool stats active=45 idle=3 waiting=3 max=50
+2026-06-09T10:19:09Z [INFO] catalog-service health-check ok latency=3ms
+2026-06-09T10:19:24Z [INFO] checkout-service gc pause 34ms heap=56%
+2026-06-09T10:19:42Z [INFO] auth-service token issued sub=user-4471 ttl=3600s cache_hit_ratio=0.91
+2026-06-09T10:19:53Z [INFO] checkout-service gc pause 34ms heap=50%
+2026-06-09T10:20:09Z [INFO] payments-api req=7b41df1b db acquire=16ms pool=payments-db
+2026-06-09T10:20:27Z [INFO] payments-api redis GET sess:1065 miss 0ms
+2026-06-09T10:20:42Z [INFO] payments-api req=446956d5 db acquire=16ms pool=payments-db
+2026-06-09T10:20:56Z [INFO] auth-service token issued sub=user-1798 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T10:21:13Z [INFO] payments-api req=740f6f8a db acquire=20ms pool=payments-db
+2026-06-09T10:21:30Z [INFO] checkout-service pool stats active=44 idle=6 waiting=0 max=50
+2026-06-09T10:21:47Z [INFO] checkout-service redis GET sess:3218 hit 0ms
+2026-06-09T10:22:01Z [INFO] checkout-service order processed txn=tx98049 total=67.14 req=dd9b2d05
+2026-06-09T10:22:20Z [INFO] checkout-service redis GET sess:7134 hit 4ms
+2026-06-09T10:22:34Z [INFO] checkout-service health-check ok latency=6ms
+2026-06-09T10:22:45Z [INFO] auth-service token issued sub=user-2904 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T10:23:00Z [INFO] checkout-service health-check ok latency=8ms
+2026-06-09T10:23:11Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T10:23:24Z [INFO] catalog-service search index refresh ok docs=11676 took=387ms
+2026-06-09T10:23:34Z [INFO] auth-service redis GET sess:6401 miss 0ms
+2026-06-09T10:23:50Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T10:24:05Z [INFO] orders-service kafka consumer group rebalance completed gen=164 (took 3611ms)
+2026-06-09T10:24:22Z [INFO] catalog-service health-check ok latency=5ms
+2026-06-09T10:24:32Z [INFO] auth-service token issued sub=user-5083 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T10:24:45Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T10:24:58Z [INFO] catalog-service search index refresh ok docs=12157 took=391ms
+2026-06-09T10:25:09Z [INFO] catalog-service health-check ok latency=2ms
+2026-06-09T10:25:20Z [INFO] checkout-service gc pause 24ms heap=64%
+2026-06-09T10:25:30Z [WARN] logging-pipeline buffer high watermark 87% (shipper lagging)
+2026-06-09T10:25:43Z [INFO] payments-api req=a492b4a9 db acquire=22ms pool=payments-db
+2026-06-09T10:25:58Z [INFO] checkout-service health-check ok latency=4ms
+2026-06-09T10:26:17Z [INFO] checkout-service pool stats active=45 idle=3 waiting=2 max=50
+2026-06-09T10:26:32Z [INFO] orders-service health-check ok latency=6ms
+2026-06-09T10:26:46Z [WARN] logging-pipeline buffer high watermark 82% (shipper lagging)
+2026-06-09T10:26:59Z [INFO] payments-api health-check ok latency=2ms
+2026-06-09T10:27:17Z [INFO] checkout-service health-check ok latency=8ms
+2026-06-09T10:27:35Z [WARN] logging-pipeline buffer high watermark 90% (shipper lagging)
+2026-06-09T10:27:50Z [INFO] catalog-service health-check ok latency=1ms
+2026-06-09T10:28:05Z [INFO] payments-api health-check ok latency=6ms
+2026-06-09T10:28:18Z [INFO] payments-api health-check ok latency=4ms
+2026-06-09T10:28:37Z [INFO] payments-api req=26dfa697 db acquire=18ms pool=payments-db
+2026-06-09T10:28:53Z [INFO] orders-service gc pause 27ms heap=51%
+2026-06-09T10:29:05Z [INFO] catalog-service gc pause 24ms heap=77%
+2026-06-09T10:29:22Z [INFO] orders-service health-check ok latency=1ms
+2026-06-09T10:29:40Z [INFO] auth-service token issued sub=user-4195 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T10:29:59Z [INFO] payments-api req=b29da725 db acquire=4ms pool=payments-db
+2026-06-09T10:30:13Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T10:30:25Z [INFO] orders-service health-check ok latency=7ms
+2026-06-09T10:30:41Z [INFO] auth-service token issued sub=user-7288 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T10:30:56Z [INFO] auth-service health-check ok latency=5ms
+2026-06-09T10:31:14Z [INFO] catalog-service health-check ok latency=3ms
+2026-06-09T10:31:31Z [INFO] payments-api redis GET sess:9863 hit 0ms
+2026-06-09T10:31:44Z [INFO] orders-service gc pause 11ms heap=42%
+2026-06-09T10:32:03Z [INFO] catalog-service gc pause 6ms heap=61%
+2026-06-09T10:32:20Z [INFO] orders-service health-check ok latency=1ms
+2026-06-09T10:32:38Z [INFO] auth-service token issued sub=user-6746 ttl=3600s cache_hit_ratio=0.90
+2026-06-09T10:32:52Z [INFO] payments-api req=1af541be db acquire=15ms pool=payments-db
+2026-06-09T10:33:08Z [INFO] checkout-service pool stats active=47 idle=0 waiting=5 max=50
+2026-06-09T10:33:20Z [WARN] logging-pipeline buffer high watermark 92% (shipper lagging)
+2026-06-09T10:33:31Z [INFO] checkout-service order processed txn=tx88115 total=104.90 req=8bc67bf0
+2026-06-09T10:33:48Z [INFO] checkout-service order processed txn=tx72163 total=318.08 req=f2ab9738
+2026-06-09T10:34:05Z [INFO] auth-service gc pause 19ms heap=57%
+2026-06-09T10:34:18Z [INFO] payments-api req=0266300e db acquire=13ms pool=payments-db
+2026-06-09T10:34:31Z [WARN] logging-pipeline buffer high watermark 85% (shipper lagging)
+2026-06-09T10:34:47Z [INFO] payments-api redis GET sess:3565 hit 0ms
+2026-06-09T10:34:57Z [INFO] orders-service kafka consumer group rebalance completed gen=147 (took 2010ms)
+2026-06-09T10:35:09Z [INFO] auth-service token issued sub=user-2178 ttl=3600s cache_hit_ratio=0.96
+2026-06-09T10:35:25Z [INFO] checkout-service gc pause 13ms heap=76%
+2026-06-09T10:35:39Z [INFO] catalog-service search index refresh ok docs=11666 took=542ms
+2026-06-09T10:35:53Z [INFO] checkout-service gc pause 16ms heap=71%
+2026-06-09T10:36:08Z [ERROR] catalog-service image-resize timeout for sku-91576 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T10:36:13Z [INFO] catalog-service image-resize retry succeeded for sku-91576 (attempt 2/3)
+2026-06-09T10:36:20Z [INFO] payments-api req=35df627c db acquire=5ms pool=payments-db
+2026-06-09T10:36:30Z [INFO] checkout-service pool stats active=47 idle=0 waiting=4 max=50
+2026-06-09T10:36:42Z [INFO] orders-service health-check ok latency=8ms
+2026-06-09T10:36:59Z [INFO] checkout-service order processed txn=tx70015 total=309.64 req=2098db6e
+2026-06-09T10:37:13Z [INFO] payments-api redis GET sess:2034 hit 2ms
+2026-06-09T10:37:26Z [INFO] auth-service token issued sub=user-7524 ttl=3600s cache_hit_ratio=0.94
+2026-06-09T10:37:36Z [ERROR] logging-pipeline dropping 17 events (buffer full) — known issue LOG-441
+2026-06-09T10:37:49Z [INFO] auth-service token issued sub=user-6919 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T10:38:02Z [INFO] orders-service kafka consumer group rebalance completed gen=151 (took 2418ms)
+2026-06-09T10:38:19Z [INFO] auth-service gc pause 29ms heap=73%
+2026-06-09T10:38:34Z [INFO] checkout-service gc pause 26ms heap=49%
+2026-06-09T10:38:52Z [INFO] payments-api req=36d73a5d db acquire=12ms pool=payments-db
+2026-06-09T10:39:02Z [INFO] checkout-service pool stats active=47 idle=1 waiting=5 max=50
+2026-06-09T10:39:15Z [INFO] checkout-service order processed txn=tx73919 total=136.40 req=464a9292
+2026-06-09T10:39:30Z [INFO] auth-service redis GET sess:4471 hit 3ms
+2026-06-09T10:39:46Z [INFO] catalog-service search index refresh ok docs=11463 took=150ms
+2026-06-09T10:39:58Z [INFO] orders-service health-check ok latency=5ms
+2026-06-09T10:40:16Z [INFO] checkout-service order processed txn=tx73879 total=183.32 req=14f72b40
+2026-06-09T10:40:26Z [INFO] catalog-service gc pause 21ms heap=77%
+2026-06-09T10:40:37Z [ERROR] logging-pipeline dropping 11 events (buffer full) — known issue LOG-441
+2026-06-09T10:40:56Z [INFO] payments-api req=c4246166 db acquire=18ms pool=payments-db
+2026-06-09T10:41:13Z [INFO] payments-api req=7454b167 db acquire=15ms pool=payments-db
+2026-06-09T10:41:23Z [INFO] auth-service gc pause 27ms heap=57%
+2026-06-09T10:41:36Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T10:41:54Z [INFO] checkout-service pool stats active=49 idle=0 waiting=4 max=50
+2026-06-09T10:42:12Z [INFO] payments-api req=7516506f db acquire=12ms pool=payments-db
+2026-06-09T10:42:28Z [INFO] checkout-service redis GET sess:9733 hit 1ms
+2026-06-09T10:42:41Z [INFO] orders-service gc pause 9ms heap=61%
+2026-06-09T10:42:56Z [INFO] payments-api redis GET sess:4607 hit 4ms
+2026-06-09T10:43:09Z [INFO] auth-service redis GET sess:6801 hit 4ms
+2026-06-09T10:43:25Z [INFO] payments-api health-check ok latency=6ms
+2026-06-09T10:43:41Z [INFO] payments-api req=a932dd65 db acquire=6ms pool=payments-db
+2026-06-09T10:43:51Z [INFO] catalog-service gc pause 38ms heap=60%
+2026-06-09T10:44:09Z [ERROR] checkout-service cannot acquire connection from pool after 5000ms (active=50 max=50) req=72518630
+2026-06-09T10:44:09Z [INFO] checkout-service pool stats active=49 idle=0 waiting=6 max=50
+2026-06-09T10:44:23Z [INFO] payments-api req=e165fd2c db acquire=17ms pool=payments-db
+2026-06-09T10:44:41Z [INFO] checkout-service order processed txn=tx86162 total=32.11 req=772e3046
+2026-06-09T10:44:57Z [ERROR] catalog-service image-resize timeout for sku-62756 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T10:45:02Z [INFO] catalog-service image-resize retry succeeded for sku-62756 (attempt 2/3)
+2026-06-09T10:45:09Z [INFO] catalog-service health-check ok latency=9ms
+2026-06-09T10:45:20Z [INFO] checkout-service order processed txn=tx86847 total=149.92 req=e10ce60c
+2026-06-09T10:45:37Z [INFO] auth-service health-check ok latency=7ms
+2026-06-09T10:45:55Z [INFO] payments-api req=c38a4981 db acquire=21ms pool=payments-db
+2026-06-09T10:46:14Z [INFO] auth-service redis GET sess:7751 hit 3ms
+2026-06-09T10:46:29Z [INFO] orders-service kafka consumer group rebalance completed gen=157 (took 1182ms)
+2026-06-09T10:46:47Z [INFO] orders-service redis GET sess:8406 hit 0ms
+2026-06-09T10:47:01Z [WARN] logging-pipeline buffer high watermark 87% (shipper lagging)
+2026-06-09T10:47:11Z [INFO] catalog-service search index refresh ok docs=12017 took=297ms
+2026-06-09T10:47:29Z [INFO] checkout-service redis GET sess:6856 hit 4ms
+2026-06-09T10:47:43Z [INFO] auth-service redis GET sess:6463 hit 1ms
+2026-06-09T10:47:59Z [INFO] auth-service token issued sub=user-3654 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T10:48:12Z [INFO] orders-service health-check ok latency=1ms
+2026-06-09T10:48:24Z [INFO] auth-service health-check ok latency=8ms
+2026-06-09T10:48:34Z [ERROR] logging-pipeline dropping 17 events (buffer full) — known issue LOG-441
+2026-06-09T10:48:49Z [INFO] auth-service token issued sub=user-1187 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T10:49:07Z [INFO] payments-api redis GET sess:1643 hit 4ms
+2026-06-09T10:49:20Z [INFO] orders-service redis GET sess:2955 hit 1ms
+2026-06-09T10:49:32Z [INFO] payments-api req=59dbbd14 db acquire=21ms pool=payments-db
+2026-06-09T10:49:46Z [INFO] payments-api req=f9755bbb db acquire=16ms pool=payments-db
+2026-06-09T10:50:04Z [INFO] checkout-service health-check ok latency=1ms
+2026-06-09T10:50:17Z [INFO] catalog-service redis GET sess:4160 hit 1ms
+2026-06-09T10:50:33Z [INFO] checkout-service pool stats active=47 idle=1 waiting=4 max=50
+2026-06-09T10:50:43Z [INFO] checkout-service order processed txn=tx84731 total=303.88 req=44c26caa
+2026-06-09T10:50:57Z [INFO] catalog-service gc pause 17ms heap=45%
+2026-06-09T10:51:14Z [INFO] payments-api req=677d83a5 db acquire=15ms pool=payments-db
+2026-06-09T10:51:29Z [INFO] checkout-service order processed txn=tx86442 total=19.54 req=87a922bf
+2026-06-09T10:51:43Z [INFO] checkout-service redis GET sess:3281 hit 2ms
+2026-06-09T10:51:56Z [INFO] orders-service gc pause 22ms heap=78%
+2026-06-09T10:52:06Z [INFO] payments-api req=d317b8dd db acquire=17ms pool=payments-db
+2026-06-09T10:52:21Z [INFO] catalog-service search index refresh ok docs=11808 took=529ms
+2026-06-09T10:52:34Z [ERROR] checkout-service cannot acquire connection from pool after 5000ms (active=50 max=50) req=4e5c9c3b
+2026-06-09T10:52:34Z [INFO] checkout-service pool stats active=50 idle=0 waiting=8 max=50
+2026-06-09T10:52:46Z [INFO] orders-service gc pause 8ms heap=69%
+2026-06-09T10:53:03Z [INFO] catalog-service gc pause 20ms heap=73%
+2026-06-09T10:53:21Z [INFO] orders-service health-check ok latency=8ms
+2026-06-09T10:53:31Z [INFO] payments-api req=9b7ba590 db acquire=13ms pool=payments-db
+2026-06-09T10:53:48Z [INFO] payments-api req=51709d7a db acquire=7ms pool=payments-db
+2026-06-09T10:53:59Z [INFO] auth-service token issued sub=user-9035 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T10:54:15Z [INFO] payments-api gc pause 10ms heap=55%
+2026-06-09T10:54:33Z [INFO] payments-api health-check ok latency=5ms
+2026-06-09T10:54:50Z [INFO] catalog-service search index refresh ok docs=11700 took=579ms
+2026-06-09T10:55:03Z [INFO] auth-service gc pause 6ms heap=53%
+2026-06-09T10:55:17Z [INFO] auth-service gc pause 23ms heap=72%
+2026-06-09T10:55:32Z [WARN] orders-service s3 PUT retry 1/3 bucket=receipts (throttled, will backoff)
+2026-06-09T10:55:44Z [ERROR] checkout-service cannot acquire connection from pool after 5000ms (active=50 max=50) req=aed2d2af
+2026-06-09T10:55:44Z [INFO] checkout-service pool stats active=50 idle=0 waiting=6 max=50
+2026-06-09T10:56:01Z [INFO] checkout-service redis GET sess:8270 miss 0ms
+2026-06-09T10:56:12Z [INFO] checkout-service order processed txn=tx73035 total=34.41 req=0d2ee522
+2026-06-09T10:56:22Z [ERROR] catalog-service image-resize timeout for sku-60995 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T10:56:26Z [INFO] catalog-service image-resize retry succeeded for sku-60995 (attempt 2/3)
+2026-06-09T10:56:40Z [INFO] orders-service redis GET sess:3950 hit 3ms
+2026-06-09T10:56:56Z [INFO] auth-service token issued sub=user-1294 ttl=3600s cache_hit_ratio=0.95
+2026-06-09T10:57:11Z [INFO] orders-service redis GET sess:1819 hit 2ms
+2026-06-09T10:57:28Z [INFO] checkout-service order processed txn=tx84884 total=53.46 req=1cc96052
+2026-06-09T10:57:47Z [INFO] payments-api req=eb685ec4 db acquire=15ms pool=payments-db
+2026-06-09T10:58:04Z [INFO] catalog-service search index refresh ok docs=12034 took=450ms
+2026-06-09T10:58:21Z [INFO] payments-api health-check ok latency=6ms
+2026-06-09T10:58:37Z [INFO] orders-service gc pause 22ms heap=50%
+2026-06-09T10:58:54Z [INFO] payments-api health-check ok latency=1ms
+2026-06-09T10:59:06Z [INFO] auth-service token issued sub=user-8662 ttl=3600s cache_hit_ratio=0.97
+2026-06-09T10:59:19Z [INFO] catalog-service redis GET sess:6490 hit 1ms
+2026-06-09T10:59:31Z [ERROR] catalog-service image-resize timeout for sku-53291 (attempt 1/3, known-flaky upstream imgproxy)
+2026-06-09T10:59:33Z [INFO] catalog-service image-resize retry succeeded for sku-53291 (attempt 2/3)
+2026-06-09T10:59:45Z [INFO] auth-service token issued sub=user-6048 ttl=3600s cache_hit_ratio=0.92
+2026-06-09T11:00:04Z [INFO] catalog-service search index refresh ok docs=12237 took=456ms

@@ -25,7 +25,7 @@ que genera el **reporte HTML**, y al final empaquetás todo en un **plugin**.
 | `recursos/spec-skill.md` | Spec de la skill **`issues-ops`** → genera `SKILL.md` | Bloque 4 |
 | `recursos/seed.sh` | Carga ~8 issues de ejemplo vía `POST`/`PUT` (poblar la base) | Bloque 4 |
 | `recursos/spec-logs.md` | Spec de evolución: la skill **aprende a leer logs** | Bloque 5 |
-| `recursos/logs/app.log` | ~1400 líneas de logs reales-ish con problemas enterrados | Bloque 5 |
+| `recursos/logs/` | 3 archivos (~3900 líneas): gateway + services + infra, con incidentes que solo se resuelven **correlacionando entre archivos** | Bloque 5 |
 | `recursos/spec-report.md` | Spec de la skill **`issues-report`** (reporte HTML) | Bloque 6 |
 | `recursos/spec-plugin.md` | Spec del empaquetado **`devops-issues`** (plugin/Power) | Bloque 6 |
 | `recursos/examples/constitution.example.md` | 🟧 [A] ejemplo de constitución | Bloque 3 |
@@ -208,19 +208,26 @@ solución — la skill te la tiene que exigir.
 
 ## 4. La skill aprende a leer logs (Bloque 5)
 
-El verdadero pitch: nadie quiere leer 1400 líneas de logs a mano. Acá la skill
-lo hace — y de paso ves **el superpoder de SDD: evolucionar**. No escribís una
-skill nueva: **cambiás la spec y se regenera**.
+En `recursos/logs/` hay 3 archivos: `gateway.log`, `services.log` e `infra.log`
+(~3900 líneas). Hay varios incidentes enterrados. **Probá primero con grep si
+querés** — `grep ERROR` te va a dar decenas de errores que se auto-resuelven y
+unos cuantos 504/502… pero **ninguna causa raíz**: las causas son líneas INFO
+inocentes en OTRO archivo, minutos u horas antes del síntoma. Esto no se
+resuelve con regex; se resuelve **correlacionando entre archivos**. Para eso
+está el LLM — y de paso ves el superpoder de SDD: no escribís una skill nueva,
+**cambiás la spec y se regenera**.
 
 1. Evolucioná la skill vía SDD (pegá `recursos/spec-logs.md`):
    - 🟧 **[A]** `/speckit.specify` → `implement` (actualiza el mismo `SKILL.md`)
    - 🟪 **[B]** Feature Spec (Quick Plan recomendado)
-2. Corré el análisis: **"analizá `recursos/logs/app.log`"** (pasale la ruta
-   absoluta si no lo encuentra).
-3. Qué tiene que pasar: detecta los patrones entre el ruido, **actualiza** los
-   issues existentes con evidencia (sin duplicar), **crea** los nuevos con
-   severity y solución propuesta, y **correlaciona** señales (hay una causa raíz
-   escondida que conecta dos problemas — fijate si la encuentra).
+2. Corré el análisis: **"analizá los logs de `recursos/logs/`"** (pasale la
+   ruta absoluta de la carpeta si no la encuentra).
+3. Qué tiene que pasar: la skill construye **cadenas causales que cruzan
+   archivos** (un evento inocente en una capa → el síntoma en otra), detecta
+   una **periodicidad**, una **tendencia** que tarda horas en explotar y una
+   **ráfaga con ventana exacta**; **actualiza** los issues existentes que esos
+   hallazgos explican (sin duplicar), **crea** los genuinamente nuevos y
+   **descarta** los errores ruidosos con justificación.
 4. Verificá con `curl http://127.0.0.1:5000/issues` o pidiendo la lista.
 
 ---
@@ -250,8 +257,8 @@ Las 2 skills + el MCP en una unidad instalable:
 
 ### 5.3 Prueba integrada final
 En sesión nueva, sin registrar nada a mano:
-**"analizá `recursos/logs/app.log` y después regenerá el reporte"** — una skill
-actualiza la tabla, la otra la consume, el MCP conecta todo. 🎉
+**"analizá los logs de `recursos/logs/` y después regenerá el reporte"** — una
+skill actualiza la tabla, la otra la consume, el MCP conecta todo. 🎉
 
 ---
 
@@ -264,6 +271,7 @@ actualiza la tabla, la otra la consume, el MCP conecta todo. 🎉
 - **MCP con 0 tools / no conecta:** corré el server a mano para ver errores en stderr; **nunca `print()` a stdout** (corrompe el JSON-RPC); usá **ruta absoluta** en `--directory`; abrí sesión nueva (descubre las tools al inicio).
 - **No aparecen los `/speckit.*` (A):** `ls .claude/commands/`, reiniciá Claude Code; usá `--integration claude`.
 - **No veo el panel Specs (B):** abrí una **carpeta** (no un archivo suelto) con File → Open Folder.
-- **La skill no encuentra el log:** pasale la **ruta absoluta** de `app.log` o copialo dentro de tu proyecto.
+- **La skill no encuentra los logs:** pasale la **ruta absoluta** de la carpeta `logs/` o copiala dentro de tu proyecto.
+- **El análisis se queda solo con los ERRORs:** la spec pide buscar periodicidad, tendencias y ventanas aunque no haya ERROR; si el `SKILL.md` regenerado perdió eso, repetí `implement`. Pista: ¿qué pasa cada hora en punto?
 - **El análisis duplica issues:** la spec exige comparar con `list_issues` antes de crear; revisá que el `SKILL.md` regenerado conserve esa regla.
 - **El plugin no aparece (A):** estructura exacta `.claude-plugin/plugin.json` + `skills/<nombre>/SKILL.md`; sesión nueva tras instalar; `/plugin` para ver el estado.

@@ -1,0 +1,480 @@
+2026-06-09T05:00:04Z [INFO] cron job analytics-rollup started host=db-01 (full table scan: events, orders, payments)
+2026-06-09T05:01:05Z [INFO] metrics db-01 io_util=87% load1=8.9 active_queries=64
+2026-06-09T05:01:47Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T05:02:11Z [ERROR] backup job nightly-backup failed host=db-01: pg_dump: could not write to output file: No space left on device
+2026-06-09T05:02:16Z [INFO] backup-scheduler nightly-backup will retry at 06:02
+2026-06-09T05:02:51Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T05:03:48Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T05:04:14Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T05:05:13Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T05:05:41Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T05:06:51Z [INFO] metrics db-01 io_util=87% load1=8.7 active_queries=52
+2026-06-09T05:07:47Z [INFO] metrics db-01 io_util=93% load1=8.0 active_queries=60
+2026-06-09T05:07:58Z [INFO] cron job analytics-rollup finished host=db-01 rows=3235483 took=472s
+2026-06-09T05:08:32Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:09:37Z [INFO] k8s node worker-3 cpu=69% mem=82% pods=15
+2026-06-09T05:10:38Z [INFO] k8s hpa catalog-service replicas=2 target_cpu=70%
+2026-06-09T05:11:03Z [INFO] k8s node worker-2 cpu=46% mem=79% pods=12
+2026-06-09T05:12:02Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:12:54Z [INFO] metrics db-01 io_util=20% load1=2.2 active_queries=5
+2026-06-09T05:13:29Z [INFO] k8s node worker-1 cpu=65% mem=81% pods=20
+2026-06-09T05:14:13Z [INFO] metrics db-01 io_util=28% load1=0.9 active_queries=6
+2026-06-09T05:15:22Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T05:16:08Z [INFO] metrics db-01 disk /var/lib/postgresql usage=84%
+2026-06-09T05:17:06Z [INFO] metrics db-01 io_util=38% load1=1.7 active_queries=4
+2026-06-09T05:17:31Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:18:38Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T05:19:12Z [INFO] k8s hpa catalog-service replicas=4 target_cpu=70%
+2026-06-09T05:19:43Z [INFO] metrics db-01 disk /var/lib/postgresql usage=84%
+2026-06-09T05:20:17Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:21:03Z [INFO] metrics db-01 io_util=22% load1=1.4 active_queries=9
+2026-06-09T05:21:49Z [INFO] metrics db-01 io_util=22% load1=1.3 active_queries=12
+2026-06-09T05:22:31Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:22:57Z [INFO] metrics db-01 io_util=37% load1=1.0 active_queries=6
+2026-06-09T05:23:22Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T05:23:54Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:24:47Z [INFO] metrics db-01 io_util=20% load1=1.0 active_queries=10
+2026-06-09T05:25:57Z [INFO] k8s node worker-2 cpu=34% mem=58% pods=16
+2026-06-09T05:26:27Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:27:11Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:27:36Z [INFO] metrics db-01 io_util=36% load1=0.9 active_queries=8
+2026-06-09T05:28:02Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:28:35Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:29:09Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:29:57Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T05:30:27Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:31:02Z [INFO] deployer auth-service v2.3.1 rollout complete (3/3 pods ready)
+2026-06-09T05:31:28Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:32:05Z [INFO] metrics db-01 io_util=31% load1=2.3 active_queries=13
+2026-06-09T05:33:12Z [INFO] metrics db-01 disk /var/lib/postgresql usage=84%
+2026-06-09T05:33:39Z [INFO] metrics db-01 disk /var/lib/postgresql usage=84%
+2026-06-09T05:34:30Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T05:35:32Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T05:36:26Z [INFO] metrics db-01 io_util=27% load1=2.0 active_queries=14
+2026-06-09T05:36:51Z [INFO] metrics db-01 io_util=20% load1=1.2 active_queries=3
+2026-06-09T05:37:57Z [INFO] k8s node worker-1 cpu=50% mem=56% pods=16
+2026-06-09T05:38:31Z [INFO] k8s node worker-2 cpu=54% mem=76% pods=14
+2026-06-09T05:39:30Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:39:57Z [INFO] metrics db-01 io_util=20% load1=2.3 active_queries=11
+2026-06-09T05:40:41Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T05:41:37Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:42:20Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:42:45Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:43:47Z [INFO] k8s node worker-2 cpu=41% mem=77% pods=20
+2026-06-09T05:44:53Z [INFO] k8s node worker-3 cpu=43% mem=48% pods=12
+2026-06-09T05:45:45Z [INFO] k8s node worker-2 cpu=60% mem=72% pods=19
+2026-06-09T05:46:34Z [INFO] metrics db-01 io_util=29% load1=1.9 active_queries=5
+2026-06-09T05:47:15Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:48:24Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:48:57Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:49:23Z [INFO] metrics db-01 io_util=37% load1=2.3 active_queries=13
+2026-06-09T05:49:56Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:50:29Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:51:09Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T05:52:00Z [INFO] k8s node worker-1 cpu=27% mem=52% pods=18
+2026-06-09T05:52:55Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:53:41Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T05:54:51Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:55:43Z [INFO] k8s node worker-2 cpu=28% mem=77% pods=23
+2026-06-09T05:56:08Z [INFO] metrics db-01 io_util=21% load1=1.6 active_queries=4
+2026-06-09T05:57:00Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T05:57:57Z [INFO] k8s hpa orders-service replicas=4 target_cpu=70%
+2026-06-09T05:58:26Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T05:59:05Z [INFO] k8s hpa orders-service replicas=3 target_cpu=70%
+2026-06-09T05:59:56Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T06:00:04Z [INFO] cron job analytics-rollup started host=db-01 (full table scan: events, orders, payments)
+2026-06-09T06:00:28Z [INFO] metrics db-01 io_util=91% load1=9.4 active_queries=74
+2026-06-09T06:01:22Z [INFO] metrics db-01 io_util=86% load1=7.5 active_queries=42
+2026-06-09T06:02:07Z [INFO] metrics db-01 io_util=96% load1=9.2 active_queries=59
+2026-06-09T06:02:12Z [ERROR] backup job nightly-backup failed host=db-01: pg_dump: could not write to output file: No space left on device
+2026-06-09T06:02:35Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T06:03:14Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T06:04:11Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T06:05:00Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T06:05:46Z [INFO] metrics db-01 io_util=97% load1=7.7 active_queries=39
+2026-06-09T06:06:18Z [INFO] metrics db-01 io_util=97% load1=7.1 active_queries=64
+2026-06-09T06:07:18Z [INFO] metrics db-01 io_util=92% load1=9.4 active_queries=52
+2026-06-09T06:07:55Z [INFO] cron job analytics-rollup finished host=db-01 rows=3822887 took=462s
+2026-06-09T06:08:10Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T06:09:19Z [INFO] k8s node worker-2 cpu=70% mem=49% pods=21
+2026-06-09T06:09:44Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T06:10:10Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T06:10:38Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T06:11:19Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T06:11:51Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T06:12:30Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T06:13:10Z [INFO] metrics db-01 disk /var/lib/postgresql usage=84%
+2026-06-09T06:13:38Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T06:14:43Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T06:15:21Z [INFO] metrics db-01 disk /var/lib/postgresql usage=84%
+2026-06-09T06:16:24Z [INFO] metrics db-01 io_util=31% load1=1.0 active_queries=7
+2026-06-09T06:17:02Z [INFO] k8s node worker-1 cpu=26% mem=49% pods=14
+2026-06-09T06:17:43Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T06:18:15Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:18:51Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:19:45Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:20:48Z [INFO] metrics db-01 io_util=24% load1=1.2 active_queries=11
+2026-06-09T06:21:41Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T06:22:33Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T06:23:43Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T06:24:38Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T06:25:24Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:25:58Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T06:27:08Z [INFO] k8s hpa catalog-service replicas=5 target_cpu=70%
+2026-06-09T06:28:17Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T06:29:22Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T06:30:28Z [INFO] k8s node worker-1 cpu=55% mem=58% pods=23
+2026-06-09T06:31:35Z [INFO] metrics db-01 io_util=38% load1=1.5 active_queries=9
+2026-06-09T06:32:43Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T06:33:18Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T06:33:53Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:34:45Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T06:35:32Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T06:36:02Z [INFO] k8s hpa orders-service replicas=2 target_cpu=70%
+2026-06-09T06:36:31Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:37:22Z [INFO] metrics db-01 io_util=20% load1=1.4 active_queries=4
+2026-06-09T06:37:47Z [INFO] k8s hpa orders-service replicas=3 target_cpu=70%
+2026-06-09T06:38:21Z [INFO] metrics db-01 io_util=32% load1=2.0 active_queries=14
+2026-06-09T06:38:55Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:39:28Z [INFO] metrics db-01 io_util=36% load1=2.1 active_queries=7
+2026-06-09T06:40:24Z [INFO] metrics db-01 io_util=27% load1=0.9 active_queries=7
+2026-06-09T06:41:18Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T06:41:58Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T06:42:47Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T06:43:12Z [INFO] k8s hpa catalog-service replicas=2 target_cpu=70%
+2026-06-09T06:44:19Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T06:45:00Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T06:45:44Z [INFO] k8s hpa catalog-service replicas=3 target_cpu=70%
+2026-06-09T06:46:21Z [INFO] metrics db-01 io_util=19% load1=2.0 active_queries=14
+2026-06-09T06:47:15Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T06:47:46Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T06:48:45Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T06:49:50Z [INFO] k8s node worker-1 cpu=38% mem=81% pods=23
+2026-06-09T06:50:31Z [INFO] k8s hpa orders-service replicas=2 target_cpu=70%
+2026-06-09T06:50:57Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:52:03Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T06:53:08Z [INFO] k8s node worker-2 cpu=49% mem=61% pods=17
+2026-06-09T06:54:15Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:55:15Z [INFO] k8s node worker-3 cpu=55% mem=82% pods=13
+2026-06-09T06:56:04Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:56:36Z [INFO] metrics db-01 io_util=36% load1=1.0 active_queries=6
+2026-06-09T06:57:43Z [INFO] metrics db-01 io_util=36% load1=0.9 active_queries=6
+2026-06-09T06:58:19Z [INFO] k8s node worker-3 cpu=25% mem=79% pods=13
+2026-06-09T06:58:45Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T06:59:23Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T06:59:51Z [INFO] k8s node worker-2 cpu=64% mem=69% pods=23
+2026-06-09T07:00:07Z [INFO] cron job analytics-rollup started host=db-01 (full table scan: events, orders, payments)
+2026-06-09T07:00:53Z [INFO] metrics db-01 io_util=97% load1=9.0 active_queries=47
+2026-06-09T07:02:01Z [INFO] metrics db-01 io_util=90% load1=8.1 active_queries=61
+2026-06-09T07:02:26Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T07:03:27Z [INFO] metrics db-01 io_util=93% load1=7.0 active_queries=58
+2026-06-09T07:04:36Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T07:05:28Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T07:06:22Z [INFO] metrics db-01 io_util=97% load1=6.8 active_queries=59
+2026-06-09T07:07:12Z [INFO] metrics db-01 io_util=94% load1=7.3 active_queries=75
+2026-06-09T07:07:40Z [INFO] cron job analytics-rollup finished host=db-01 rows=3253468 took=442s
+2026-06-09T07:07:47Z [INFO] metrics db-01 io_util=96% load1=8.9 active_queries=37
+2026-06-09T07:08:56Z [INFO] metrics db-01 io_util=30% load1=1.2 active_queries=11
+2026-06-09T07:09:46Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T07:10:49Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T07:11:39Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T07:12:13Z [INFO] metrics db-01 io_util=33% load1=1.4 active_queries=14
+2026-06-09T07:13:20Z [INFO] metrics db-01 io_util=31% load1=1.3 active_queries=11
+2026-06-09T07:13:48Z [INFO] k8s node worker-2 cpu=55% mem=61% pods=18
+2026-06-09T07:14:00Z [INFO] deployer checkout-service v2.8.0 rollout complete (3/3 pods ready) changelog: connection handling refactor, retry tuning
+2026-06-09T07:14:43Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T07:15:19Z [INFO] k8s node worker-3 cpu=51% mem=71% pods=24
+2026-06-09T07:16:08Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T07:16:47Z [INFO] k8s node worker-1 cpu=48% mem=54% pods=14
+2026-06-09T07:17:56Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T07:18:27Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T07:19:05Z [INFO] metrics db-01 io_util=22% load1=1.0 active_queries=8
+2026-06-09T07:19:45Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T07:20:22Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T07:21:05Z [INFO] k8s node worker-2 cpu=32% mem=68% pods=13
+2026-06-09T07:22:05Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T07:22:54Z [INFO] k8s node worker-1 cpu=28% mem=58% pods=12
+2026-06-09T07:23:55Z [INFO] metrics db-01 disk /var/lib/postgresql usage=85%
+2026-06-09T07:24:55Z [INFO] metrics db-01 io_util=18% load1=0.9 active_queries=7
+2026-06-09T07:25:27Z [INFO] k8s hpa orders-service replicas=5 target_cpu=70%
+2026-06-09T07:26:18Z [INFO] k8s node worker-3 cpu=67% mem=79% pods=13
+2026-06-09T07:27:20Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T07:27:49Z [INFO] k8s hpa catalog-service replicas=5 target_cpu=70%
+2026-06-09T07:28:50Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T07:29:53Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T07:31:03Z [INFO] k8s node worker-3 cpu=62% mem=65% pods=22
+2026-06-09T07:32:06Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T07:32:57Z [INFO] k8s hpa catalog-service replicas=4 target_cpu=70%
+2026-06-09T07:33:24Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T07:33:55Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T07:34:48Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T07:35:26Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T07:36:17Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T07:36:44Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T07:37:53Z [INFO] k8s node worker-2 cpu=45% mem=75% pods=20
+2026-06-09T07:38:54Z [INFO] k8s hpa orders-service replicas=2 target_cpu=70%
+2026-06-09T07:39:57Z [INFO] k8s hpa catalog-service replicas=5 target_cpu=70%
+2026-06-09T07:41:04Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T07:41:41Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T07:42:38Z [INFO] k8s node worker-3 cpu=70% mem=79% pods=20
+2026-06-09T07:43:18Z [INFO] k8s node worker-3 cpu=50% mem=79% pods=24
+2026-06-09T07:43:47Z [INFO] k8s node worker-2 cpu=35% mem=62% pods=17
+2026-06-09T07:44:55Z [INFO] k8s node worker-1 cpu=28% mem=50% pods=22
+2026-06-09T07:45:20Z [INFO] metrics db-01 io_util=29% load1=1.5 active_queries=9
+2026-06-09T07:46:05Z [INFO] metrics db-01 io_util=20% load1=2.3 active_queries=14
+2026-06-09T07:46:55Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T07:47:54Z [INFO] metrics db-01 io_util=27% load1=1.9 active_queries=9
+2026-06-09T07:48:23Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T07:49:05Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T07:50:03Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T07:51:00Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T07:51:37Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T07:52:39Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T07:53:24Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T07:54:03Z [INFO] metrics db-01 io_util=27% load1=1.3 active_queries=9
+2026-06-09T07:54:40Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T07:55:39Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T07:56:05Z [INFO] k8s node worker-2 cpu=70% mem=78% pods=13
+2026-06-09T07:57:11Z [INFO] metrics db-01 io_util=34% load1=2.1 active_queries=12
+2026-06-09T07:58:11Z [INFO] metrics db-01 io_util=32% load1=1.6 active_queries=6
+2026-06-09T07:58:49Z [INFO] k8s node worker-1 cpu=47% mem=72% pods=23
+2026-06-09T07:59:14Z [INFO] k8s hpa orders-service replicas=5 target_cpu=70%
+2026-06-09T07:59:54Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:00:03Z [INFO] cron job analytics-rollup started host=db-01 (full table scan: events, orders, payments)
+2026-06-09T08:00:27Z [INFO] metrics db-01 io_util=89% load1=8.0 active_queries=70
+2026-06-09T08:01:02Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T08:02:08Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T08:02:53Z [INFO] k8s hpa catalog-service replicas=5 target_cpu=70%
+2026-06-09T08:03:50Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T08:04:52Z [INFO] metrics db-01 io_util=97% load1=8.8 active_queries=49
+2026-06-09T08:05:22Z [INFO] metrics db-01 io_util=86% load1=7.1 active_queries=61
+2026-06-09T08:06:23Z [INFO] metrics db-01 io_util=94% load1=8.4 active_queries=63
+2026-06-09T08:06:49Z [INFO] metrics db-01 io_util=92% load1=9.8 active_queries=51
+2026-06-09T08:07:46Z [INFO] metrics db-01 io_util=89% load1=8.9 active_queries=56
+2026-06-09T08:07:50Z [INFO] cron job analytics-rollup finished host=db-01 rows=2699495 took=464s
+2026-06-09T08:08:25Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T08:09:10Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T08:09:42Z [INFO] metrics db-01 io_util=37% load1=1.2 active_queries=5
+2026-06-09T08:10:12Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T08:10:39Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T08:11:22Z [INFO] metrics db-01 io_util=28% load1=1.5 active_queries=14
+2026-06-09T08:11:51Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T08:12:43Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T08:13:40Z [INFO] metrics db-01 io_util=30% load1=1.4 active_queries=12
+2026-06-09T08:14:34Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T08:15:13Z [INFO] k8s node worker-1 cpu=62% mem=49% pods=18
+2026-06-09T08:16:21Z [INFO] k8s node worker-1 cpu=54% mem=57% pods=23
+2026-06-09T08:17:20Z [INFO] metrics db-01 io_util=26% load1=1.3 active_queries=8
+2026-06-09T08:18:17Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T08:19:26Z [INFO] k8s node worker-1 cpu=53% mem=50% pods=15
+2026-06-09T08:20:06Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:20:50Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T08:21:44Z [INFO] k8s hpa orders-service replicas=3 target_cpu=70%
+2026-06-09T08:22:44Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T08:23:40Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T08:24:30Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T08:24:57Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T08:26:06Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T08:26:55Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T08:28:04Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T08:28:53Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T08:29:22Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T08:30:05Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:30:40Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T08:31:05Z [INFO] k8s node worker-3 cpu=59% mem=82% pods=24
+2026-06-09T08:31:41Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T08:32:19Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:33:05Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T08:33:47Z [INFO] k8s hpa orders-service replicas=5 target_cpu=70%
+2026-06-09T08:34:23Z [INFO] k8s node worker-1 cpu=30% mem=62% pods=12
+2026-06-09T08:35:17Z [INFO] k8s hpa catalog-service replicas=2 target_cpu=70%
+2026-06-09T08:36:11Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T08:36:46Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T08:37:30Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T08:37:56Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T08:38:17Z [WARN] ntp drift 1.9s detected node=worker-2 (upstream pool unreachable 2/4)
+2026-06-09T08:38:42Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T08:39:44Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:40:45Z [INFO] metrics db-01 io_util=36% load1=0.9 active_queries=12
+2026-06-09T08:41:22Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T08:41:54Z [INFO] metrics db-01 io_util=35% load1=1.3 active_queries=9
+2026-06-09T08:42:17Z [WARN] ntp step correction -2.4s applied node=worker-2
+2026-06-09T08:42:54Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:43:55Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:44:33Z [INFO] k8s node worker-2 cpu=26% mem=76% pods=17
+2026-06-09T08:45:26Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T08:46:15Z [INFO] metrics db-01 io_util=30% load1=1.1 active_queries=12
+2026-06-09T08:47:07Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T08:48:16Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:48:44Z [INFO] metrics db-01 disk /var/lib/postgresql usage=86%
+2026-06-09T08:49:17Z [INFO] k8s node worker-1 cpu=52% mem=75% pods=21
+2026-06-09T08:49:44Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T08:50:26Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T08:51:13Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T08:51:38Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T08:52:03Z [INFO] metrics db-01 io_util=26% load1=1.0 active_queries=4
+2026-06-09T08:52:34Z [INFO] k8s node worker-3 cpu=39% mem=70% pods=13
+2026-06-09T08:53:33Z [INFO] k8s hpa catalog-service replicas=3 target_cpu=70%
+2026-06-09T08:54:05Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T08:54:17Z [INFO] ntp sync ok node=worker-2 offset=0.01s
+2026-06-09T08:54:53Z [INFO] k8s node worker-2 cpu=70% mem=73% pods=16
+2026-06-09T08:55:22Z [INFO] k8s node worker-3 cpu=43% mem=81% pods=14
+2026-06-09T08:56:08Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T08:57:00Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T08:57:27Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T08:58:25Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T08:59:33Z [INFO] metrics db-01 io_util=26% load1=2.2 active_queries=9
+2026-06-09T09:00:08Z [INFO] cron job analytics-rollup started host=db-01 (full table scan: events, orders, payments)
+2026-06-09T09:00:23Z [INFO] metrics db-01 io_util=93% load1=6.9 active_queries=39
+2026-06-09T09:01:04Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:02:11Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T09:02:40Z [INFO] metrics db-01 io_util=93% load1=8.3 active_queries=73
+2026-06-09T09:03:35Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T09:04:31Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:05:40Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T09:06:44Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T09:07:35Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:07:42Z [INFO] cron job analytics-rollup finished host=db-01 rows=3751498 took=456s
+2026-06-09T09:08:00Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T09:09:04Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T09:10:12Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T09:10:40Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:11:35Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T09:12:09Z [INFO] k8s node worker-3 cpu=46% mem=80% pods=18
+2026-06-09T09:13:06Z [INFO] metrics db-01 io_util=20% load1=1.5 active_queries=7
+2026-06-09T09:13:45Z [INFO] metrics db-01 io_util=38% load1=2.1 active_queries=4
+2026-06-09T09:14:23Z [INFO] k8s node worker-1 cpu=38% mem=82% pods=23
+2026-06-09T09:15:13Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T09:15:47Z [INFO] metrics db-01 io_util=38% load1=2.1 active_queries=14
+2026-06-09T09:16:32Z [INFO] metrics db-01 io_util=36% load1=1.1 active_queries=3
+2026-06-09T09:17:09Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T09:18:06Z [INFO] metrics db-01 io_util=35% load1=1.3 active_queries=4
+2026-06-09T09:18:52Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T09:19:31Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T09:19:59Z [INFO] k8s node worker-2 cpu=32% mem=82% pods=22
+2026-06-09T09:20:53Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T09:21:24Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T09:22:32Z [INFO] metrics db-01 io_util=31% load1=1.1 active_queries=14
+2026-06-09T09:23:11Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T09:24:03Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T09:25:11Z [INFO] metrics db-01 io_util=33% load1=1.0 active_queries=6
+2026-06-09T09:26:12Z [INFO] k8s node worker-2 cpu=29% mem=57% pods=23
+2026-06-09T09:26:43Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T09:27:47Z [INFO] metrics db-01 io_util=35% load1=1.0 active_queries=8
+2026-06-09T09:28:57Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T09:29:28Z [INFO] metrics db-01 io_util=28% load1=1.8 active_queries=9
+2026-06-09T09:30:29Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:31:37Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T09:32:36Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T09:33:22Z [INFO] k8s hpa orders-service replicas=5 target_cpu=70%
+2026-06-09T09:34:26Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T09:35:09Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T09:35:47Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T09:36:12Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:36:51Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T09:37:20Z [INFO] k8s hpa orders-service replicas=3 target_cpu=70%
+2026-06-09T09:37:58Z [INFO] k8s node worker-1 cpu=35% mem=74% pods=20
+2026-06-09T09:38:36Z [INFO] metrics db-01 io_util=20% load1=1.4 active_queries=7
+2026-06-09T09:39:07Z [INFO] metrics db-01 io_util=25% load1=1.3 active_queries=8
+2026-06-09T09:39:53Z [INFO] metrics db-01 io_util=36% load1=2.0 active_queries=5
+2026-06-09T09:40:49Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:41:26Z [INFO] metrics db-01 io_util=37% load1=2.0 active_queries=10
+2026-06-09T09:42:02Z [INFO] k8s node worker-1 cpu=68% mem=58% pods=24
+2026-06-09T09:43:10Z [INFO] k8s hpa catalog-service replicas=2 target_cpu=70%
+2026-06-09T09:43:55Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T09:44:38Z [INFO] metrics db-01 io_util=26% load1=2.2 active_queries=10
+2026-06-09T09:45:34Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T09:46:35Z [INFO] metrics db-01 io_util=27% load1=1.2 active_queries=3
+2026-06-09T09:47:37Z [INFO] metrics db-01 io_util=30% load1=1.2 active_queries=12
+2026-06-09T09:48:16Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T09:48:58Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T09:49:28Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T09:50:27Z [INFO] metrics db-01 io_util=34% load1=1.1 active_queries=8
+2026-06-09T09:51:26Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T09:52:32Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T09:53:24Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T09:54:19Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T09:54:45Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T09:55:32Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T09:56:10Z [INFO] metrics db-01 io_util=18% load1=0.8 active_queries=5
+2026-06-09T09:57:08Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:58:16Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T09:58:59Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T09:59:24Z [INFO] k8s node worker-1 cpu=33% mem=80% pods=18
+2026-06-09T10:00:05Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T10:00:07Z [INFO] cron job analytics-rollup started host=db-01 (full table scan: events, orders, payments)
+2026-06-09T10:00:33Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:01:31Z [INFO] metrics db-01 io_util=86% load1=7.9 active_queries=52
+2026-06-09T10:02:03Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T10:02:47Z [INFO] metrics db-01 io_util=91% load1=7.8 active_queries=55
+2026-06-09T10:03:51Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T10:04:18Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T10:05:15Z [INFO] metrics db-01 io_util=94% load1=6.9 active_queries=66
+2026-06-09T10:06:15Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T10:07:18Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:07:43Z [INFO] cron job analytics-rollup finished host=db-01 rows=3212844 took=472s
+2026-06-09T10:07:59Z [INFO] metrics db-01 io_util=97% load1=9.6 active_queries=35
+2026-06-09T10:08:47Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T10:09:17Z [INFO] metrics db-01 io_util=36% load1=1.7 active_queries=3
+2026-06-09T10:09:42Z [INFO] k8s node worker-3 cpu=48% mem=73% pods=15
+2026-06-09T10:10:51Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:11:47Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T10:12:20Z [INFO] k8s hpa catalog-service replicas=4 target_cpu=70%
+2026-06-09T10:13:09Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T10:14:13Z [INFO] k8s node worker-1 cpu=52% mem=54% pods=24
+2026-06-09T10:14:50Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:15:44Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T10:16:34Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T10:16:59Z [INFO] k8s node worker-2 cpu=56% mem=53% pods=17
+2026-06-09T10:17:29Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T10:18:08Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T10:18:58Z [INFO] metrics db-01 io_util=19% load1=1.7 active_queries=12
+2026-06-09T10:20:08Z [INFO] k8s hpa orders-service replicas=3 target_cpu=70%
+2026-06-09T10:21:06Z [INFO] k8s hpa orders-service replicas=5 target_cpu=70%
+2026-06-09T10:21:42Z [INFO] k8s hpa catalog-service replicas=3 target_cpu=70%
+2026-06-09T10:22:45Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T10:23:28Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T10:23:59Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T10:24:57Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T10:26:00Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T10:26:59Z [INFO] metrics db-01 io_util=27% load1=1.5 active_queries=7
+2026-06-09T10:27:50Z [INFO] k8s hpa catalog-service replicas=2 target_cpu=70%
+2026-06-09T10:28:33Z [WARN] k8s node worker-3 memory pressure (evicting low-priority pods)
+2026-06-09T10:29:28Z [INFO] cron job metrics-compactor finished host=app-02 ok
+2026-06-09T10:29:55Z [INFO] k8s node worker-2 cpu=25% mem=77% pods=18
+2026-06-09T10:30:45Z [INFO] k8s node worker-3 cpu=25% mem=79% pods=24
+2026-06-09T10:31:11Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:31:54Z [INFO] k8s node worker-1 cpu=63% mem=68% pods=17
+2026-06-09T10:32:19Z [INFO] k8s node worker-3 cpu=49% mem=62% pods=21
+2026-06-09T10:33:19Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T10:34:11Z [INFO] k8s hpa catalog-service replicas=3 target_cpu=70%
+2026-06-09T10:34:42Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T10:35:44Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T10:36:49Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T10:37:56Z [INFO] metrics db-01 io_util=31% load1=2.0 active_queries=6
+2026-06-09T10:38:45Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:39:54Z [INFO] k8s hpa catalog-service replicas=5 target_cpu=70%
+2026-06-09T10:41:02Z [INFO] k8s node worker-1 cpu=47% mem=81% pods=13
+2026-06-09T10:41:56Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T10:42:42Z [INFO] k8s hpa orders-service replicas=2 target_cpu=70%
+2026-06-09T10:43:21Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:43:54Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T10:44:54Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T10:45:27Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:46:28Z [INFO] k8s node worker-1 cpu=32% mem=61% pods=24
+2026-06-09T10:47:35Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T10:48:33Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T10:49:20Z [INFO] cron job metrics-compactor finished host=app-01 ok
+2026-06-09T10:49:49Z [INFO] metrics db-01 disk /var/lib/postgresql usage=87%
+2026-06-09T10:50:43Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:51:18Z [INFO] k8s hpa catalog-service replicas=5 target_cpu=70%
+2026-06-09T10:52:25Z [INFO] cron job sitemap-gen finished host=app-02 ok
+2026-06-09T10:53:27Z [INFO] k8s node worker-3 cpu=49% mem=81% pods=13
+2026-06-09T10:54:23Z [INFO] k8s node worker-3 cpu=34% mem=77% pods=18
+2026-06-09T10:55:28Z [INFO] cron job cache-warmer finished host=app-01 ok
+2026-06-09T10:56:18Z [INFO] metrics db-01 io_util=32% load1=1.7 active_queries=12
+2026-06-09T10:57:06Z [INFO] metrics db-01 io_util=37% load1=1.0 active_queries=4
+2026-06-09T10:57:47Z [INFO] cron job sitemap-gen finished host=app-01 ok
+2026-06-09T10:58:33Z [INFO] k8s node worker-2 cpu=25% mem=73% pods=20
+2026-06-09T10:59:17Z [INFO] cron job cache-warmer finished host=app-02 ok
+2026-06-09T11:00:25Z [INFO] metrics db-01 io_util=96% load1=6.8 active_queries=66
