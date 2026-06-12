@@ -251,7 +251,10 @@ Las 2 skills + el MCP en una unidad instalable:
   │   └── issues-report/SKILL.md
   └── .mcp.json                    ← registra issues-api
   ```
-  Instalá (marketplace local + `/plugin`) y **reiniciá la sesión**.
+  **Probar (directo):** `claude --plugin-dir ./devops-issues`.
+  **Distribuir (marketplace local):** `/plugin marketplace add ./carpeta` →
+  `/plugin install devops-issues@taller` → `/reload-plugins` (sin reiniciar).
+  El MCP del plugin arranca solo al habilitarlo.
 - 🟪 **[B]** Power de Kiro (MCP + steering; las skills adentro si tu versión lo
   soporta, si no quedan en `.kiro/skills/`).
 

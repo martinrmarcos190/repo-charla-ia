@@ -31,12 +31,18 @@ devops-issues/
 └── .mcp.json                ← registra issues-api (uv --directory ... run server.py)
 ```
 
-- `plugin.json` mínimo: `{"name": "devops-issues", "description": "...", "version": "0.1.0"}`.
-- El `.mcp.json` del plugin registra el MCP: al instalar el plugin, el server
-  queda disponible sin `claude mcp add` manual.
-- Instalación para probar: agregar la carpeta como marketplace local y
-  `/plugin install devops-issues` (o el flujo de la versión del día); reiniciar
-  la sesión.
+- `plugin.json` mínimo: `{"name": "devops-issues", "description": "...", "version": "0.1.0"}`
+  (solo `name` es obligatorio; kebab-case).
+- El `.mcp.json` del plugin registra el MCP: al habilitar el plugin, el server
+  **arranca automáticamente**, sin `claude mcp add` manual.
+- **Probar en el taller (directo, sin marketplace):**
+  `claude --plugin-dir ./devops-issues` — carga el plugin al lanzar; tras
+  cambios, `/reload-plugins`.
+- **Distribuir de verdad (marketplace local):** carpeta con
+  `.claude-plugin/marketplace.json` (`{"name": "taller", "owner": {"name": "..."},
+  "plugins": [{"name": "devops-issues", "source": "./devops-issues"}]}`) →
+  `/plugin marketplace add ./carpeta` → `/plugin install devops-issues@taller`
+  → `/reload-plugins` (no hace falta reiniciar la sesión).
 
 ## 🟪 [B] Como Power de Kiro
 
@@ -48,7 +54,7 @@ devops-issues/
 
 ## Criterios de aceptación
 
-- En una **sesión nueva** (o tras reiniciar), sin registrar nada a mano:
+- Tras `/reload-plugins` (o lanzando con `--plugin-dir`), sin registrar nada a mano:
   - las dos skills aparecen disponibles, y
   - el MCP `issues-api` está conectado con sus 4 tools.
 - Prueba integrada: pedirle al agente *"analizá los logs de `recursos/logs/` y
