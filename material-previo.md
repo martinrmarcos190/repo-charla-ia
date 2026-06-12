@@ -161,7 +161,7 @@ specify version
 En el taller vas a generar este servicio **vía SDD desde cero**. Este snippet es
 solo para **refrescar** cómo se ve Flask + el `sqlite3` de la stdlib (sin ORM).
 **No es la solución completa:** le faltan `init_db()`, el seed, `GET /issues/<id>`
-y el `PUT` — eso lo genera SDD a partir de `recursos/problema.md`.
+y el `PUT` — eso lo genera SDD a partir de `recursos/bloque3-api/problema.md`.
 
 ```python
 import sqlite3

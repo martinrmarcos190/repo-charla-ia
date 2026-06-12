@@ -4,7 +4,7 @@
 # No toca la base de datos directamente: usa los endpoints, así funciona igual
 # sin importar cómo esté implementada la API (Camino A o B) y no spoilea la
 # solución. Algunos issues correlacionan a propósito con las historias
-# enterradas en recursos/logs/ (para la demo de análisis del Bloque 5).
+# enterradas en recursos/bloque5-logs/logs/ (para la demo de análisis del Bloque 5).
 #
 # Uso:
 #   ./seed.sh                          # usa http://127.0.0.1:5000

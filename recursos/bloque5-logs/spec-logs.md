@@ -3,7 +3,7 @@
 > **Tool-agnostic:** este texto se pega en `/speckit.specify` (Camino A) o al
 > crear el Feature Spec en Kiro (Camino B). Es una **evolución de la spec** de
 > `issues-ops` — el punto fuerte de SDD: cambia el requisito, cambia la spec,
-> se regenera la skill. Requiere la carpeta `recursos/logs/` (3 archivos).
+> se regenera la skill. Requiere la carpeta `recursos/bloque5-logs/logs/` (3 archivos).
 
 ---
 
@@ -58,7 +58,7 @@ válidos, `resolved` exige solución, confirmar leyendo el issue).
 
 ## Criterios de aceptación
 
-- Con la carpeta `recursos/logs/` provista, el análisis identifica **al menos
+- Con la carpeta `recursos/bloque5-logs/logs/` provista, el análisis identifica **al menos
   3 cadenas causales que cruzan 2 o más archivos** (evento en una capa →
   síntoma en otra).
 - Detecta al menos **una periodicidad** (síntoma recurrente en ventanas

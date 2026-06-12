@@ -20,17 +20,17 @@ que genera el **reporte HTML**, y al final empaquetás todo en un **plugin**.
 | Archivo | Para qué | Cuándo |
 |---|---|---|
 | `material-previo.md` | Guía de preparación completa (instalación + refresher Flask) | **Antes** del taller |
-| `recursos/problema.md` | Spec del problema → genera la **API de issues** | Bloque 3 |
-| `recursos/spec-mcp.md` | Spec del **MCP** `issues-api` → genera `server.py` | Bloque 4 |
-| `recursos/spec-skill.md` | Spec de la skill **`issues-ops`** → genera `SKILL.md` | Bloque 4 |
-| `recursos/seed.sh` | Carga ~8 issues de ejemplo vía `POST`/`PUT` (poblar la base) | Bloque 4 |
-| `recursos/spec-logs.md` | Spec de evolución: la skill **aprende a leer logs** | Bloque 5 |
-| `recursos/logs/` | 3 archivos (~3900 líneas): gateway + services + infra, con incidentes que solo se resuelven **correlacionando entre archivos** | Bloque 5 |
-| `recursos/spec-report.md` | Spec de la skill **`issues-report`** (reporte HTML) | Bloque 6 |
-| `recursos/spec-plugin.md` | Spec del empaquetado **`devops-issues`** (plugin/Power) | Bloque 6 |
-| `recursos/examples/constitution.example.md` | 🟧 [A] ejemplo de constitución | Bloque 3 |
-| `recursos/examples/steering.example.md` | 🟪 [B] ejemplo de steering file | Bloque 3 |
-| `recursos/examples/mcp.json.example` | 🟪 [B] registro del MCP en Kiro | Bloque 4 |
+| `recursos/bloque3-api/problema.md` | Spec del problema → genera la **API de issues** | Bloque 3 |
+| `recursos/bloque3-api/constitution.example.md` | 🟧 [A] ejemplo de constitución | Bloque 3 |
+| `recursos/bloque3-api/steering.example.md` | 🟪 [B] ejemplo de steering file | Bloque 3 |
+| `recursos/bloque4-mcp-skill/spec-mcp.md` | Spec del **MCP** `issues-api` → genera `server.py` | Bloque 4 |
+| `recursos/bloque4-mcp-skill/spec-skill.md` | Spec de la skill **`issues-ops`** → genera `SKILL.md` | Bloque 4 |
+| `recursos/bloque4-mcp-skill/seed.sh` | Carga ~8 issues de ejemplo vía `POST`/`PUT` (poblar la base) | Bloque 4 |
+| `recursos/bloque4-mcp-skill/mcp.json.example` | 🟪 [B] registro del MCP en Kiro | Bloque 4 |
+| `recursos/bloque5-logs/spec-logs.md` | Spec de evolución: la skill **aprende a leer logs** | Bloque 5 |
+| `recursos/bloque5-logs/logs/` | 3 archivos (~3900 líneas): gateway + services + infra, con incidentes que solo se resuelven **correlacionando entre archivos** | Bloque 5 |
+| `recursos/bloque6-reporte-plugin/spec-report.md` | Spec de la skill **`issues-report`** (reporte HTML) | Bloque 6 |
+| `recursos/bloque6-reporte-plugin/spec-plugin.md` | Spec del empaquetado **`devops-issues`** (plugin/Power) | Bloque 6 |
 
 > Las specs son **tool-agnostic**: el mismo `.md` se pega en `/speckit.specify`
 > (A) o al crear el Feature Spec (B).
@@ -80,7 +80,7 @@ La primera vez que corras `claude` te autentica por OAuth en el navegador.
 Para llegar con la sintaxis fresca, mirá el snippet ilustrativo en
 `material-previo.md` (sección 5). **No es la solución completa** (le faltan
 `init_db()`, el seed, `GET /issues/<id>` y el `PUT`): esa la generás vos vía SDD
-en el Bloque 3 a partir de `recursos/problema.md`.
+en el Bloque 3 a partir de `recursos/bloque3-api/problema.md`.
 
 > ⚠️ **macOS:** cuando corras la API, ojo que AirPlay Receiver ocupa el puerto
 > 5000 y responde 403 a todo. Si `curl` devuelve vacío o 403, desactivalo en
@@ -117,10 +117,10 @@ El panel "Specs" ya está listo (no se instala nada).
 > + validación de enums + seed + curl). Anotá el número y comparalo con el
 > tiempo real.
 
-### 🟧 [A] — pegá el contenido de `recursos/problema.md` en `/speckit.specify`
+### 🟧 [A] — pegá el contenido de `recursos/bloque3-api/problema.md` en `/speckit.specify`
 ```text
 /speckit.constitution   (reglas: solo stdlib + Flask, sqlite3, sin auth, tests con curl)
-/speckit.specify        (pegá recursos/problema.md)
+/speckit.specify        (pegá recursos/bloque3-api/problema.md)
 /speckit.clarify
 /speckit.plan           (Flask + sqlite3 stdlib)
 /speckit.tasks
@@ -130,8 +130,8 @@ El panel "Specs" ya está listo (no se instala nada).
 
 ### 🟪 [B]
 ```text
-(Opcional) Steering file en .kiro/steering/ con las mismas reglas (ver examples/steering.example.md).
-Panel Specs → "+" → Feature → pegá recursos/problema.md →
+(Opcional) Steering file en .kiro/steering/ con las mismas reglas (ver bloque3-api/steering.example.md).
+Panel Specs → "+" → Feature → pegá recursos/bloque3-api/problema.md →
    Requirements-First (o Quick Plan si vas ajustado) →
    revisar requirements.md → design.md → tasks.md → "Run all Tasks".
 ```
@@ -156,8 +156,8 @@ curl http://127.0.0.1:5000/issues/1
 **Poblá la base** (el Bloque 5 lo necesita — suma ~8 issues, 2 resueltos):
 
 ```bash
-./recursos/seed.sh                          # http://127.0.0.1:5000
-./recursos/seed.sh http://127.0.0.1:5001    # si la levantaste en otro puerto
+./recursos/bloque4-mcp-skill/seed.sh                          # http://127.0.0.1:5000
+./recursos/bloque4-mcp-skill/seed.sh http://127.0.0.1:5001    # si la levantaste en otro puerto
 ```
 
 ### 3.1 Scaffold del proyecto MCP (los dos caminos)
@@ -167,7 +167,7 @@ uv venv && source .venv/bin/activate
 uv add "mcp[cli]" httpx
 ```
 
-### 3.2 Generá el `server.py` vía SDD (pegá `recursos/spec-mcp.md`)
+### 3.2 Generá el `server.py` vía SDD (pegá `recursos/bloque4-mcp-skill/spec-mcp.md`)
 - 🟧 **[A]** `/speckit.specify` (pegá `spec-mcp.md`) → `plan` → `tasks` → `implement`
 - 🟪 **[B]** Feature Spec con `spec-mcp.md` (Quick Plan si vas ajustado)
 
@@ -179,7 +179,7 @@ claude mcp list          # debe aparecer issues-api
 # dentro de Claude Code: /mcp   (debe mostrar 4 tools)
 ```
 ```json
-// 🟪 [B] — .kiro/settings/mcp.json (ver recursos/examples/mcp.json.example)
+// 🟪 [B] — .kiro/settings/mcp.json (ver recursos/bloque4-mcp-skill/mcp.json.example)
 {
   "mcpServers": {
     "issues-api": {
@@ -191,7 +191,7 @@ claude mcp list          # debe aparecer issues-api
 }
 ```
 
-### 3.4 Generá la skill `issues-ops` vía SDD (pegá `recursos/spec-skill.md`)
+### 3.4 Generá la skill `issues-ops` vía SDD (pegá `recursos/bloque4-mcp-skill/spec-skill.md`)
 - 🟧 **[A]** `/speckit.specify` → `plan` → `tasks` → `implement`
   → queda en `.claude/skills/issues-ops/SKILL.md`. Si la carpeta es nueva:
   `/reload-skills` o reiniciá Claude Code.
@@ -208,7 +208,7 @@ solución — la skill te la tiene que exigir.
 
 ## 4. La skill aprende a leer logs (Bloque 5)
 
-En `recursos/logs/` hay 3 archivos: `gateway.log`, `services.log` e `infra.log`
+En `recursos/bloque5-logs/logs/` hay 3 archivos: `gateway.log`, `services.log` e `infra.log`
 (~3900 líneas). Hay varios incidentes enterrados. **Probá primero con grep si
 querés** — `grep ERROR` te va a dar decenas de errores que se auto-resuelven y
 unos cuantos 504/502… pero **ninguna causa raíz**: las causas son líneas INFO
@@ -217,10 +217,10 @@ resuelve con regex; se resuelve **correlacionando entre archivos**. Para eso
 está el LLM — y de paso ves el superpoder de SDD: no escribís una skill nueva,
 **cambiás la spec y se regenera**.
 
-1. Evolucioná la skill vía SDD (pegá `recursos/spec-logs.md`):
+1. Evolucioná la skill vía SDD (pegá `recursos/bloque5-logs/spec-logs.md`):
    - 🟧 **[A]** `/speckit.specify` → `implement` (actualiza el mismo `SKILL.md`)
    - 🟪 **[B]** Feature Spec (Quick Plan recomendado)
-2. Corré el análisis: **"analizá los logs de `recursos/logs/`"** (pasale la
+2. Corré el análisis: **"analizá los logs de `recursos/bloque5-logs/logs/`"** (pasale la
    ruta absoluta de la carpeta si no la encuentra).
 3. Qué tiene que pasar: la skill construye **cadenas causales que cruzan
    archivos** (un evento inocente en una capa → el síntoma en otra), detecta
@@ -234,12 +234,12 @@ está el LLM — y de paso ves el superpoder de SDD: no escribís una skill nuev
 
 ## 5. Reporte HTML + plugin (Bloque 6)
 
-### 5.1 La segunda skill: `issues-report` (pegá `recursos/spec-report.md`)
+### 5.1 La segunda skill: `issues-report` (pegá `recursos/bloque6-reporte-plugin/spec-report.md`)
 Genera un **reporte HTML autocontenido** alimentado solo por
 `issues-api:list_issues`. Probá: **"armá el reporte de issues"** → abrí
 `issues-report.html` en el navegador.
 
-### 5.2 Empaquetá todo: `devops-issues` (pegá `recursos/spec-plugin.md`)
+### 5.2 Empaquetá todo: `devops-issues` (pegá `recursos/bloque6-reporte-plugin/spec-plugin.md`)
 Las 2 skills + el MCP en una unidad instalable:
 
 - 🟧 **[A]** plugin de Claude Code:
@@ -260,7 +260,7 @@ Las 2 skills + el MCP en una unidad instalable:
 
 ### 5.3 Prueba integrada final
 En sesión nueva, sin registrar nada a mano:
-**"analizá los logs de `recursos/logs/` y después regenerá el reporte"** — una
+**"analizá los logs de `recursos/bloque5-logs/logs/` y después regenerá el reporte"** — una
 skill actualiza la tabla, la otra la consume, el MCP conecta todo. 🎉
 
 ---
