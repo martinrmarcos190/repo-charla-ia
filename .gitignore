@@ -1,6 +1,7 @@
 # Generados durante el taller
 *.db
-inventory.db
+issues.db
+issues-report.html
 __pycache__/
 *.pyc
 .venv/
@@ -8,7 +9,8 @@ __pycache__/
 
 # Artefactos que cada uno genera vía SDD
 taller-sdd/
-mcp-items/
+mcp-issues/
+devops-issues/
 .specify/
 .kiro/
 

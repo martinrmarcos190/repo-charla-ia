@@ -1,4 +1,4 @@
-# Spec del MCP `items-api` (Bloque 4)
+# Spec del MCP `issues-api` (Bloque 4)
 
 > **Tool-agnostic:** este texto se pega en `/speckit.specify` (Camino A) o al
 > crear el Feature Spec en Kiro (Camino B). MCP es un estándar abierto: la spec
@@ -6,8 +6,8 @@
 
 ---
 
-Quiero un servidor **MCP** llamado `items-api` que exponga como tools la API
-local de inventario de modelos (el Flask del Bloque 3, corriendo en
+Quiero un servidor **MCP** llamado `issues-api` que exponga como tools la API
+local de issues de infraestructura (el Flask del Bloque 3, corriendo en
 `http://127.0.0.1:5000`). Generá vía SDD el server completo en un único archivo
 `server.py`.
 
@@ -20,14 +20,22 @@ local de inventario de modelos (el Flask del Bloque 3, corriendo en
 
 ## Tools a exponer
 
-1. `list_models()` — lista todos los modelos. Hace `GET /models`.
-2. `get_model(model_id: int)` — devuelve un modelo por id. Hace `GET /models/<id>`;
+1. `list_issues()` — lista todos los issues. Hace `GET /issues`.
+2. `get_issue(issue_id: int)` — devuelve un issue por id. Hace `GET /issues/<id>`;
    si la API responde **404**, devolver un mensaje claro de "no existe", no un error.
-3. `add_model(name: str, framework: str, accuracy: float)` — crea un modelo.
-   Hace `POST /models` con el body JSON y devuelve la respuesta (incluye el `id`).
+3. `add_issue(title: str, service: str, severity: str, description: str = "",
+   proposed_solution: str = "")` — crea un issue. Hace `POST /issues` con el
+   body JSON y devuelve la respuesta (incluye el `id`).
+4. `update_issue(issue_id: int, status: str | None = None,
+   severity: str | None = None, description: str | None = None,
+   proposed_solution: str | None = None)` — actualiza un issue. Hace
+   `PUT /issues/<id>` enviando **solo los campos provistos** (los `None` no se
+   mandan). Si la API responde 404 o 400, devolver el mensaje de error legible.
 
-Cada tool debe tener un **docstring** describiendo qué hace (el MCP lo usa como
-descripción de la tool para el agente). Tipá los parámetros.
+Cada tool debe tener un **docstring** describiendo qué hace y los valores
+válidos de los enums (`severity`: low/medium/high/critical · `status`:
+open/investigating/resolved) — el MCP usa el docstring como descripción de la
+tool para el agente. Tipá los parámetros.
 
 ## Reglas de robustez (críticas para stdio)
 
@@ -39,13 +47,15 @@ descripción de la tool para el agente). Tipá los parámetros.
 ## Criterios de aceptación
 
 - Corriendo el server a mano (`uv run server.py`) no imprime nada a stdout.
-- Al registrarlo, el cliente descubre **3 tools**: `list_models`, `get_model`, `add_model`.
-- Con el Flask del Bloque 3 corriendo: `list_models` devuelve los seeds;
-  `add_model` crea y devuelve un `id`; `get_model` con ese id lo recupera;
-  `get_model` con un id inexistente devuelve el mensaje de "no existe".
+- Al registrarlo, el cliente descubre **4 tools**: `list_issues`, `get_issue`,
+  `add_issue`, `update_issue`.
+- Con el Flask del Bloque 3 corriendo: `list_issues` devuelve los seeds;
+  `add_issue` crea y devuelve un `id`; `update_issue` cambia el `status` y
+  `get_issue` lo refleja; `get_issue` con un id inexistente devuelve el mensaje
+  de "no existe".
 
 ## Tu tarea (antes de automatizar)
 
 Igual que con el Flask: **estimá** cuánto tardarías a mano en escribir el MCP
-server (3 tools + manejo de 404 + stdio + httpx async). Anotá el número y
-compará con el tiempo real vía SDD.
+server (4 tools + campos opcionales + manejo de 404/400 + stdio + httpx async).
+Anotá el número y compará con el tiempo real vía SDD.

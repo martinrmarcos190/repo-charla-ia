@@ -1,9 +1,10 @@
-# Taller: Spec-Driven Development + Skills
+# Taller: Spec-Driven Development + Skills para DevOps
 
-Repo de **materiales para participantes**. Acá está todo lo que vas a necesitar
-para el taller: el pre-work, las **specs** que vas a pegar y los ejemplos de
-configuración. **No hay código pre-hecho a propósito:** la API, el servidor MCP y
-la Skill los generás vos **vía SDD** durante la clase.
+Repo de **materiales para participantes**. El caso del taller: tu equipo de
+DevOps registra **issues de infraestructura** en una API local; sobre eso
+construís un MCP, una skill que opera los issues **y analiza logs**, una skill
+que genera el **reporte HTML**, y al final empaquetás todo en un **plugin**.
+**No hay código pre-hecho a propósito:** todo lo generás vos **vía SDD**.
 
 > **Dual-track.** El taller corre en dos caminos y el 90% es idéntico:
 > - 🟧 **[A]** Claude Code + Spec Kit
@@ -19,10 +20,14 @@ la Skill los generás vos **vía SDD** durante la clase.
 | Archivo | Para qué | Cuándo |
 |---|---|---|
 | `material-previo.md` | Guía de preparación completa (instalación + refresher Flask) | **Antes** del taller |
-| `recursos/problema.md` | Spec del problema → genera la **API** | Bloque 3 |
-| `recursos/spec-mcp.md` | Spec del **MCP** → genera `server.py` | Bloque 4 |
-| `recursos/spec-skill.md` | Spec de la **Skill** → genera `SKILL.md` | Bloque 4 |
-| `recursos/seed.sh` | Carga ~10 modelos de ejemplo vía `POST /models` (para poblar el inventario) | Bloque 3/4 |
+| `recursos/problema.md` | Spec del problema → genera la **API de issues** | Bloque 3 |
+| `recursos/spec-mcp.md` | Spec del **MCP** `issues-api` → genera `server.py` | Bloque 4 |
+| `recursos/spec-skill.md` | Spec de la skill **`issues-ops`** → genera `SKILL.md` | Bloque 4 |
+| `recursos/seed.sh` | Carga ~8 issues de ejemplo vía `POST`/`PUT` (poblar la base) | Bloque 4 |
+| `recursos/spec-logs.md` | Spec de evolución: la skill **aprende a leer logs** | Bloque 5 |
+| `recursos/logs/app.log` | ~1400 líneas de logs reales-ish con problemas enterrados | Bloque 5 |
+| `recursos/spec-report.md` | Spec de la skill **`issues-report`** (reporte HTML) | Bloque 6 |
+| `recursos/spec-plugin.md` | Spec del empaquetado **`devops-issues`** (plugin/Power) | Bloque 6 |
 | `recursos/examples/constitution.example.md` | 🟧 [A] ejemplo de constitución | Bloque 3 |
 | `recursos/examples/steering.example.md` | 🟪 [B] ejemplo de steering file | Bloque 3 |
 | `recursos/examples/mcp.json.example` | 🟪 [B] registro del MCP en Kiro | Bloque 4 |
@@ -74,8 +79,8 @@ La primera vez que corras `claude` te autentica por OAuth en el navegador.
 
 Para llegar con la sintaxis fresca, mirá el snippet ilustrativo en
 `material-previo.md` (sección 5). **No es la solución completa** (le faltan
-`init_db()`, el seed y `GET /models/<id>`): esa la generás vos vía SDD en el
-Bloque 3 a partir de `recursos/problema.md`.
+`init_db()`, el seed, `GET /issues/<id>` y el `PUT`): esa la generás vos vía SDD
+en el Bloque 3 a partir de `recursos/problema.md`.
 
 > ⚠️ **macOS:** cuando corras la API, ojo que AirPlay Receiver ocupa el puerto
 > 5000 y responde 403 a todo. Si `curl` devuelve vacío o 403, desactivalo en
@@ -106,10 +111,11 @@ El panel "Specs" ya está listo (no se instala nada).
 
 ---
 
-## 2. Construir la API vía SDD (Bloque 3)
+## 2. Construir la API de issues vía SDD (Bloque 3)
 
-> Antes de empezar: **estimá** cuánto tardarías a mano (DB + Flask + 4 endpoints +
-> seed + curl). Anotá el número y comparalo con el tiempo real.
+> Antes de empezar: **estimá** cuánto tardarías a mano (DB + Flask + 5 endpoints
+> + validación de enums + seed + curl). Anotá el número y comparalo con el
+> tiempo real.
 
 ### 🟧 [A] — pegá el contenido de `recursos/problema.md` en `/speckit.specify`
 ```text
@@ -133,18 +139,12 @@ Panel Specs → "+" → Feature → pegá recursos/problema.md →
 ### Probar (los dos caminos) — con la API corriendo
 ```bash
 curl http://127.0.0.1:5000/health
-curl http://127.0.0.1:5000/models
-curl -X POST http://127.0.0.1:5000/models -H "Content-Type: application/json" \
-  -d '{"name":"bert-base","framework":"pytorch","accuracy":0.91}'
-curl http://127.0.0.1:5000/models/1
-```
-
-**Poblar el inventario** (opcional, pero hace mejor la demo del Bloque 4) — con la
-API corriendo, cargá ~10 modelos de ejemplo vía el endpoint:
-
-```bash
-./recursos/seed.sh                          # http://127.0.0.1:5000
-./recursos/seed.sh http://127.0.0.1:5001    # si la levantaste en otro puerto
+curl http://127.0.0.1:5000/issues
+curl -X POST http://127.0.0.1:5000/issues -H "Content-Type: application/json" \
+  -d '{"title":"Cert TLS por vencer","service":"cert-monitor","severity":"medium"}'
+curl -X PUT http://127.0.0.1:5000/issues/1 -H "Content-Type: application/json" \
+  -d '{"status":"investigating"}'
+curl http://127.0.0.1:5000/issues/1
 ```
 
 ---
@@ -153,9 +153,16 @@ API corriendo, cargá ~10 modelos de ejemplo vía el endpoint:
 
 **La API del Bloque 3 debe estar corriendo.**
 
+**Poblá la base** (el Bloque 5 lo necesita — suma ~8 issues, 2 resueltos):
+
+```bash
+./recursos/seed.sh                          # http://127.0.0.1:5000
+./recursos/seed.sh http://127.0.0.1:5001    # si la levantaste en otro puerto
+```
+
 ### 3.1 Scaffold del proyecto MCP (los dos caminos)
 ```bash
-uv init mcp-items && cd mcp-items
+uv init mcp-issues && cd mcp-issues
 uv venv && source .venv/bin/activate
 uv add "mcp[cli]" httpx
 ```
@@ -167,33 +174,84 @@ uv add "mcp[cli]" httpx
 ### 3.3 Registrá el MCP
 ```bash
 # 🟧 [A]
-claude mcp add items-api -- uv --directory "$(pwd)" run server.py
-claude mcp list          # debe aparecer items-api
-# dentro de Claude Code: /mcp
+claude mcp add issues-api -- uv --directory "$(pwd)" run server.py
+claude mcp list          # debe aparecer issues-api
+# dentro de Claude Code: /mcp   (debe mostrar 4 tools)
 ```
 ```json
 // 🟪 [B] — .kiro/settings/mcp.json (ver recursos/examples/mcp.json.example)
 {
   "mcpServers": {
-    "items-api": {
+    "issues-api": {
       "command": "uv",
-      "args": ["--directory", "/ruta/absoluta/a/mcp-items", "run", "server.py"],
+      "args": ["--directory", "/ruta/absoluta/a/mcp-issues", "run", "server.py"],
       "disabled": false
     }
   }
 }
 ```
 
-### 3.4 Generá la Skill vía SDD (pegá `recursos/spec-skill.md`)
-- 🟧 **[A]** `/speckit.specify` (pegá `spec-skill.md`) → `plan` → `tasks` → `implement`
-  → queda en `.claude/skills/items-ops/SKILL.md`. Si la carpeta es nueva:
+### 3.4 Generá la skill `issues-ops` vía SDD (pegá `recursos/spec-skill.md`)
+- 🟧 **[A]** `/speckit.specify` → `plan` → `tasks` → `implement`
+  → queda en `.claude/skills/issues-ops/SKILL.md`. Si la carpeta es nueva:
   `/reload-skills` o reiniciá Claude Code.
-- 🟪 **[B]** Feature Spec con `spec-skill.md` → `.kiro/skills/items-ops/SKILL.md`
+- 🟪 **[B]** Feature Spec con `spec-skill.md` → `.kiro/skills/issues-ops/SKILL.md`
   (respetá la subcarpeta con el nombre).
 
 ### 3.5 Probar
-Pedile al agente: **"listá los modelos y agregá uno"**. Debe usar la Skill + las
-tools del MCP. Verificá con los `curl` de arriba.
+Pedile al agente: **"listá los issues abiertos y marcá el de los pods en
+CrashLoop como investigating"**. Debe usar la skill + las tools del MCP
+(incluido `update_issue`). Bonus: pedile resolver un issue **sin** darle la
+solución — la skill te la tiene que exigir.
+
+---
+
+## 4. La skill aprende a leer logs (Bloque 5)
+
+El verdadero pitch: nadie quiere leer 1400 líneas de logs a mano. Acá la skill
+lo hace — y de paso ves **el superpoder de SDD: evolucionar**. No escribís una
+skill nueva: **cambiás la spec y se regenera**.
+
+1. Evolucioná la skill vía SDD (pegá `recursos/spec-logs.md`):
+   - 🟧 **[A]** `/speckit.specify` → `implement` (actualiza el mismo `SKILL.md`)
+   - 🟪 **[B]** Feature Spec (Quick Plan recomendado)
+2. Corré el análisis: **"analizá `recursos/logs/app.log`"** (pasale la ruta
+   absoluta si no lo encuentra).
+3. Qué tiene que pasar: detecta los patrones entre el ruido, **actualiza** los
+   issues existentes con evidencia (sin duplicar), **crea** los nuevos con
+   severity y solución propuesta, y **correlaciona** señales (hay una causa raíz
+   escondida que conecta dos problemas — fijate si la encuentra).
+4. Verificá con `curl http://127.0.0.1:5000/issues` o pidiendo la lista.
+
+---
+
+## 5. Reporte HTML + plugin (Bloque 6)
+
+### 5.1 La segunda skill: `issues-report` (pegá `recursos/spec-report.md`)
+Genera un **reporte HTML autocontenido** alimentado solo por
+`issues-api:list_issues`. Probá: **"armá el reporte de issues"** → abrí
+`issues-report.html` en el navegador.
+
+### 5.2 Empaquetá todo: `devops-issues` (pegá `recursos/spec-plugin.md`)
+Las 2 skills + el MCP en una unidad instalable:
+
+- 🟧 **[A]** plugin de Claude Code:
+  ```text
+  devops-issues/
+  ├── .claude-plugin/plugin.json   ← name, description, version
+  ├── skills/
+  │   ├── issues-ops/SKILL.md
+  │   └── issues-report/SKILL.md
+  └── .mcp.json                    ← registra issues-api
+  ```
+  Instalá (marketplace local + `/plugin`) y **reiniciá la sesión**.
+- 🟪 **[B]** Power de Kiro (MCP + steering; las skills adentro si tu versión lo
+  soporta, si no quedan en `.kiro/skills/`).
+
+### 5.3 Prueba integrada final
+En sesión nueva, sin registrar nada a mano:
+**"analizá `recursos/logs/app.log` y después regenerá el reporte"** — una skill
+actualiza la tabla, la otra la consume, el MCP conecta todo. 🎉
 
 ---
 
@@ -206,3 +264,6 @@ tools del MCP. Verificá con los `curl` de arriba.
 - **MCP con 0 tools / no conecta:** corré el server a mano para ver errores en stderr; **nunca `print()` a stdout** (corrompe el JSON-RPC); usá **ruta absoluta** en `--directory`; abrí sesión nueva (descubre las tools al inicio).
 - **No aparecen los `/speckit.*` (A):** `ls .claude/commands/`, reiniciá Claude Code; usá `--integration claude`.
 - **No veo el panel Specs (B):** abrí una **carpeta** (no un archivo suelto) con File → Open Folder.
+- **La skill no encuentra el log:** pasale la **ruta absoluta** de `app.log` o copialo dentro de tu proyecto.
+- **El análisis duplica issues:** la spec exige comparar con `list_issues` antes de crear; revisá que el `SKILL.md` regenerado conserve esa regla.
+- **El plugin no aparece (A):** estructura exacta `.claude-plugin/plugin.json` + `skills/<nombre>/SKILL.md`; sesión nueva tras instalar; `/plugin` para ver el estado.

@@ -65,10 +65,10 @@ genera el código. Entre fases, **vos revisás**.
 
 > **🟩 Recuadro: SDD, MCP y Skills son estándares abiertos.**
 > En el taller **construimos todo desde cero vía specs** (nada de pegar código):
-> el `.md` del problema, la spec del **MCP** y la de la **Skill** son **idénticas**
-> en las dos herramientas. Solo cambia **cómo se crean las specs y dónde se
-> registran**, no **qué son**. Eso es justamente lo que vamos a comprobar en vivo:
-> el taller es portable.
+> el `.md` del problema y las specs del **MCP**, de las **Skills** y del
+> **empaquetado** son **idénticos** en las dos herramientas. Solo cambia **cómo
+> se crean las specs y dónde se registran**, no **qué son**. Eso es justamente lo
+> que vamos a comprobar en vivo: el taller es portable.
 
 ---
 
@@ -160,8 +160,8 @@ specify version
 
 En el taller vas a generar este servicio **vía SDD desde cero**. Este snippet es
 solo para **refrescar** cómo se ve Flask + el `sqlite3` de la stdlib (sin ORM).
-**No es la solución completa:** le faltan `init_db()`, el seed y `GET /models/<id>`
-— eso lo genera SDD a partir de `recursos/problema.md`.
+**No es la solución completa:** le faltan `init_db()`, el seed, `GET /issues/<id>`
+y el `PUT` — eso lo genera SDD a partir de `recursos/problema.md`.
 
 ```python
 import sqlite3
@@ -169,7 +169,8 @@ from datetime import datetime, timezone
 from flask import Flask, g, jsonify, request
 
 app = Flask(__name__)
-DB = "inventory.db"
+DB = "issues.db"
+SEVERITIES = {"low", "medium", "high", "critical"}
 
 def get_db():
     if "db" not in g:
@@ -181,21 +182,25 @@ def get_db():
 def health():
     return jsonify({"status": "ok"})
 
-@app.get("/models")
-def list_models():
-    rows = get_db().execute("SELECT * FROM models ORDER BY id").fetchall()
+@app.get("/issues")
+def list_issues():
+    rows = get_db().execute("SELECT * FROM issues ORDER BY id").fetchall()
     return jsonify([dict(r) for r in rows])
 
-@app.post("/models")
-def add_model():
+@app.post("/issues")
+def add_issue():
     data = request.get_json(silent=True) or {}
-    if not data.get("name") or not data.get("framework"):
-        return jsonify({"error": "name y framework son obligatorios"}), 400
+    if not data.get("title") or not data.get("service") or not data.get("severity"):
+        return jsonify({"error": "title, service y severity son obligatorios"}), 400
+    if data["severity"] not in SEVERITIES:
+        return jsonify({"error": "severity inválida"}), 400
     created_at = datetime.now(timezone.utc).isoformat()
     db = get_db()
     cur = db.execute(
-        "INSERT INTO models (name, framework, accuracy, created_at) VALUES (?, ?, ?, ?)",
-        (data["name"], data["framework"], data.get("accuracy"), created_at),
+        "INSERT INTO issues (title, service, severity, status, description, proposed_solution, created_at)"
+        " VALUES (?, ?, ?, 'open', ?, ?, ?)",
+        (data["title"], data["service"], data["severity"],
+         data.get("description"), data.get("proposed_solution"), created_at),
     )
     db.commit()
     return jsonify({"id": cur.lastrowid}), 201
@@ -207,7 +212,7 @@ if __name__ == "__main__":
 
 Si lo guardás como `app.py` podés correrlo para refrescar (uv trae Flask al
 vuelo; pinneá el Python para que no agarre uno viejo del sistema). Ojo: así como
-está, sin crear la tabla, `GET /models` falla con "no such table" — es esperado,
+está, sin crear la tabla, `GET /issues` falla con "no such table" — es esperado,
 es solo un refresher de sintaxis:
 
 ```bash
@@ -222,13 +227,13 @@ Probar:
 
 ```bash
 curl http://127.0.0.1:5000/health
-curl http://127.0.0.1:5000/models
-curl -X POST http://127.0.0.1:5000/models -H "Content-Type: application/json" \
-  -d '{"name":"bert-base","framework":"pytorch","accuracy":0.91}'
+curl http://127.0.0.1:5000/issues
+curl -X POST http://127.0.0.1:5000/issues -H "Content-Type: application/json" \
+  -d '{"title":"Cert TLS por vencer","service":"cert-monitor","severity":"medium"}'
 ```
 
-> La versión completa (con `init_db()`, seed y `GET /models/<id>`) la generás vos
-> vía SDD en el Bloque 3. No viene en este repo a propósito.
+> La versión completa (con `init_db()`, seed, `GET /issues/<id>` y `PUT`) la
+> generás vos vía SDD en el Bloque 3. No viene en este repo a propósito.
 
 ---
 
@@ -240,9 +245,10 @@ curl -X POST http://127.0.0.1:5000/models -H "Content-Type: application/json" \
 | Reglas / constitución | `.specify/memory/constitution.md` | Steering files en `.kiro/steering/` |
 | Spec del problema | Idéntica — se la pegás a `/speckit.specify` | Idéntica — se la pegás al crear el Feature Spec |
 | Spec del MCP (`spec-mcp.md`) | Idéntica → SDD genera `server.py` | Idéntica → SDD genera `server.py` |
-| Registrar el MCP | `claude mcp add items-api -- uv run server.py` | Editar `.kiro/settings/mcp.json` |
-| Spec de la Skill (`spec-skill.md`) | Idéntica → SDD genera `SKILL.md` en `.claude/skills/items-ops/` | Idéntica → SDD genera `SKILL.md` en `.kiro/skills/items-ops/` |
+| Registrar el MCP | `claude mcp add issues-api -- uv run server.py` | Editar `.kiro/settings/mcp.json` |
+| Specs de las Skills (`spec-skill.md`, `spec-logs.md`, `spec-report.md`) | Idénticas → SDD genera los `SKILL.md` en `.claude/skills/<nombre>/` | Idénticas → SDD genera los `SKILL.md` en `.kiro/skills/<nombre>/` |
 | Verificar MCP | `claude mcp list`, `/mcp` | Panel MCP de Kiro / `/mcp` en el chat |
+| Empaquetado final | Plugin `devops-issues` (`.claude-plugin/`) | Power de Kiro |
 
 ---
 
