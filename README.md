@@ -21,11 +21,11 @@ que genera el **reporte HTML**, y al final empaquetás todo en un **plugin**.
 |---|---|---|
 | `material-previo.md` | Guía de preparación completa (instalación + refresher Flask) | **Antes** del taller |
 | `recursos/bloque3-api/problema.md` | Spec del problema → genera la **API de issues** | Bloque 3 |
+| `recursos/bloque3-api/seed.sh` | Carga ~8 issues de ejemplo vía `POST`/`PUT` (poblar la base recién construida) | Bloque 3 (al final) |
 | `recursos/bloque3-api/constitution.example.md` | 🟧 [A] ejemplo de constitución | Bloque 3 |
 | `recursos/bloque3-api/steering.example.md` | 🟪 [B] ejemplo de steering file | Bloque 3 |
 | `recursos/bloque4-mcp-skill/spec-mcp.md` | Spec del **MCP** `issues-api` → genera `server.py` | Bloque 4 |
 | `recursos/bloque4-mcp-skill/spec-skill.md` | Spec de la skill **`issues-ops`** → genera `SKILL.md` | Bloque 4 |
-| `recursos/bloque4-mcp-skill/seed.sh` | Carga ~8 issues de ejemplo vía `POST`/`PUT` (poblar la base) | Bloque 4 |
 | `recursos/bloque4-mcp-skill/mcp.json.example` | 🟪 [B] registro del MCP en Kiro | Bloque 4 |
 | `recursos/bloque5-logs/spec-logs.md` | Spec de evolución: la skill **aprende a leer logs** | Bloque 5 |
 | `recursos/bloque5-logs/logs/` | 3 archivos (~3900 líneas): gateway + services + infra, con incidentes que solo se resuelven **correlacionando entre archivos** | Bloque 5 |
@@ -147,18 +147,20 @@ curl -X PUT http://127.0.0.1:5000/issues/1 -H "Content-Type: application/json" \
 curl http://127.0.0.1:5000/issues/1
 ```
 
+### Poblá la base (con la API andando — los Bloques 4 y 5 lo necesitan)
+
+Suma ~8 issues realistas (2 resueltos) usando los endpoints que acabás de construir:
+
+```bash
+./recursos/bloque3-api/seed.sh                          # http://127.0.0.1:5000
+./recursos/bloque3-api/seed.sh http://127.0.0.1:5001    # si la levantaste en otro puerto
+```
+
 ---
 
 ## 3. MCP + Skill (Bloque 4)
 
-**La API del Bloque 3 debe estar corriendo.**
-
-**Poblá la base** (el Bloque 5 lo necesita — suma ~8 issues, 2 resueltos):
-
-```bash
-./recursos/bloque4-mcp-skill/seed.sh                          # http://127.0.0.1:5000
-./recursos/bloque4-mcp-skill/seed.sh http://127.0.0.1:5001    # si la levantaste en otro puerto
-```
+**La API del Bloque 3 debe estar corriendo, con la base ya poblada (`seed.sh`).**
 
 ### 3.1 Scaffold del proyecto MCP (los dos caminos)
 ```bash
