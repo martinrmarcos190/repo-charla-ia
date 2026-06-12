@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "items-api": {
+    "issues-api": {
       "command": "uv",
-      "args": ["--directory", "/ruta/absoluta/a/mcp-items", "run", "server.py"],
+      "args": ["--directory", "/ruta/absoluta/a/mcp-issues", "run", "server.py"],
       "disabled": false
     }
   }
